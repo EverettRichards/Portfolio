@@ -33,28 +33,24 @@ export const projects = [
   },
 ];
 
-export const testimonials = [
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/1.jpg",
-    name: "Jesse Hicks",
-    company: "Zoozle",
-  },
-  {
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quod necessitatibus quidem impedit facilis? Distinctio laboriosam veritatis recusandae minus. Voluptatum accusantium hic laudantium soluta ea sapiente cupiditate officia maiores itaque.",
-    image: "https://randomuser.me/api/portraits/men/94.jpg",
-    name: "Ruben Alvarez",
-    company: "Dooble.io",
-  },
+export const skills = [
+  "Machine Learning & Data Analytics in Python with scikit-learn, TensorFlow, OpenCV, and PyTorch",
+  "Web development using HTML/CSS and Javascript, including React and Node.js",
+  "Ethereum Smart Contract development with Solidity",
+  "Object-oriented application programming with Java and C++",
+  "Version control & collaborative development with Git",
+  "3D video game programming with Lua",
+  "Database management with SQL",
+  "Software design and analysis",
 ];
 
-export const skills = [
-  "JavaScript",
-  "React",
-  "Next.js",
-  "Node",
-  "GraphQL",
-  "Material UI",
+export const researches = [
+  {
+    title: "Research Project 1",
+    subtitle: "Machine Learning",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: "./project-1.gif",
+    link: "https://reactbootcamp.com",
+  },
 ];
