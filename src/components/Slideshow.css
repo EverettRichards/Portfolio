@@ -1,0 +1,60 @@
+.slideshow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /*width: 50%; /* Adjust this to your desired fixed width */
+    height: 24em; /* Adjust this to your desired fixed height */
+    overflow: hidden;
+    background-color: #000; /* Background color to fill the space if the image is smaller */
+  }
+  
+  .slideshow-image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .slideshow-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This will ensure images fill the window with edges cut off */
+  }
+  
+  .slideshow-caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+  }
+  
+  .slideshow-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .slideshow-btn:hover {
+    color: #ccc;
+  }
+  
+  .slideshow-btn:first-of-type {
+    left: 10px;
+  }
+  
+  .slideshow-btn:last-of-type {
+    right: 10px;
+  }
+  

@@ -12,7 +12,7 @@ export default function App() {
       <Navbar />
       <About />
       <Research />
-      <Projects />
+      {/*<Projects />*/}
       <Skills />
       <Contact />
     </main>

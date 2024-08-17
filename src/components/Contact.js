@@ -15,12 +15,12 @@ export default function Contact() {
                     Feel free to reach out through any of the following methods.
                 </p>
                 <br />
-                <div className="flex flex-wrap lg:w-1/2 sm:mx-auto sm:mb-2 -mx-6 text-center">
+                <div className="flex flex-wrap lg:w-3/4 sm:mx-auto sm:mb-2 -mx-6 text-center">
                     {contacts.map((contact) => (
                     <div key={contact} className="p-2 sm:w-1/2 w-full">
                         <div className="bg-gray-800 rounded flex p-4 h-full items-center">
                             <span className="title-font font-medium text-white">
-                                <a href={contact.url} target="_blank" className="w-full">{contact.title}</a>
+                                <a href={contact.url} target="_blank" className="w-full"><img src={contact.icon} style={{width:"32px", height:"32px", display:"inline", marginRight:"12px"}} /><span>{contact.value}</span></a>
                             </span>
                         </div>
                     </div>

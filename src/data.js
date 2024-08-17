@@ -62,8 +62,9 @@ export const researches = [
       "Abstract": "https://www.urp.udel.edu/summer-sym-pres/edge-enabled-collaborative-object-detection-for-connected-autonomous-vehicles/",
       "Paper": "https://drive.google.com/file/d/1TXZwE9rR3KcFgkUGBsVSHjd14-IFY3uG/view?usp=sharing",
       "Poster": "https://drive.google.com/file/d/1bp1082myhzq6jsimDbMJyHCFLieBaZvd/view?usp=sharing",
-      "Lab": "https://www.reu-transportation.com/",
+      "Code": "https://github.com/EverettRichards/Edge-CAV",
     },
+    main_link: "https://drive.google.com/file/d/1TXZwE9rR3KcFgkUGBsVSHjd14-IFY3uG/view?usp=sharing",
   },
   {
     title: "Enhancing Construction Worker Safety Through Sensor Fusion and Machine Learning",
@@ -75,7 +76,10 @@ export const researches = [
     image: "./dice_video.gif",
     links: {
       "Lab": "https://dice.sdsu.edu/",
+      "Code": "https://github.com/EverettRichards/DiCE",
+      "Demo": "https://www.youtube.com/watch?v=3qlrGciOR84",
     },
+    main_link: "https://github.com/EverettRichards/DiCE",
   },
 ];
 
@@ -84,24 +88,45 @@ export const contacts = [
     title: "Email",
     value: "ehrichards9@gmail.com",
     url: "mailto:ehrichards9@gmail.com",
-    icon: "",
+    icon: "./icons/gmail.svg",
   },
   {
     title: "LinkedIn",
-    value: "https://www.linkedin.com/in/everett-richards-7834a6274/",
-    url: "https://www.linkedin.com/in/everett-richards-7834a6274/",
-    icon: "",
+    value: "linkedin.com/in/everett-richards",
+    url: "https://www.linkedin.com/in/everett-richards",
+    icon: "./icons/linkedin.svg",
   },
   {
     title: "GitHub",
     value: "github.com/EverettRichards",
     url: "https://github.com/EverettRichards",
-    icon: "",
+    icon: "./icons/github.svg",
   },
   {
     title: "Instagram",
     value: "@the_everett_richards",
     url: "https://www.instagram.com/the_everett_richards/",
-    icon: "",
+    icon: "./icons/instagram.svg",
   },
 ]
+
+export const slides = [
+  {"photo": "./slideshow/ud_symposium.png",
+    "caption": "Presenting my research at the University of Delaware Undergraduate Research Symposium in August 2024.",},
+  {"photo": "./slideshow/Teddie2.jpg",
+    "caption": "Exploring the nation's capital with my aunt's dog, Teddie.",},
+  {"photo": "./slideshow/kayaking_providence.jpg",
+    "caption": "Kayaking on the Providence River in Rhode Island.",},
+  {"photo": "./slideshow/tutoring.jpg",
+    "caption": "Tutoring Discrete Mathematics at the Math & Science Learning Center (MSLC) at San Diego State University.",},
+  {"photo": "./slideshow/testbed_photo_3.jpg",
+    "caption": "The testbed I made for my research project at the University of Delaware.",},
+  {"photo": "./slideshow/EstesPark.jpg",
+    "caption": "Adventuring at Estes Park in the Colorado Rocky Mountains.",},
+  {"photo": "./slideshow/NICU.jpg",
+    "caption": "Celebrating my receipt of the North Island Credit Union scholarship.",},
+  {"photo": "./slideshow/WyomingCapitol.jpg",
+    "caption": "Touring the Wyoming State Capitol in Cheyenne.",},
+  {"photo": "./slideshow/AtWorkREU.jpg",
+    "caption": "Working on my research project for the NSF REU at the University of Delaware.",},
+];
