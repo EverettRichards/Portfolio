@@ -4,7 +4,7 @@
     justify-content: center;
     position: relative;
     /*width: 50%; /* Adjust this to your desired fixed width */
-    height: 24em; /* Adjust this to your desired fixed height */
+    height: 26em; /* Adjust this to your desired fixed height */
     overflow: hidden;
     background-color: #000; /* Background color to fill the space if the image is smaller */
   }
