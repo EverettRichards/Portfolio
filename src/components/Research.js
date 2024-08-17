@@ -22,7 +22,7 @@ export default function Research() {
         <div className="flex flex-col w-full mb-6">
           <CodeIcon className="mx-auto inline-block w-10 mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Research Experience
+            Research Projects
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
             As an aspiring computer scientist, research is a key part of my academic and professional development.
@@ -34,18 +34,18 @@ export default function Research() {
               href={research.main_link}
               key={research.image}
               target="_blank"
-              className="sm:w-1/2 w-100 p-4">
+              className="md:w-1/2 w-100 p-4">
               <div className="flex relative bg-gray-800">
                 <img
                   alt="gallery"
-                  className=" research-box absolute inset-0 w-full h-full object-cover object-center bg-gray-800"
+                  className="research-box absolute inset-0 w-full h-full object-cover object-center bg-gray-800 sm:hidden md:block"
                   src={research.image}
                 />
-                <div className=" research-box px-8 py-6 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                <div className="research-box px-8 py-6 relative z-10 w-full border-4 border-gray-800 bg-gray-900 sm:opacity-100 md:opacity-0 md:hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-400 mb-1">
                     {research.lab}
                   </h2>
-                  <h2 className="tracking-widest text-sm title-font font-medium text-grey-200 mb-1 italic">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-yellow-200 mb-1 italic">
                     {research.university}
                   </h2>
                   <h1 className="title-font text-lg font-medium text-white mb-3">
