@@ -5,13 +5,18 @@ export default function About() {
         <section id="about">
           <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+              <h1 className="title-font sm:text-6xl text-3xl mb-4 font-medium text-white">
                 Hi, I'm Everett.
-                <br className="hidden lg:inline-block" />
-                I love computing!
-                <br className="hidden lg:inline-block" />
-                [WEBSITE IS WORK IN PROGRESS. PLEASE DISREGARD FOR NOW.]
               </h1>
+              <h2 className="title-font sm:text-2xl text-2xl mb-4 font-medium text-gray-300">
+              A little bit about me:
+              </h2>
+              <ul className="title-font sm:text-lg mb-4 font-medium text-gray-300 text-left list-disc text-lg px-5">
+                <li>Undergraduate studying Computer Science & Applied Mathematics</li>
+                <li>Undergraduate Researcher</li>
+                <li>Computer Science & Math Tutor</li>
+                <li>President, ACM Student Chapter</li>
+              </ul>
               <p className="mb-8 leading-relaxed">
                 I am an undergraduate at San Diego State University pursuing
                 a double major in Computer Science and Applied Mathematics.
@@ -35,9 +40,9 @@ export default function About() {
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <img
-                className="object-cover object-center rounded"
+                className="object-cover object-center rounded-2xl"
                 alt="hero"
-                src="./coding.svg"
+                src="./ud_symposium.png"
               />
             </div>
           </div>
