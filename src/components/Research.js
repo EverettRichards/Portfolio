@@ -13,7 +13,7 @@ export default function Research() {
 
           @media only screen and (max-width: 600px) {
             .research-box {
-              height: 32em;
+              height: auto;
             }
           }
         `}
