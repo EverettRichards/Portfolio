@@ -119,8 +119,6 @@ export const slides = [
     "caption": "Kayaking on the Providence River in Rhode Island.",},
   {"photo": "./slideshow/tutoring.jpg",
     "caption": "Tutoring Discrete Mathematics at the Math & Science Learning Center (MSLC) at San Diego State University.",},
-  {"photo": "./slideshow/testbed_photo_3.jpg",
-    "caption": "The testbed I made for my research project at the University of Delaware.",},
   {"photo": "./slideshow/EstesPark.jpg",
     "caption": "Adventuring at Estes Park in the Colorado Rocky Mountains.",},
   {"photo": "./slideshow/NICU.jpg",
