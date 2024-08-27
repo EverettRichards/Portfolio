@@ -37,13 +37,18 @@ export default function About() {
               <div className="flex justify-center">
                 <a
                   href="#contact"
-                  className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+                  className="inline-flex text-white bg-blue-500 border-0 py-2 px-4 focus:outline-none hover:bg-blue-600 rounded text-lg">
                   Contact Me
                 </a>
                 <a
-                  href="#projects"
-                  className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                  href="#research"
+                  className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                   View Projects
+                </a>
+                <a
+                  href="https://docs.google.com/document/d/1Pphz4vExxLpTO9oJZle-k0culQDqo0Q93crWGP4mlqg/edit?usp=sharing" target="_blank"
+                  className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+                  View Resume
                 </a>
               </div>
             </div>
