@@ -12,8 +12,8 @@ const images = slides
 export default function About() {
     return (
         <section id="about">
-          <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-            <div className="lg:w-1/2 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+          <div className="container mx-auto flex px-2 lg:px-10 pt-7 lg:pt-20 lg:pb-20 md:flex-row flex-col items-center">
+            <div className="lg:w-1/2 md:w-1/2 px-4 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="title-font sm:text-6xl text-5xl mb-4 font-medium text-blue-500">
                 Hi, I'm Everett.
               </h1>
@@ -23,7 +23,7 @@ export default function About() {
               <ul className="title-font sm:text-md mb-4 font-medium text-gray-300 text-left list-disc text-md px-5">
                 <li className="my-2">I am pursuing a B.S. in Computer Science & Applied Mathematics at San Diego State University (SDSU)</li>
                 <li className="my-2">My goal is to earn a PhD in computer science, and continue in the research field</li>
-                <li className="my-2">I tutor computer science, mathematics, and statistics at the SDSU Math & Science Learning Center (MSLC)</li>
+                <li className="my-2">I have completed research projects at San Diego State University (SDSU), University of Delaware (UD), and University of California San Diego (UCSD).</li>
                 <li className="my-2">I am the founder & president of the <a className="underline" href="https://acm.sdsu.edu" target="_blank">SDSU ACM Chapter</a></li>
               </ul>
               {/*<p className="mb-8 leading-relaxed">

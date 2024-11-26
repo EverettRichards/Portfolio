@@ -4,7 +4,7 @@
     justify-content: center;
     position: relative;
     /*width: 50%; /* Adjust this to your desired fixed width */
-    height: 26em; /* Adjust this to your desired fixed height */
+    /*height: 26em; /* Adjust this to your desired fixed height */
     overflow: hidden;
     background-color: #000; /* Background color to fill the space if the image is smaller */
   }
@@ -23,15 +23,15 @@
   
   .slideshow-caption {
     position: absolute;
-    bottom: 10px;
+    /*bottom: 10px;*/
     left: 0;
     width: 100%;
     text-align: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    padding: 10px;
+    /*padding: 10px;*/
     box-sizing: border-box;
-    font-size: 1.2rem;
+    /*font-size: 1.2rem;*/
   }
   
   .slideshow-btn {
