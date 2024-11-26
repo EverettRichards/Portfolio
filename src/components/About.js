@@ -46,9 +46,9 @@ export default function About() {
                   View Projects
                 </a>
                 <a
-                  href="https://docs.google.com/document/d/1Pphz4vExxLpTO9oJZle-k0culQDqo0Q93crWGP4mlqg/edit?usp=sharing" target="_blank"
+                  href="https://drive.google.com/file/d/110yjcvY4NuCH5E5s9nOv_XM4U6aWJAd4/view?usp=sharing" target="_blank"
                   className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
-                  View Resume
+                  View CV
                 </a>
               </div>
             </div>
