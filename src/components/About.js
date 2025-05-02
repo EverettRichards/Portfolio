@@ -53,7 +53,8 @@ export default function About() {
               </div>
             </div>
 
-            <Slideshow images={images} />
+            {/* <Slideshow images={images} /> */}
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT11GEgNYBi3e8HFhPejBXVALSUGBjlrw_lzc750EGhqWnQSagFvLQQLLCfP76p9FwVQLktnSp5bcJn/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="720" height="426" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
             {/*<div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <img

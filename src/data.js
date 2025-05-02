@@ -1,38 +1,3 @@
-export const projects_old = [
-  {
-    title: "React Reserve",
-    subtitle: "MERN Stack",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "React Tracks",
-    subtitle: "React and Python",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "DevChat",
-    subtitle: "React and Firebase",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
-    link: "https://reactbootcamp.com",
-  },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "https://reactbootcamp.com",
-  },
-];
-
 export const projects = [
 
 ]
@@ -57,7 +22,7 @@ export const researches = [
     when: "Summer 2024",
     description:
       "At the NSF REU, I developed and tested an interdisciplinary framework to improve autonomous vehicle object labeling accuracy by combining multiple vehicles' perspectives via an edge server. I accomplished this by developing two algorithms, called Perceptive Aggregation and Collaborative Estimation (PACE) and Variable Object Tally and Evaluation (VOTE). I presented a poster on my research at the University of Delaware Undergraduate Research Symposium in August 2024.",
-    image: "./REU_video.gif",
+    image: "./reu_video.gif",
     links: {
       "Abstract": "https://www.urp.udel.edu/summer-sym-pres/edge-enabled-collaborative-object-detection-for-connected-autonomous-vehicles/",
       "Paper": "https://drive.google.com/file/d/1TXZwE9rR3KcFgkUGBsVSHjd14-IFY3uG/view?usp=sharing",
