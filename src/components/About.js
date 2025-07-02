@@ -60,7 +60,7 @@ export default function About() {
             
             <div className="w-full md:w-1/2 h-64 md:h-auto relative" style={{ paddingTop: '30%' }}>
               <iframe
-                src="https://docs.google.com/presentation/d/e/2PACX-1vT11GEgNYBi3e8HFhPejBXVALSUGBjlrw_lzc750EGhqWnQSagFvLQQLLCfP76p9FwVQLktnSp5bcJn/pubembed?start=true&loop=true&delayms=3000"
+                src="https://docs.google.com/presentation/d/e/2PACX-1vT11GEgNYBi3e8HFhPejBXVALSUGBjlrw_lzc750EGhqWnQSagFvLQQLLCfP76p9FwVQLktnSp5bcJn/pubembed?start=true&loop=true&delayms=4500"
                 frameBorder="0"
                 allowFullScreen
                 mozallowfullscreen="true"

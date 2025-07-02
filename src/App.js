@@ -9,7 +9,7 @@ import Research from "./components/Research";
 
 export default function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <main className="text-gray-400 bg-gray-900 body-font min-h-screen">
       <Navbar />
       <About />
       <Research />

@@ -1,6 +1,6 @@
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
 import React from "react";
-import { skills } from "../data";
+import { hard_skills, soft_skills } from "../data";
 
 export default function Skills() {
   return (
@@ -12,20 +12,42 @@ export default function Skills() {
             Skills &amp; Experience
           </h1>
           <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-            I have a wide range of technical skills and experience in many software paradigms.
+            I have a wide range of technical skills and experience that I have developed through my academic and research projects.
           </p>
         </div>
-        <div className="flex flex-wrap lg:w-3/4 sm:mx-auto sm:mb-2 -mx-6">
-          {skills.map((skill) => (
-            <div key={skill} className="p-2 sm:w-1/3 w-full">
-              <div className="bg-gray-800 rounded flex p-4 h-full items-center">
-                <BadgeCheckIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-4" />
-                <span className="title-font font-medium text-white">
-                  {skill}
-                </span>
-              </div>
+        <div className="flex flex-col lg:flex-row gap-8 lg:w-3/4 sm:mx-auto sm:mb-2">
+          {/* Hard Skills Section */}
+          <div className="flex-1 order-1 lg:order-1">
+            <h2 className="text-lg font-bold text-white py-2 bg-gray-800 mb-4 text-center col-span-2">
+              Technical Skills
+            </h2>
+            <div className="grid grid-cols-2 gap-4">
+              {hard_skills.map((skill) => (
+                <div key={skill} className="bg-gray-800 rounded flex p-4 items-center">
+                  <BadgeCheckIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-4" />
+                  <span className="title-font font-medium text-white">
+                    {skill}
+                  </span>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+          {/* Soft Skills Section */}
+          <div className="flex-1 order-2 lg:order-2">
+            <h2 className="text-lg font-bold text-white py-2 bg-gray-800 mb-4 text-center col-span-2">
+              Professional Skills
+            </h2>
+            <div className="grid grid-cols-2 gap-4">
+              {soft_skills.map((skill) => (
+                <div key={skill} className="bg-gray-800 rounded flex p-4 items-center">
+                  <BadgeCheckIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-4" />
+                  <span className="title-font font-medium text-white">
+                    {skill}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

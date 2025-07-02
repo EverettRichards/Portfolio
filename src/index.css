@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Ensure the entire page has gray-900 background */
+html, body {
+  background-color: #111827; /* gray-900 */
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}

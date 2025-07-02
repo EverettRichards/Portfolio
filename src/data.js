@@ -2,17 +2,23 @@ export const projects = [
 
 ]
 
-export const skills = [
-  "Python Machine Learning & Data Analytics with TensorFlow and OpenCV",
-  "Developing and deploying Ethereum smart contracts with Solidity",
-  "OOP with Java, C++, and JavaScript/Node.js",
-  "Computer networking and edge computing",
-  "Research practices and presentation",
-  "Independent and group project management",
-  "Group leadership experience",
-  "Tutoring and peer mentoring",
-  "Written and oral communication",
+export const hard_skills = [
+  "Deep learning with PyTorch and TensorFlow",
+  "Computer vision with OpenCV and YOLO",
+  "Robotics simulation with MuJoCo, RoboSuite, and RoboMimic",
+  "Autonomous vehicle simulation with CARLA, OPV2V, and DAIR-V2X",
+  "Data analysis with Pandas, NumPy, and SciPy",
+  "CNNs, RNNs, and Transformers",
 ];
+
+export const soft_skills = [
+  "Literature review and research synthesis",
+  "Technical writing and documentation",
+  "Public speaking and presentations",
+  "Project management and organization",
+  "Academic leadership and mentoring",
+  "Publishing research papers",
+]
 
 export const researches = [
   {
