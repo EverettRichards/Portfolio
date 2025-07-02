@@ -25,7 +25,8 @@ export default function Research() {
             Research Projects
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            As an aspiring computer scientist, research is a key part of my academic and professional development.
+            As an aspiring computer scientist, research is a key part of my academic and professional development. I have completed research projects at San Diego State University (SDSU), the University of Dealware (UD), the University of California San Diego (UCSD), and Worcester Polytechnic Institute (WPI).
+            <span className="hidden md:block italic pt-3">Hover your mouse over each thumbnail to learn more about the research project.</span>
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
@@ -42,10 +43,10 @@ export default function Research() {
                   src={research.image}
                 />
                 <div className="research-box px-8 py-6 relative z-10 w-full border-4 border-gray-800 bg-gray-900 sm:opacity-100 md:opacity-0 md:hover:opacity-100">
-                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-400 mb-1">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-blue-400 mb-1 italic">
                     {research.lab}
                   </h2>
-                  <h2 className="tracking-widest text-sm title-font font-medium text-yellow-200 mb-1 italic">
+                  <h2 className="tracking-widest text-md title-font font-medium text-yellow-200 mb-1">
                     {research.university}
                   </h2>
                   <h1 className="title-font text-lg font-medium text-white mb-3">

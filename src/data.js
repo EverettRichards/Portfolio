@@ -16,16 +16,43 @@ export const skills = [
 
 export const researches = [
   {
-    title: "Edge-Enabled Collaborative Object Detection for Connected Autonomous Vehicles",
-    lab: "National Science Foundation Research Experience for Undergraduates (NSF REU)",
-    university: "University of Delaware",
+    title: "Modality-Aware Collaborative Perception for Autonomous Vehicles",
+    lab: "NSF REU in Applied Artificial Intelligence for Advanced Applications",
+    university: "Worcester Polytechnic Institute (WPI)",
+    when: "Fall 2024 -- Spring 2025",
+    description:
+      "Currently working on a project that aims to improve collaborative perception in autonomous vehicles by leveraging multiple modalities of sensor data. In particular, my model introduces robust modality-aware collaborative perception, which uses a novel attention mechanism to fuse data from multiple vehicles, regardless of which sensors they are equipped with. This approach enhances object detection accuracy and robustness in dynamic environments.",
+    image: "./research_videos/carla.gif",
+    links: {
+      "OPV2V": "https://mobility-lab.seas.ucla.edu/opv2v/",
+      "DAIR-V2X": "https://github.com/AIR-THU/DAIR-V2X?tab=readme-ov-file",
+    },
+    // main_link: "https://mimicgen.github.io/",
+  },
+  {
+    title: "Evaluating Performance of the Nvidia MimicGen Imitation Learning Algorithm when Subjected to Gaussian Noise",
+    lab: "NSF REU in Interdisciplinary Artificial Intelligence",
+    university: "University of California San Diego (UCSD)",
+    when: "Fall 2024 -- Spring 2025",
+    description:
+      "Conducted experiments on the impact of Gaussian noise injection in robotic imitation learning models. Optimized a sigmoid approximation curve relating noise amplitude to performance, yielding statistically significant R^2 values between 0.91 and 0.99. Used Pandas, NumPy, MatPlotLib, and SciPy for data analysis and optimization. Used MuJoCo, RoboSuite, RoboMimic, and MimicGen for robotic simulation and imitation learning",
+    image: "./research_videos/mimicgen_coffee.gif",
+    links: {
+      "MimicGen": "https://mimicgen.github.io/",
+    },
+    main_link: "https://mimicgen.github.io/",
+  },
+  {
+    title: "Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception",
+    lab: "NSF REU in Sustainable Resilient Transportation Systems",
+    university: "University of Delaware (UD)",
     when: "Summer 2024",
     description:
-      "At the NSF REU, I developed and tested an interdisciplinary framework to improve autonomous vehicle object labeling accuracy by combining multiple vehicles' perspectives via an edge server. I accomplished this by developing two algorithms, called Perceptive Aggregation and Collaborative Estimation (PACE) and Variable Object Tally and Evaluation (VOTE). I presented a poster on my research at the University of Delaware Undergraduate Research Symposium in August 2024.",
-    image: "./reu_video.gif",
+      "At the NSF REU, I developed and tested an interdisciplinary framework to improve autonomous vehicle object labeling accuracy by combining multiple vehicles' perspectives via an edge server. I accomplished this by developing two algorithms, called Perceptive Aggregation and Collaborative Estimation (PACE) and Variable Object Tally and Evaluation (VOTE). I presented a poster at the University of Delaware Undergraduate Research Symposium in August 2024, and presented my work at the IEEE EDGE conference in Helsinki, Finland in July 2025.",
+    image: "./research_videos/reu_video.gif",
     links: {
-      "Abstract": "https://www.urp.udel.edu/summer-sym-pres/edge-enabled-collaborative-object-detection-for-connected-autonomous-vehicles/",
-      "Paper": "https://drive.google.com/file/d/1TXZwE9rR3KcFgkUGBsVSHjd14-IFY3uG/view?usp=sharing",
+      "Abstract": "https://www.arxiv.org/abs/2506.06474",
+      "Paper": "https://www.arxiv.org/pdf/2506.06474",
       "Poster": "https://drive.google.com/file/d/1bp1082myhzq6jsimDbMJyHCFLieBaZvd/view?usp=sharing",
       "Code": "https://github.com/EverettRichards/Edge-CAV",
     },
@@ -34,11 +61,11 @@ export const researches = [
   {
     title: "Enhancing Construction Worker Safety Through Sensor Fusion and Machine Learning",
     lab: "Data-informed Construction Engineering (DiCE) Laboratory",
-    university: "San Diego State University",
+    university: "San Diego State University (SDSU)",
     when: "Spring 2024",
     description:
       "At the DiCE Lab, I designed a data analytics program that fuses IMU sensors and camera input to classify and predict the movements of construction workers. I also developed a 3D simulation to visualize IMU data in real-time, allowing for the data to be validated.",
-    image: "./dice_video.gif",
+    image: "./research_videos/dice_video.gif",
     links: {
       "Lab": "https://dice.sdsu.edu/",
       "Code": "https://github.com/EverettRichards/DiCE",

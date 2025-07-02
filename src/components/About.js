@@ -22,11 +22,12 @@ export default function About() {
               </h2>
               <ul className="title-font sm:text-md mb-4 font-medium text-gray-300 text-left list-disc text-md px-5">
                 <li className="my-2">Pursuing a B.S. in Computer Science & Applied Mathematics at San Diego State University (SDSU)</li>
-                <li className="my-2">Goal is to earn a PhD in computer science and pursue a research career</li>
-                <li className="my-2">Completed research projects at San Diego State University (SDSU), University of Delaware (UD), and University of California San Diego (UCSD).</li>
-                <li className="my-2">Associated Students Representative for the SDSU College of Sciences</li>
+                <li className="my-2">Goal is to earn a PhD and pursue a career in applied robotics research</li>
+                <li className="my-2">Completed <a className="underline" href="#research">research projects</a> at four different R1 research universities</li>
+                <li className="my-2"><a className="underline" href="https://arxiv.org/abs/2506.06474" target="_blank">Published a paper</a> on collaborative vehicle perception at IEEE EDGE 2025</li>
+                {/* <li className="my-2">Associated Students Representative for the SDSU College of Sciences</li> */}
                 <li className="my-2">Founder & president of the <a className="underline" href="https://acm.sdsu.edu" target="_blank">SDSU ACM Chapter</a></li>
-                <li className="my-2">Co-founder and Vice Chair of the SDSU Coalition of Technology Representatives and Leadership (CTRL)</li>
+                {/* <li className="my-2">Co-founder and Vice Chair of the SDSU Coalition of Technology Representatives and Leadership (CTRL)</li> */}
               </ul>
               {/*<p className="mb-8 leading-relaxed">
                 I am an undergraduate at San Diego State University pursuing
@@ -48,7 +49,7 @@ export default function About() {
                   View Projects
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/110yjcvY4NuCH5E5s9nOv_XM4U6aWJAd4/view?usp=sharing" target="_blank"
+                  href="/files/Richards_CV_06_25.pdf" target="_blank"
                   className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-4 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                   View CV
                 </a>
