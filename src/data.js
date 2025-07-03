@@ -106,6 +106,18 @@ export const contacts = [
     url: "https://www.instagram.com/the_everett_richards/",
     icon: "./icons/instagram.svg",
   },
+  {
+    title: "Google Scholar",
+    value: "Google Scholar",
+    url: "https://scholar.google.com/citations?user=iowXMSwAAAAJ&hl=en",
+    icon: "./icons/google-scholar.svg",
+  },
+  {
+    title: "ORCID",
+    value: "ORCID",
+    url: "https://orcid.org/0009-0009-9743-5636",
+    icon: "./icons/orcid.svg",
+  }
 ]
 
 export const slides = [

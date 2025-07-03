@@ -33,7 +33,7 @@ export default function Leadership() {
         </p> */}
     </div>
 
-    <div className="space-y-12">
+    <div className="space-y-0">
         {leadershipData.map((item, index) => (
         <div
             key={index}
@@ -42,16 +42,16 @@ export default function Leadership() {
             } items-center md:items-start gap-4 md:gap-6`}
         >
             {/* Text Section */}
-            <div className="md:w-3/5 md:my-auto text-center md:text-left">
+            <div className="flex-1 md:my-auto text-center md:text-left">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-100 mb-2" dangerouslySetInnerHTML={{ __html: item.title }}></h3>
                 <p className="text-gray-400 text-base md:text-lg lg:text-xl" dangerouslySetInnerHTML={{ __html: item.body }}></p>
             </div>
             {/* Image Section */}
-            <div className="md:w-2/5 md:w-1/2 w-full">
+            <div className="w-full md:w-auto md:flex-shrink-0">
                 <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-auto object-cover rounded-xl shadow-md bg-white"
+                    className="w-full md:w-auto md:h-48 lg:h-56 h-auto object-cover rounded-xl shadow-md bg-white"
                 />
             </div>
         </div>
