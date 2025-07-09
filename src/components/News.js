@@ -5,7 +5,7 @@ const initialNews = [
     // Example:
     {
         date: '2025-07-09',
-        event: 'Presented my paper, "Edge Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception", at IEEE EDGE 2025 in Helsinki, Finland.',
+        event: 'Presented my paper, "Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception", at IEEE EDGE 2025 in Helsinki, Finland.',
     },
     {
         date: '2025-05-28',
@@ -73,7 +73,7 @@ const initialNews = [
     },
 ];
 
-const PREVIEW_COUNT = 5;
+const PREVIEW_COUNT = 6;
 
 export default function News() {
     const [news] = useState(initialNews);
