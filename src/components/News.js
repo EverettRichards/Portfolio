@@ -5,15 +5,19 @@ const initialNews = [
     // Example:
     {
         date: '2025-07-09',
-        event: 'Presented my paper, "Edge Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception", at IEEE EDGE 2025.',
+        event: 'Presented my paper, "Edge Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception", at IEEE EDGE 2025 in Helsinki, Finland.',
     },
     {
         date: '2025-05-28',
         event: 'Began Research Assistantship at the NSF REU in Applied AI for Advanced Applications at Worcester Polytechnic Institute (WPI).',
     },
     {
-        date: '2025-05-15',
+        date: '2025-05-18',
         event: 'Received the Certificate of Excellence Award in Advanced Programming Languages by the World Computing Organization (WCO).',
+    },
+    {
+        date: '2025-05-15',
+        event: 'Paper accepted for publication at IEEE EDGE 2025.'
     },
     {
         date: '2025-05-01',
