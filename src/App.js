@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Leadership from "./components/Leadership";
 import Skills from "./components/Skills";
+import News from "./components/News";
 import Research from "./components/Research";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
     <main className="text-gray-400 bg-gray-900 body-font min-h-screen">
       <Navbar />
       <About />
+      <News />
       <Research />
       <Leadership />
       {/*<Projects />*/}
