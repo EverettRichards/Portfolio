@@ -40,6 +40,14 @@ const initialNews = [
         event: 'Received the George A. Hansen Scholarship for outstanding academic performance in STEM.'
     },
     {
+        date: '2024-12-07',
+        event: 'Participated in the William Lowell Putnam Mathematical Competition and scored in the top 40% of participants nationwide.',
+    },
+    {
+        date: '2024-11-25',
+        event: 'Negotiated and secured a $2,500 sponsorship from Google on behalf of the SDSU ACM Chapter.'
+    },
+    {
         date: '2024-09-20',
         event: 'Began Research Assistantship at the NSF REU in Interdisciplinary AI at the University of California San Diego (UCSD).',
     },
@@ -64,12 +72,16 @@ const initialNews = [
         event: 'Began Research Assistantship at the NSF REU in Sustainable Resilient Transportation Systems at the University of Delaware.',
     },
     {
+        date: '2024-03-19',
+        event: 'Formally declared a second major in Applied Mathematics at San Diego State University.',
+    },
+    {
         date: '2024-01-20',
         event: 'Began Instructional Assistantship for MATH 245 (Discrete Mathematics).'
     },
     {
         date: '2023-08-23',
-        event: 'Began undergraduate studies at San Diego State University.'
+        event: 'Began undergraduate studies at San Diego State University as a Computer Science major.'
     },
 ];
 
