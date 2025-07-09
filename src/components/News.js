@@ -76,8 +76,12 @@ const initialNews = [
         event: 'Formally declared a second major in Applied Mathematics at San Diego State University.',
     },
     {
-        date: '2024-01-20',
+        date: '2024-01-17',
         event: 'Began Instructional Assistantship for MATH 245 (Discrete Mathematics).'
+    },
+    {
+        date: '2023-12-15',
+        event: 'Began Research Assistantship at the SDSU Data-informed Construction Engineering (DiCE) Lab.',
     },
     {
         date: '2023-08-23',
