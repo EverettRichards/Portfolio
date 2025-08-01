@@ -1,91 +1,96 @@
 import React, { useState } from 'react';
 import { NewspaperIcon as ChipIcon } from '@heroicons/react/solid';
+import './News.css';
 
 const initialNews = [
     // Example:
     {
+        date: '2025-07-31',
+        event: '<b>Presented a research poster</b>, <i>"From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training"</i>, at the Summer Undergraduate Research Showcase at Worcester Polytechnic Institute (WPI).',
+    },
+    {
         date: '2025-07-09',
-        event: 'Presented my paper, "Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception", at IEEE EDGE 2025 in Helsinki, Finland.',
+        event: '<b>Presented a <a href="https://arxiv.org/abs/2506.06474" target="_blank">research paper</a></b>, <i>"Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception"</i>, at IEEE EDGE 2025 in Helsinki, Finland.',
     },
     {
         date: '2025-05-28',
-        event: 'Began Research Assistantship at the NSF REU in Applied AI for Advanced Applications at Worcester Polytechnic Institute (WPI).',
+        event: '<b>Began Research Assistantship</b> at the NSF REU in Applied AI for Advanced Applications at Worcester Polytechnic Institute (WPI).',
     },
     {
         date: '2025-05-18',
-        event: 'Received the Certificate of Excellence Award in Advanced Programming Languages by the World Computing Organization (WCO).',
+        event: '<b>Received the Certificate of Excellence Award</b> in Advanced Programming Languages by the World Computing Organization (WCO).',
     },
     {
         date: '2025-05-15',
-        event: 'Paper accepted for publication at IEEE EDGE 2025.'
+        event: '<b>Paper accepted for publication</b> at IEEE EDGE 2025.'
     },
     {
         date: '2025-05-01',
-        event: 'Elected as Interim Vice Chair of the SDSU Coalition of Tech Representatives and Leadership (CTRL).',
+        event: '<b>Elected as Interim Vice Chair</b> of the SDSU Coalition of Tech Representatives and Leadership (CTRL).',
     },
     {
         date: '2025-04-26',
-        event: 'Served as a Project Judge and planning committee member for the ACM "Innovate 4 SDSU" Hackathon.'
+        event: '<b>Served as a Project Judge</b> and planning committee member for the ACM "Innovate 4 SDSU" Hackathon.'
     },
     {
         date: '2025-03-28',
-        event: 'Elected as Associated Students Representative for the SDSU College of Sciences.',
+        event: '<b>Elected as Associated Students Representative</b> for the SDSU College of Sciences.',
     },
     {
         date: '2025-03-26',
-        event: 'Re-elected as President of the Association for Computing Machinery (ACM) Student Chapter at SDSU.',
+        event: '<b>Re-elected as President</b> of the Association for Computing Machinery (ACM) Student Chapter at SDSU.',
     },
     {
         date: '2025-03-19',
-        event: 'Received the George A. Hansen Scholarship for outstanding academic performance in STEM.'
+        event: '<b>Received the George A. Hansen Scholarship</b> for outstanding academic performance in STEM.'
     },
     {
         date: '2024-12-07',
-        event: 'Participated in the William Lowell Putnam Mathematical Competition and scored in the top 40% of participants nationwide.',
+        event: '<b>Participated in the William Lowell Putnam Mathematical Competition</b> and scored in the top 40% of participants nationwide.',
     },
     {
         date: '2024-11-25',
-        event: 'Negotiated and secured a $2,500 sponsorship from Google on behalf of the SDSU ACM Chapter.'
+        event: '<b>Negotiated and secured a $2,500 sponsorship</b> from Google on behalf of the SDSU ACM Chapter.'
     },
     {
         date: '2024-09-20',
-        event: 'Began Research Assistantship at the NSF REU in Interdisciplinary AI at the University of California San Diego (UCSD).',
-    },
-    {
-        date: '2024-09-04',
-        event: 'Hosted the first general body meeting as President of the brand new ACM Chapter at SDSU.',
+        event: '<b>Began Research Assistantship</b> at the NSF REU in Interdisciplinary AI at the University of California San Diego (UCSD).',
     },
     {
         date: '2024-08-28',
-        event: 'Began Tutor position at the SDSU Math and Science Learning Center (MSLC).',
+        event: '<b>Began Tutor position</b> at the SDSU Math and Science Learning Center (MSLC).',
     },
     {
         date: '2024-08-12',
-        event: 'Received Deloitte Foundation Scholarship.'
+        event: '<b>Received Deloitte Foundation Scholarship</b> for outstanding leadership and career development.'
     },
     {
         date: '2024-08-08',
-        event: 'Presented my research poster at the Summer Undergraduate Research Symposium at the University of Delaware.',
+        event: '<b>Presented a <a href="https://drive.google.com/file/d/1bp1082myhzq6jsimDbMJyHCFLieBaZvd/view" target="_blank">research poster</a></b>, <i>"Edge-Enabled Collaborative Object Detection for Connected Autonomous Vehicles"</i>, at the Summer Undergraduate Research Symposium at the University of Delaware.',
     },
     {
         date: '2024-06-03',
-        event: 'Began Research Assistantship at the NSF REU in Sustainable Resilient Transportation Systems at the University of Delaware.',
+        event: '<b>Began Research Assistantship</b> at the NSF REU in Sustainable Resilient Transportation Systems at the University of Delaware.',
+    },
+    {
+        date: '2024-04-30',
+        event: '<b>Founded the ACM Chapter</b> at San Diego State University (SDSU) and elected as President.',
     },
     {
         date: '2024-03-19',
-        event: 'Formally declared a second major in Applied Mathematics at San Diego State University.',
+        event: '<b>Formally declared a second major</b> in Applied Mathematics at San Diego State University.',
     },
     {
         date: '2024-01-17',
-        event: 'Began Instructional Assistantship for MATH 245 (Discrete Mathematics).'
+        event: '<b>Began Instructional Assistantship</b> for MATH 245 (Discrete Mathematics).'
     },
     {
         date: '2023-12-15',
-        event: 'Began Research Assistantship at the SDSU Data-informed Construction Engineering (DiCE) Lab.',
+        event: '<b>Began Research Assistantship</b> at the SDSU Data-informed Construction Engineering (DiCE) Lab.',
     },
     {
         date: '2023-08-23',
-        event: 'Began undergraduate studies at San Diego State University as a Computer Science major.'
+        event: '<b>Began undergraduate studies</b> at San Diego State University as a Computer Science major.'
     },
 ];
 
@@ -117,6 +122,10 @@ export default function News() {
                 ) : (
                     <div className="table-container mx-auto text-white bg-gray-800">
                         <table className="news-table w-full border-separate border-spacing-y-4 border-spacing-x-6 pt-2">
+                            <colgroup>
+                                <col style={{ width: '120px' }} />
+                                <col />
+                            </colgroup>
                             <thead>
                                 <tr>
                                     <th className="px-4 py-2 text-left">Date</th>
@@ -126,14 +135,18 @@ export default function News() {
                             <tbody>
                                 {previewNews.map((item, idx) => (
                                     <tr key={idx} className="align-top">
-                                        <td className="px-4 py-2">{item.date}</td>
-                                        <td className="px-4 py-2">{item.event}</td>
+                                        <td className="pl-4 py-2">{item.date}</td>
+                                        <td className="px-4 py-2">
+                                            <span dangerouslySetInnerHTML={{ __html: item.event }} />
+                                        </td>
                                     </tr>
                                 ))}
                                 {expanded && remainingNews.map((item, idx) => (
                                     <tr key={PREVIEW_COUNT + idx} className="align-top">
                                         <td className="px-4 py-2">{item.date}</td>
-                                        <td className="px-4 py-2">{item.event}</td>
+                                        <td className="px-4 py-2">
+                                            <span dangerouslySetInnerHTML={{ __html: item.event }} />
+                                        </td>
                                     </tr>
                                 ))}
                             </tbody>

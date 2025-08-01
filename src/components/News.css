@@ -1,0 +1,9 @@
+span b {
+    /* font-style: italic; */
+    color: #5bb2ff;
+}
+
+span a {
+    text-decoration: underline;
+    /*color: #ddaaff;*/
+}
