@@ -106,7 +106,7 @@ export default function News() {
     return (
         <section className="section news-section" id="news">
             <div className="container px-5 pt-10 pb-2 mx-auto">
-                <div className="text-center mb-6">
+                <div className="text-center mb-2 md:mb-6">
                     <ChipIcon className="w-10 inline-block mb-4" />
                     <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
                         News &amp; Updates
@@ -116,7 +116,7 @@ export default function News() {
                     </p>
                 </div>
             </div>
-            <div className="flex flex-col w-5/6 lg:w-3/4 sm:mx-auto sm:mb-2">
+            <div className="flex flex-col w-full md:w-5/6 lg:w-3/4 sm:mx-auto sm:mb-2 text-xs md:text-base">
                 {news.length === 0 ? (
                     <p className="section-empty">No news updates yet. Stay tuned!</p>
                 ) : (
@@ -128,23 +128,23 @@ export default function News() {
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th className="px-4 py-2 text-left">Date</th>
-                                    <th className="px-4 py-2 text-left">Event</th>
+                                    <th className="px-1 md:px-4 py-2 text-left">Date</th>
+                                    <th className="px-1 md:px-4 py-2 text-left">Event</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {previewNews.map((item, idx) => (
                                     <tr key={idx} className="align-top">
-                                        <td className="pl-4 py-2">{item.date}</td>
-                                        <td className="px-4 py-2">
+                                        <td className="pl-1 md:pl-4 py-2">{item.date}</td>
+                                        <td className="px-1 md:px-4 py-2">
                                             <span dangerouslySetInnerHTML={{ __html: item.event }} />
                                         </td>
                                     </tr>
                                 ))}
                                 {expanded && remainingNews.map((item, idx) => (
                                     <tr key={PREVIEW_COUNT + idx} className="align-top">
-                                        <td className="px-4 py-2">{item.date}</td>
-                                        <td className="px-4 py-2">
+                                        <td className="px-1 md:px-4 py-2">{item.date}</td>
+                                        <td className="px-1 md:px-4 py-2">
                                             <span dangerouslySetInnerHTML={{ __html: item.event }} />
                                         </td>
                                     </tr>
