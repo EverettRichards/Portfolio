@@ -123,7 +123,7 @@ export default function News() {
                     <div className="table-container mx-auto text-white bg-gray-800">
                         <table className="news-table w-full border-separate border-spacing-y-4 border-spacing-x-6 pt-2">
                             <colgroup>
-                                <col style={{ width: '120px' }} />
+                                <col style={{ whiteSpace: 'nowrap', width: '1%' }} />
                                 <col />
                             </colgroup>
                             <thead>
@@ -135,7 +135,7 @@ export default function News() {
                             <tbody>
                                 {previewNews.map((item, idx) => (
                                     <tr key={idx} className="align-top">
-                                        <td className="pl-1 md:pl-4 py-2">{item.date}</td>
+                                        <td className="pl-1 md:pl-4 py-2" style={{ whiteSpace: 'nowrap' }}>{item.date} </td>
                                         <td className="px-1 md:px-4 py-2">
                                             <span dangerouslySetInnerHTML={{ __html: item.event }} />
                                         </td>
@@ -143,7 +143,7 @@ export default function News() {
                                 ))}
                                 {expanded && remainingNews.map((item, idx) => (
                                     <tr key={PREVIEW_COUNT + idx} className="align-top">
-                                        <td className="px-1 md:px-4 py-2">{item.date}</td>
+                                        <td className="px-1 md:px-4 py-2" style={{ whiteSpace: 'nowrap' }}>{item.date} </td>
                                         <td className="px-1 md:px-4 py-2">
                                             <span dangerouslySetInnerHTML={{ __html: item.event }} />
                                         </td>
