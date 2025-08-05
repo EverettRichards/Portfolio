@@ -15,35 +15,33 @@ export default function Skills() {
             I have a wide range of technical skills and experience that I have developed through my academic and research projects.
           </p>
         </div>
-        <div className="flex flex-col lg:flex-row gap-8 lg:w-3/4 sm:mx-auto sm:mb-2">
+        <div className="flex flex-col lg:flex-row gap-4 md:gap-8 lg:w-3/4 sm:mx-auto sm:mb-2">
           {/* Hard Skills Section */}
           <div className="flex-1 order-1 lg:order-1">
-            <h2 className="text-lg font-bold text-white py-2 bg-gray-800 mb-4 text-center col-span-2">
+            <h2 className="text-base md:text-lg font-bold text-white py-2 bg-gray-800 mb-4 text-center col-span-2">
               Technical Skills
             </h2>
             <div className="grid grid-cols-2 gap-4">
               {hard_skills.map((skill) => (
                 <div key={skill} className="bg-gray-800 rounded flex p-4 items-center">
-                  <BadgeCheckIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-4" />
-                  <span className="title-font font-medium text-white">
-                    {skill}
-                  </span>
+                  <BadgeCheckIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-4 hidden md:block" />
+                  <span className="title-font font-medium text-white text-xs md:text-base"
+                    dangerouslySetInnerHTML={{ __html: skill }} />
                 </div>
               ))}
             </div>
           </div>
           {/* Soft Skills Section */}
           <div className="flex-1 order-2 lg:order-2">
-            <h2 className="text-lg font-bold text-white py-2 bg-gray-800 mb-4 text-center col-span-2">
+            <h2 className="text-base md:text-lg font-bold text-white py-2 bg-gray-800 mb-4 text-center col-span-2">
               Professional Skills
             </h2>
             <div className="grid grid-cols-2 gap-4">
               {soft_skills.map((skill) => (
                 <div key={skill} className="bg-gray-800 rounded flex p-4 items-center">
-                  <BadgeCheckIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-4" />
-                  <span className="title-font font-medium text-white">
-                    {skill}
-                  </span>
+                  <BadgeCheckIcon className="text-blue-400 w-6 h-6 flex-shrink-0 mr-4 hidden md:block" />
+                  <span className="title-font font-medium text-white text-xs md:text-base"
+                    dangerouslySetInnerHTML={{ __html: skill }} />
                 </div>
               ))}
             </div>

@@ -3,21 +3,21 @@ export const projects = [
 ]
 
 export const hard_skills = [
-  "Deep learning with PyTorch and TensorFlow",
-  "Computer vision with OpenCV and YOLO",
-  "Robotics simulation with MuJoCo, RoboSuite, and RoboMimic",
-  "Autonomous vehicle simulation with CARLA, OPV2V, and DAIR-V2X",
-  "Data analysis with Pandas, NumPy, and SciPy",
-  "CNNs, RNNs, and Transformers",
+  "<b>Deep Learning</b> with PyTorch and TensorFlow",
+  "<b>Computer Vision</b> with OpenCV and YOLO",
+  "<b>Robotics Simulation</b> with MuJoCo, RoboSuite, and RoboMimic",
+  "<b>Vehicle Simulation</b> with CARLA, OPV2V, and DAIR-V2X",
+  "<b>Data Analysis</b> with Pandas, NumPy, and SciPy",
+  "<b>CNNs</b>, <b>RNNs</b>, and <b>Transformers</b>",
 ];
 
 export const soft_skills = [
-  "Literature review and research synthesis",
-  "Technical writing and documentation",
-  "Public speaking and presentations",
-  "Project management and organization",
-  "Academic leadership and mentoring",
-  "Publishing research papers",
+  "<b>Literature Review</b> and Research Synthesis",
+  "<b>Technical Writing</b> and Documentation",
+  "<b>Publishing Research</b> Papers and Posters",
+  "<b>Public Speaking</b> and Presentations",
+  "<b>Project Management</b> and Organization",
+  "<b>Academic Leadership</b> and Mentoring",
 ]
 
 export const researches = [
