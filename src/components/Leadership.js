@@ -37,21 +37,21 @@ export default function Leadership() {
         {leadershipData.map((item, index) => (
         <div
             key={index}
-            className={`flex flex-col-reverse md:w-5/6 lg:w-3/5 md:mx-auto md:flex-row ${
+            className={`flex flex-col-reverse w-5/6 lg:w-3/5 mx-auto md:flex-row ${
             index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
             } items-center md:items-start gap-4 md:gap-6`}
         >
             {/* Text Section */}
-            <div className="flex-1 md:my-auto text-center md:text-left">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-100 mb-2" dangerouslySetInnerHTML={{ __html: item.title }}></h3>
-                <p className="text-gray-400 text-base md:text-lg lg:text-xl" dangerouslySetInnerHTML={{ __html: item.body }}></p>
+            <div className="flex-1 md:my-auto text-centerNO md:text-left pb-4 md:pb-0">
+                <h3 className="text-xl md:text-2xl font-bold text-gray-100 mb-2 text-center md:text-left" dangerouslySetInnerHTML={{ __html: item.title }}></h3>
+                <p className="text-gray-400 text-sm md:text-lg lg:text-xl" dangerouslySetInnerHTML={{ __html: item.body }}></p>
             </div>
             {/* Image Section */}
             <div className="w-full md:w-auto md:flex-shrink-0">
                 <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full md:w-auto md:h-48 lg:h-56 h-auto object-cover rounded-xl shadow-md bg-white"
+                    className="w-full mx-auto md:w-auto md:h-48 lg:h-56 h-auto object-cover rounded-xl shadow-md bg-white"
                 />
             </div>
         </div>
