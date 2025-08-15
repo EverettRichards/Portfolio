@@ -25,7 +25,7 @@ export default function Research() {
             Research Projects
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            As an aspiring computer scientist, research is a key part of my academic and professional development. I have completed research projects at San Diego State University (SDSU), the University of Dealware (UD), the University of California San Diego (UCSD), and Worcester Polytechnic Institute (WPI).
+            As an aspiring computer scientist, research is a key part of my academic and professional development. My research interests primarily revolve around intelligent robotics and computer vision.
             <span className="hidden md:block italic pt-3">Hover your mouse over each thumbnail to learn more about the research project.</span>
           </p>
         </div>
