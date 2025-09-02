@@ -27,7 +27,7 @@ export const researches = [
     university: "Worcester Polytechnic Institute (WPI)",
     when: "Fall 2024 -- Spring 2025",
     description:
-      "Developed and analyzed a multimodal collaborative object detection algorithm integrating LiDAR-camera sensor fusion to enhance 3D perception in autonomous vehicles. Conducted robustness evaluations through targeted injection of Gaussian noise into 3D LiDAR point clouds, simulating sensor degradation due to low-resolution sensors and adverse weather conditions. Proposed and empirically validated a novel noise-aware training curriculum, achieving up to a 40\% improvement in model robustness under challenging real-world scenarios. Resulting paper currently under review at MIT URTC 2025.",
+      "Developed and analyzed a multimodal collaborative object detection algorithm integrating LiDAR-camera sensor fusion to enhance 3D perception in autonomous vehicles. Conducted robustness evaluations through targeted injection of Gaussian noise into 3D LiDAR point clouds, simulating sensor degradation due to low-resolution sensors and adverse weather conditions. Proposed and empirically validated a novel noise-aware training curriculum, achieving up to a 40\% improvement in model robustness under challenging real-world scenarios. Resulting paper accepted at MIT URTC 2025.",
     image: "./research_videos/carla.gif",
     links: {
       "OPV2V": "https://mobility-lab.seas.ucla.edu/opv2v/",
@@ -41,7 +41,7 @@ export const researches = [
     university: "University of California San Diego (UCSD)",
     when: "Fall 2024 -- Spring 2025",
     description:
-      "Conducted experiments on the impact of Gaussian noise injection in robotic imitation learning models. Optimized a sigmoid approximation curve relating noise amplitude to performance, yielding statistically significant R^2 values between 0.91 and 0.99. Used Pandas, NumPy, MatPlotLib, and SciPy for data analysis and optimization. Used MuJoCo, RoboSuite, RoboMimic, and MimicGen for robotic simulation and imitation learning",
+      "Conducted experiments on the impact of Gaussian noise injection in robotic imitation learning models. Optimized a sigmoid approximation curve relating noise amplitude to performance, yielding statistically significant R^2 values between 0.91 and 0.99. Used Pandas, NumPy, MatPlotLib, and SciPy for data analysis and optimization. Used MuJoCo, RoboSuite, RoboMimic, and MimicGen for robotic simulation and imitation learning. Resulting paper accepted at MIT URTC 2025.",
     image: "./research_videos/mimicgen_coffee.gif",
     links: {
       "MimicGen": "https://mimicgen.github.io/",

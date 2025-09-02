@@ -3,14 +3,17 @@ import { NewspaperIcon as ChipIcon } from '@heroicons/react/solid';
 import './News.css';
 
 const initialNews = [
-    // Example:
+    {
+        date: '2025-09-02',
+        event: '<b>Two papers accepted for publication</b> at <b>MIT URTC 2025</b> in Cambridge, Massachusetts.',
+    },
     {
         date: '2025-07-31',
         event: '<b>Presented a research poster</b>, <i>"From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training"</i>, at the Summer Undergraduate Research Showcase at Worcester Polytechnic Institute (WPI).',
     },
     {
         date: '2025-07-09',
-        event: '<b>Presented a <a href="https://arxiv.org/abs/2506.06474" target="_blank">research paper</a></b>, <i>"Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception"</i>, at IEEE EDGE 2025 in Helsinki, Finland.',
+        event: '<b>Presented a <a href="https://ieeexplore.ieee.org/document/11120480" target="_blank">research paper</a></b>, <i>"Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception"</i>, at IEEE EDGE 2025 in Helsinki, Finland.',
     },
     {
         date: '2025-05-28',
@@ -22,7 +25,7 @@ const initialNews = [
     },
     {
         date: '2025-05-15',
-        event: '<b>Paper accepted for publication</b> at IEEE EDGE 2025.'
+        event: '<b>Paper accepted for publication</b> at <b>IEEE EDGE 2025</b> in Helsinki, Finland.'
     },
     {
         date: '2025-05-01',
@@ -34,7 +37,7 @@ const initialNews = [
     },
     {
         date: '2025-03-28',
-        event: '<b>Elected as Associated Students Representative</b> for the SDSU College of Sciences.',
+        event: '<b>Elected as University Council Representative</b> for the SDSU College of Sciences.',
     },
     {
         date: '2025-03-26',
