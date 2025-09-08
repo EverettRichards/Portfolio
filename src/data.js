@@ -30,10 +30,10 @@ export const researches = [
       "Developed and analyzed a multimodal collaborative object detection algorithm integrating LiDAR-camera sensor fusion to enhance 3D perception in autonomous vehicles. Conducted robustness evaluations through targeted injection of Gaussian noise into 3D LiDAR point clouds, simulating sensor degradation due to low-resolution sensors and adverse weather conditions. Proposed and empirically validated a novel noise-aware training curriculum, achieving up to a 40\% improvement in model robustness under challenging real-world scenarios. Resulting paper accepted at MIT URTC 2025.",
     image: "./research_videos/carla.gif",
     links: {
-      "OPV2V": "https://mobility-lab.seas.ucla.edu/opv2v/",
-      "DAIR-V2X": "https://github.com/AIR-THU/DAIR-V2X?tab=readme-ov-file",
+      "Paper": "./papers/Richards_BM2CP.pdf",
+      "Poster": "./posters/WPI.jpg"
     },
-    // main_link: "https://mimicgen.github.io/",
+    //main_link: "./papers/Richards_BM2CP.pdf",
   },
   {
     title: "Evaluating Performance of the Nvidia MimicGen Imitation Learning Algorithm when Subjected to Gaussian Noise",
@@ -44,9 +44,9 @@ export const researches = [
       "Conducted experiments on the impact of Gaussian noise injection in robotic imitation learning models. Optimized a sigmoid approximation curve relating noise amplitude to performance, yielding statistically significant R^2 values between 0.91 and 0.99. Used Pandas, NumPy, MatPlotLib, and SciPy for data analysis and optimization. Used MuJoCo, RoboSuite, RoboMimic, and MimicGen for robotic simulation and imitation learning. Resulting paper accepted at MIT URTC 2025.",
     image: "./research_videos/mimicgen_coffee.gif",
     links: {
-      "MimicGen": "https://mimicgen.github.io/",
+      "Paper": "./papers/Richards_MimicGen.pdf",
     },
-    main_link: "https://mimicgen.github.io/",
+    //main_link: "https://mimicgen.github.io/",
   },
   {
     title: "Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception",
@@ -57,12 +57,12 @@ export const researches = [
       "At the NSF REU, I developed and tested an interdisciplinary framework to improve autonomous vehicle object labeling accuracy by combining multiple vehicles' perspectives via an edge server. I accomplished this by developing two algorithms, called Perceptive Aggregation and Collaborative Estimation (PACE) and Variable Object Tally and Evaluation (VOTE). I presented a poster at the University of Delaware Undergraduate Research Symposium in August 2024, and presented my work at the IEEE EDGE conference in Helsinki, Finland in July 2025.",
     image: "./research_videos/reu_video.gif",
     links: {
-      "Abstract": "https://www.arxiv.org/abs/2506.06474",
-      "Paper": "https://www.arxiv.org/pdf/2506.06474",
-      "Poster": "https://drive.google.com/file/d/1bp1082myhzq6jsimDbMJyHCFLieBaZvd/view?usp=sharing",
+      "IEEE Xplore": "https://ieeexplore.ieee.org/document/11120480",
+      "Paper": "./papers/Richards_ECOD.pdf",
+      "Poster": "./posters/UDEL.jpg",
       "Code": "https://github.com/EverettRichards/Edge-CAV",
     },
-    main_link: "https://drive.google.com/file/d/1TXZwE9rR3KcFgkUGBsVSHjd14-IFY3uG/view?usp=sharing",
+    //main_link: "./papers/Richards_ECOD.pdf",
   },
   {
     title: "Enhancing Construction Worker Safety Through Sensor Fusion and Machine Learning",
@@ -77,7 +77,7 @@ export const researches = [
       "Code": "https://github.com/EverettRichards/DiCE",
       "Demo": "https://www.youtube.com/watch?v=3qlrGciOR84",
     },
-    main_link: "https://github.com/EverettRichards/DiCE",
+    //main_link: "https://github.com/EverettRichards/DiCE",
   },
 ];
 

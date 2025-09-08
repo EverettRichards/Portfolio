@@ -24,7 +24,7 @@ export default function About() {
                 <li className="my-2">Pursuing a B.S. in Computer Science & Applied Mathematics at San Diego State University (SDSU)</li>
                 <li className="my-2">Goal is to earn a PhD and pursue a career in applied robotics research</li>
                 <li className="my-2">Completed <a className="underline" href="#research">research projects</a> at four different R1 research universities</li>
-                <li className="my-2"><a className="underline" href="https://arxiv.org/abs/2506.06474" target="_blank">Published a paper</a> on collaborative vehicle perception at IEEE EDGE 2025</li>
+                <li className="my-2"><a className="underline" href="https://scholar.google.com/citations?user=iowXMSwAAAAJ&hl=en" target="_blank">Published three research papers</a> on machine learning for robotics</li>
                 {/* <li className="my-2">Associated Students Representative for the SDSU College of Sciences</li> */}
                 <li className="my-2">Founder & president of the <a className="underline" href="https://acm.sdsu.edu" target="_blank">SDSU ACM Chapter</a></li>
                 {/* <li className="my-2">Co-founder and Vice Chair of the SDSU Coalition of Technology Representatives and Leadership (CTRL)</li> */}
