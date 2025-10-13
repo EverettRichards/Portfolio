@@ -4,16 +4,20 @@ import './News.css';
 
 const initialNews = [
     {
-        date: '2025-09-02',
-        event: '<b>Two papers accepted for publication</b> at <b>MIT URTC 2025</b> in Cambridge, Massachusetts.',
+        date: '2025-10-11',
+        event: '<b>Presented a <a href="https://everettrichards.com/papers/Richards_MimicGen.pdf" target="_blank">research paper</a></b>, <i>"Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation"</i>, at <b>IEEE MIT URTC 2025</b> in Cambridge, MA.',
+    },
+    {
+        date: '2025-10-11',
+        event: '<b>Presented a <a href="https://everettrichards.com/papers/Richards_BM2CP.pdf" target="_blank">research paper</a></b>, <i>"From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training"</i>, at <b>IEEE MIT URTC 2025</b> in Cambridge, MA.',
     },
     {
         date: '2025-07-31',
-        event: '<b>Presented a research poster</b>, <i>"From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training"</i>, at the Summer Undergraduate Research Showcase at Worcester Polytechnic Institute (WPI).',
+        event: '<b>Presented a <a href="http://localhost:3000/posters/WPI.jpg" target="_blank">research poster</a></b>, <i>"From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training"</i>, at the Summer Undergraduate Research Showcase at Worcester Polytechnic Institute (WPI).',
     },
     {
         date: '2025-07-09',
-        event: '<b>Presented a <a href="https://ieeexplore.ieee.org/document/11120480" target="_blank">research paper</a></b>, <i>"Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception"</i>, at IEEE EDGE 2025 in Helsinki, Finland.',
+        event: '<b>Presented a <a href="https://ieeexplore.ieee.org/document/11120480" target="_blank">research paper</a></b>, <i>"Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception"</i>, at <b>IEEE EDGE 2025</b> in Helsinki, Finland.',
     },
     {
         date: '2025-05-28',

@@ -22,7 +22,7 @@ export const soft_skills = [
 
 export const researches = [
   {
-    title: "Modality-Aware Collaborative Perception for Autonomous Vehicles",
+    title: "From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training",
     lab: "NSF REU in Applied Artificial Intelligence for Advanced Applications",
     university: "Worcester Polytechnic Institute (WPI)",
     when: "Fall 2024 -- Spring 2025",
@@ -36,7 +36,7 @@ export const researches = [
     //main_link: "./papers/Richards_BM2CP.pdf",
   },
   {
-    title: "Evaluating Performance of the Nvidia MimicGen Imitation Learning Algorithm when Subjected to Gaussian Noise",
+    title: "Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation",
     lab: "NSF REU in Interdisciplinary Artificial Intelligence",
     university: "University of California San Diego (UCSD)",
     when: "Fall 2024 -- Spring 2025",
