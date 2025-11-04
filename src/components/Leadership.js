@@ -9,9 +9,9 @@ const leadershipData = [
       image: require("../images/hackathon_judge.jpg"),
     },
     {
-      title: "Associated Students Representative",
-      body: "Represented College of Sciences students on the University Council. Advocated for sustainability and STEM research funding. Serve as an Executive Officer on the College of Sciences Student Council.",
-      image: require("../images/AS_Logo.png"),
+      title: "University Council Representative",
+      body: "Represented College of Sciences students on the Associated Students University Council. Advocated for sustainability and STEM research funding. Serve as an Executive Officer on the College of Sciences Student Council.",
+      image: require("../images/adela1.jpg"),
     },
     {
       title: "Math & Computer Science Tutoring",
@@ -51,7 +51,7 @@ export default function Leadership() {
                 <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full mx-auto md:w-auto md:h-48 lg:h-56 h-auto object-cover rounded-xl shadow-md bg-white"
+                    className="w-full mx-auto md:w-auto md:h-48 lg:h-56 h-auto object-cover rounded-xl shadow-md bg-white border-2 border-blue-300"
                 />
             </div>
         </div>
