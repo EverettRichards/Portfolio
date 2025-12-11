@@ -4,12 +4,24 @@ import './News.css';
 
 const initialNews = [
     {
+        date: '2025-12-02',
+        event: '<b>Attended <a href="https://neurips.cc/" target="_blank">NeurIPS</a> 2025</b> in San Diego, CA.'
+    },
+    {
+        date: '2025-11-15',
+        event: 'Helped organize and lead the <b><a href="https://acm.sdsu.edu/hack" target="_blank">Innovate 4 SDSU Hackathon</a></b>, in which nearly 200 students came together to build projects that benefit the San Diego community.'
+    },
+    {
         date: '2025-10-11',
         event: '<b>Presented a <a href="https://everettrichards.com/papers/Richards_MimicGen.pdf" target="_blank">research paper</a></b>, <i>"Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation"</i>, at <b>IEEE MIT URTC 2025</b> in Cambridge, MA.',
     },
     {
         date: '2025-10-11',
         event: '<b>Presented a <a href="https://everettrichards.com/papers/Richards_BM2CP.pdf" target="_blank">research paper</a></b>, <i>"From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training"</i>, at <b>IEEE MIT URTC 2025</b> in Cambridge, MA.',
+    },
+    {
+        date: '2025-08-31',
+        event: '<b>Began Research Assistantship</b> at the SDSU Machine Vision and Perception (MVP) Lab under Dr. Xiaobai Liu, working on VLA models for autonomous robotics.',
     },
     {
         date: '2025-07-31',
@@ -101,7 +113,7 @@ const initialNews = [
     },
 ];
 
-const PREVIEW_COUNT = 6;
+const PREVIEW_COUNT = 7;
 
 export default function News() {
     const [news] = useState(initialNews);
