@@ -27,7 +27,7 @@ export const researches = [
     university: "Worcester Polytechnic Institute (WPI)",
     when: "Fall 2024 -- Spring 2025",
     description:
-      "Developed and analyzed a multimodal collaborative object detection algorithm integrating LiDAR-camera sensor fusion to enhance 3D perception in autonomous vehicles. Conducted robustness evaluations through targeted injection of Gaussian noise into 3D LiDAR point clouds, simulating sensor degradation due to low-resolution sensors and adverse weather conditions. Proposed and empirically validated a novel noise-aware training curriculum, achieving up to a 40\% improvement in model robustness under challenging real-world scenarios. Resulting paper accepted at MIT URTC 2025.",
+      "Developed and analyzed a multimodal collaborative object detection algorithm integrating LiDAR-camera sensor fusion to enhance 3D perception in autonomous vehicles. Conducted robustness evaluations through targeted injection of Gaussian noise into 3D LiDAR point clouds, simulating sensor degradation due to low-resolution sensors and adverse weather conditions. Proposed and empirically validated a novel noise-aware training curriculum, achieving up to a 40% improvement in model robustness under challenging real-world scenarios. Resulting paper accepted at MIT URTC 2025.",
     image: "./research_videos/carla.gif",
     links: {
       "Paper": "./papers/Richards_BM2CP.pdf",
