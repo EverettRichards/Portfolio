@@ -28,7 +28,7 @@ export default function Hero() {
               Research Experience
             </Link>
             <a
-              href="/files/Richards_CV_06_25.pdf" 
+              href="/files/Richards_CV_12_25.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 py-2 px-6 focus:outline-none hover:bg-gray-300 dark:hover:bg-gray-800 rounded text-lg transition-colors focus:ring-2 focus:ring-blue-400"
@@ -51,7 +51,7 @@ export default function Hero() {
           <img
             className="object-cover object-center rounded-2xl shadow-xl"
             alt="Everett presenting research"
-            src="./ud_symposium.png"
+            src="./slideshow/NeurIPS.jpg"
           />
         </div>
       </div>
