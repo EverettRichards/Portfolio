@@ -58,7 +58,7 @@ export default function LeadershipPage() {
               <img
                 src={item.image}
                 alt={item.title.replace(/<[^>]*>/g, '')}
-                className="w-full mx-auto md:w-auto md:h-56 lg:h-64 h-auto object-cover rounded-xl shadow-lg bg-white border-2 border-blue-300"
+                className="w-full mx-auto md:w-auto md:h-56 lg:h-64 h-auto object-cover rounded-xl shadow-lg bg-white border-4 border-blue-400 dark:border-blue-500"
               />
             </div>
           </div>

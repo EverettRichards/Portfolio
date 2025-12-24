@@ -39,7 +39,7 @@ export default function AboutPage() {
           {personalPhotos.map((item, index) => (
             <div 
               key={index} 
-              className="relative group cursor-pointer overflow-hidden rounded-xl shadow-lg"
+              className="relative group cursor-pointer overflow-hidden rounded-xl shadow-lg border-2 border-gray-200 dark:border-gray-700 hover:border-blue-400 dark:hover:border-blue-500 transition-all duration-300"
               onClick={() => setSelectedPhoto(item)}
               onKeyPress={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') {

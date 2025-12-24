@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative">
+    <section id="hero" className="relative border-b border-gray-200 dark:border-gray-800">
       <div className="container mx-auto flex px-2 lg:px-10 pt-10 lg:pt-20 pb-10 lg:pb-20 md:flex-row flex-col items-center">
         <div className="lg:w-1/2 md:w-1/2 px-4 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
           <h1 className="title-font sm:text-6xl text-5xl mb-4 font-medium text-blue-500 dark:text-blue-500">
@@ -31,7 +31,7 @@ export default function Hero() {
               href="/files/Richards_CV_06_25.pdf" 
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 dark:hover:bg-gray-700 rounded text-lg transition-colors focus:ring-2 focus:ring-blue-400"
+              className="inline-flex text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 py-2 px-6 focus:outline-none hover:bg-gray-300 dark:hover:bg-gray-800 rounded text-lg transition-colors focus:ring-2 focus:ring-blue-400"
             >
               View CV
             </a>
@@ -39,7 +39,7 @@ export default function Hero() {
               href="https://www.linkedin.com/in/everett-richards"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 dark:hover:bg-gray-700 rounded text-lg transition-colors focus:ring-2 focus:ring-blue-400"
+              className="inline-flex items-center gap-2 text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-900 border border-gray-300 dark:border-gray-700 py-2 px-6 focus:outline-none hover:bg-gray-300 dark:hover:bg-gray-800 rounded text-lg transition-colors focus:ring-2 focus:ring-blue-400"
             >
               <img src="/icons/linkedin.svg" alt="" className="w-5 h-5" />
               LinkedIn
