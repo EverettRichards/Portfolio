@@ -1,24 +1,25 @@
 import React from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Leadership from "./components/Leadership";
-import Skills from "./components/Skills";
-import News from "./components/News";
-import Research from "./components/Research";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import NavbarNew from "./components/NavbarNew";
+import Home from "./pages/Home";
+import ResearchPage from "./pages/ResearchPage";
+import LeadershipPage from "./pages/LeadershipPage";
+import AboutPage from "./pages/AboutPage";
 
 export default function App() {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font min-h-screen">
-      <Navbar />
-      <About />
-      <News />
-      <Research />
-      <Leadership />
-      {/*<Projects />*/}
-      <Skills />
-      <Contact />
-    </main>
+    <Router>
+      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-400">
+        <NavbarNew />
+        <main>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/research" component={ResearchPage} />
+            <Route path="/leadership" component={LeadershipPage} />
+            <Route path="/about" component={AboutPage} />
+          </Switch>
+        </main>
+      </div>
+    </Router>
   );
 }
