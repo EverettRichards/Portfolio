@@ -3,21 +3,21 @@ import React, { useState } from "react";
 
 const personalPhotos = [
   {
+    photo: "./slideshow/alps.jpg",
+    caption: "Exploring the Swiss Alps during a winter trip to central Europe."
+  },
+  {
     photo: "./slideshow/EstesPark.jpg",
     caption: "Adventuring at Estes Park in the Colorado Rocky Mountains."
   },
   {
-    photo: "./slideshow/kayaking_providence.jpg",
-    caption: "Kayaking on the Providence River in Rhode Island."
+    photo: "./slideshow/boston_kayak.jpg",
+    caption: "Kayaking on the Charles River in Boston, MA."
   },
   {
     photo: "./slideshow/Teddie2.jpg",
     caption: "Exploring the nation's capital with a family member's dog, Teddie."
   },
-  {
-    photo: "./slideshow/WyomingCapitol.jpg",
-    caption: "Touring the Wyoming State Capitol in Cheyenne."
-  }
 ];
 
 export default function AboutPage() {
