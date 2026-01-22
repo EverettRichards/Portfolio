@@ -19,6 +19,9 @@ function PublicationCard({ publication }) {
     navigator.clipboard.writeText(citation).then(() => {
       setCopiedFormat(format);
       setTimeout(() => setCopiedFormat(null), 2000);
+    }).catch((err) => {
+      console.error('Failed to copy citation:', err);
+      alert('Failed to copy citation to clipboard. Please try selecting and copying the text manually.');
     });
   };
 
