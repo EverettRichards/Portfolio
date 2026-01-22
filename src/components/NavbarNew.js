@@ -57,6 +57,12 @@ export default function NavbarNew() {
             Research
           </Link>
           <Link 
+            to="/publications" 
+            className={`mr-8 hover:text-white transition-colors ${isActive('/publications') ? 'text-blue-400' : 'text-gray-400'}`}
+          >
+            Publications
+          </Link>
+          <Link 
             to="/leadership" 
             className={`mr-8 hover:text-white transition-colors ${isActive('/leadership') ? 'text-blue-400' : 'text-gray-400'}`}
           >

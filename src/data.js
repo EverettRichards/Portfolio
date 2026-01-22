@@ -20,6 +20,80 @@ export const soft_skills = [
   "<b>Academic Leadership</b> and Mentoring",
 ]
 
+export const publications = [
+  {
+    title: "Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception",
+    authors: ["Everett Richards", "Syed Rahman", "Yeyin Xu", "Sabur Baidya"],
+    venue: "IEEE EDGE 2024",
+    venueType: "Conference",
+    year: 2024,
+    abstract: "This paper presents ECOD (Edge-Enabled Collaborative Object Detection), a novel framework for enhancing autonomous vehicle perception through multi-vehicle collaboration via edge computing. We developed two algorithms: Perceptive Aggregation and Collaborative Estimation (PACE) and Variable Object Tally and Evaluation (VOTE). PACE aggregates object detection results from multiple vehicles to improve accuracy, while VOTE provides a confidence-based ranking system. Experimental results demonstrate significant improvements in object detection accuracy compared to single-vehicle perception, particularly in scenarios with occlusion and varying environmental conditions.",
+    thumbnail: "./research_videos/reu_video.gif",
+    pdfLink: "./papers/Richards_ECOD.pdf",
+    officialLink: "https://ieeexplore.ieee.org/document/11120480",
+    posterLink: "./posters/UDEL.jpg",
+    citations: {
+      bibtex: `@inproceedings{richards2024ecod,
+  title={Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception},
+  author={Richards, Everett and Rahman, Syed and Xu, Yeyin and Baidya, Sabur},
+  booktitle={2024 IEEE 8th International Conference on Edge Computing and Scalable Cloud (EDGE)},
+  pages={1--8},
+  year={2024},
+  organization={IEEE}
+}`,
+      apa: "Richards, E., Rahman, S., Xu, Y., & Baidya, S. (2024). Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception. In 2024 IEEE 8th International Conference on Edge Computing and Scalable Cloud (EDGE) (pp. 1-8). IEEE.",
+      mla: 'Richards, Everett, et al. "Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception." 2024 IEEE 8th International Conference on Edge Computing and Scalable Cloud (EDGE). IEEE, 2024.',
+      chicago: "Richards, Everett, Syed Rahman, Yeyin Xu, and Sabur Baidya. \"Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception.\" In 2024 IEEE 8th International Conference on Edge Computing and Scalable Cloud (EDGE), pp. 1-8. IEEE, 2024."
+    }
+  },
+  {
+    title: "From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training",
+    authors: ["Everett Richards", "Zixuan Wang", "Xiaowei Yuan", "Xiaonan Huang"],
+    venue: "MIT URTC 2025",
+    venueType: "Conference",
+    year: 2025,
+    abstract: "This paper addresses the challenge of sensor degradation in collaborative autonomous vehicle perception systems. We propose a novel noise-aware training curriculum that enhances the robustness of multimodal collaborative object detection algorithms. By systematically injecting Gaussian noise into 3D LiDAR point clouds during training, we simulate real-world conditions such as low-resolution sensors and adverse weather. Our approach integrates LiDAR-camera sensor fusion with collaborative perception frameworks. Experimental results demonstrate up to a 40% improvement in model robustness under challenging scenarios, significantly enhancing the reliability of autonomous vehicle perception systems in real-world deployment.",
+    thumbnail: "./research_videos/carla.gif",
+    pdfLink: "./papers/Richards_BM2CP.pdf",
+    officialLink: null,
+    posterLink: "./posters/WPI.jpg",
+    citations: {
+      bibtex: `@inproceedings{richards2025chaos,
+  title={From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training},
+  author={Richards, Everett and Wang, Zixuan and Yuan, Xiaowei and Huang, Xiaonan},
+  booktitle={MIT Undergraduate Research Technology Conference 2025},
+  year={2025}
+}`,
+      apa: "Richards, E., Wang, Z., Yuan, X., & Huang, X. (2025). From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training. In MIT Undergraduate Research Technology Conference 2025.",
+      mla: 'Richards, Everett, et al. "From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training." MIT Undergraduate Research Technology Conference 2025. 2025.',
+      chicago: "Richards, Everett, Zixuan Wang, Xiaowei Yuan, and Xiaonan Huang. \"From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training.\" In MIT Undergraduate Research Technology Conference 2025, 2025."
+    }
+  },
+  {
+    title: "Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation",
+    authors: ["Everett Richards", "Yuke Zhu"],
+    venue: "MIT URTC 2025",
+    venueType: "Conference",
+    year: 2025,
+    abstract: "This work investigates the impact of demonstration quality on robotic imitation learning performance. We systematically inject Gaussian noise into expert demonstrations and analyze the resulting performance degradation. Through extensive experiments using MuJoCo, RoboSuite, RoboMimic, and MimicGen frameworks, we discover that performance degradation follows a predictable sigmoid curve. We optimize this relationship using statistical methods including Pandas, NumPy, MatPlotLib, and SciPy, achieving R² values between 0.91 and 0.99. This mathematical model provides insights into the robustness requirements for imitation learning systems and can inform data collection strategies for real-world robotic applications.",
+    thumbnail: "./research_videos/mimicgen_coffee.gif",
+    pdfLink: "./papers/Richards_MimicGen.pdf",
+    officialLink: null,
+    posterLink: null,
+    citations: {
+      bibtex: `@inproceedings{richards2025modeling,
+  title={Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation},
+  author={Richards, Everett and Zhu, Yuke},
+  booktitle={MIT Undergraduate Research Technology Conference 2025},
+  year={2025}
+}`,
+      apa: "Richards, E., & Zhu, Y. (2025). Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation. In MIT Undergraduate Research Technology Conference 2025.",
+      mla: 'Richards, Everett, and Yuke Zhu. "Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation." MIT Undergraduate Research Technology Conference 2025. 2025.',
+      chicago: "Richards, Everett, and Yuke Zhu. \"Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation.\" In MIT Undergraduate Research Technology Conference 2025, 2025."
+    }
+  }
+];
+
 export const researches = [
   {
     title: "From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training",
