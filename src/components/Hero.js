@@ -22,10 +22,10 @@ export default function Hero() {
           
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
             <Link
-              to="/research"
+              to="/publications"
               className="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg transition-colors focus:ring-2 focus:ring-blue-400"
             >
-              Research Experience
+              Publications
             </Link>
             <a
               href="/files/Richards_CV_12_25.pdf" 

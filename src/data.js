@@ -22,37 +22,12 @@ export const soft_skills = [
 
 export const publications = [
   {
-    title: "Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception",
-    authors: ["Everett Richards", "Syed Rahman", "Yeyin Xu", "Sabur Baidya"],
-    venue: "IEEE EDGE 2024",
-    venueType: "Conference",
-    year: 2024,
-    abstract: "This paper presents ECOD (Edge-Enabled Collaborative Object Detection), a novel framework for enhancing autonomous vehicle perception through multi-vehicle collaboration via edge computing. We developed two algorithms: Perceptive Aggregation and Collaborative Estimation (PACE) and Variable Object Tally and Evaluation (VOTE). PACE aggregates object detection results from multiple vehicles to improve accuracy, while VOTE provides a confidence-based ranking system. Experimental results demonstrate significant improvements in object detection accuracy compared to single-vehicle perception, particularly in scenarios with occlusion and varying environmental conditions.",
-    thumbnail: "./research_videos/reu_video.gif",
-    pdfLink: "./papers/Richards_ECOD.pdf",
-    officialLink: "https://ieeexplore.ieee.org/document/11120480",
-    posterLink: "./posters/UDEL.jpg",
-    citations: {
-      bibtex: `@inproceedings{richards2024ecod,
-  title={Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception},
-  author={Richards, Everett and Rahman, Syed and Xu, Yeyin and Baidya, Sabur},
-  booktitle={2024 IEEE 8th International Conference on Edge Computing and Scalable Cloud (EDGE)},
-  pages={1--8},
-  year={2024},
-  organization={IEEE}
-}`,
-      apa: "Richards, E., Rahman, S., Xu, Y., & Baidya, S. (2024). Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception. In 2024 IEEE 8th International Conference on Edge Computing and Scalable Cloud (EDGE) (pp. 1-8). IEEE.",
-      mla: 'Richards, Everett, et al. "Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception." 2024 IEEE 8th International Conference on Edge Computing and Scalable Cloud (EDGE). IEEE, 2024.',
-      chicago: "Richards, Everett, Syed Rahman, Yeyin Xu, and Sabur Baidya. \"Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception.\" In 2024 IEEE 8th International Conference on Edge Computing and Scalable Cloud (EDGE), pp. 1-8. IEEE, 2024."
-    }
-  },
-  {
     title: "From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training",
-    authors: ["Everett Richards", "Zixuan Wang", "Xiaowei Yuan", "Xiaonan Huang"],
-    venue: "MIT URTC 2025",
-    venueType: "Conference",
+    authors: ["Everett Richards", "Allie Lopez", "Jose Morales", "Ziming Zhang"],
+    venue: "MIT Undergraduate Research Technology Conference",
+    venueType: "Cambridge, MA",
     year: 2025,
-    abstract: "This paper addresses the challenge of sensor degradation in collaborative autonomous vehicle perception systems. We propose a novel noise-aware training curriculum that enhances the robustness of multimodal collaborative object detection algorithms. By systematically injecting Gaussian noise into 3D LiDAR point clouds during training, we simulate real-world conditions such as low-resolution sensors and adverse weather. Our approach integrates LiDAR-camera sensor fusion with collaborative perception frameworks. Experimental results demonstrate up to a 40% improvement in model robustness under challenging scenarios, significantly enhancing the reliability of autonomous vehicle perception systems in real-world deployment.",
+    abstract: "Reliable perception is critical for autonomous vehicles (AVs), particularly in collaborative systems where multiple agents share sensor data to improve environmental awareness. However, most collaborative object detection frameworks assume ideal sensor conditions and degrade sharply when exposed to noise, occlusion, or hardware variability—issues common in real-world deployment. In this work, we present a noise-aware training framework that improves the robustness and efficiency of 3D object detectors by injecting Gaussian noise into LiDAR point clouds during training. Using the BM2CP architecture and the DAIR-V2X dataset, we evaluated a range of training regimes, both constant and progressive, in more than 1,400 inference trials. We find that models trained with curriculum-style exposure to increasing noise levels degrade more gracefully under inference-time corruption, generalize better across sensor quality, and converge faster than traditional baselines. For instance, a model trained with heavy noise for just 20 epochs outperforms a baseline trained for 50 epochs when evaluated on degraded input, highlighting the accelerated rate of convergence enabled by noise-infused training. These findings demonstrate that robustness is a tunable and scalable property, offering a practical path toward safer and more cost-effective AV perception in noisy, uncertain, or resource-constrained environments.",
     thumbnail: "./research_videos/carla.gif",
     pdfLink: "./papers/Richards_BM2CP.pdf",
     officialLink: null,
@@ -60,22 +35,22 @@ export const publications = [
     citations: {
       bibtex: `@inproceedings{richards2025chaos,
   title={From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training},
-  author={Richards, Everett and Wang, Zixuan and Yuan, Xiaowei and Huang, Xiaonan},
+  author={Richards, Everett and Lopez, Allie and Morales, Jose and Zhang, Ziming},
   booktitle={MIT Undergraduate Research Technology Conference 2025},
   year={2025}
 }`,
-      apa: "Richards, E., Wang, Z., Yuan, X., & Huang, X. (2025). From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training. In MIT Undergraduate Research Technology Conference 2025.",
+      apa: "Richards, E., Lopez, A., Morales, J., & Zhang, Z. (2025). From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training. In MIT Undergraduate Research Technology Conference 2025.",
       mla: 'Richards, Everett, et al. "From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training." MIT Undergraduate Research Technology Conference 2025. 2025.',
-      chicago: "Richards, Everett, Zixuan Wang, Xiaowei Yuan, and Xiaonan Huang. \"From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training.\" In MIT Undergraduate Research Technology Conference 2025, 2025."
+      chicago: "Richards, Everett, Allie Lopez, Jose Morales, and Ziming Zhang. \"From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training.\" In MIT Undergraduate Research Technology Conference 2025, 2025."
     }
   },
   {
     title: "Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation",
-    authors: ["Everett Richards", "Yuke Zhu"],
-    venue: "MIT URTC 2025",
-    venueType: "Conference",
+    authors: ["Everett Richards", "Liu Dai"],
+    venue: "MIT Undergraduate Research Technology Conference",
+    venueType: "Cambridge, MA",
     year: 2025,
-    abstract: "This work investigates the impact of demonstration quality on robotic imitation learning performance. We systematically inject Gaussian noise into expert demonstrations and analyze the resulting performance degradation. Through extensive experiments using MuJoCo, RoboSuite, RoboMimic, and MimicGen frameworks, we discover that performance degradation follows a predictable sigmoid curve. We optimize this relationship using statistical methods including Pandas, NumPy, MatPlotLib, and SciPy, achieving R² values between 0.91 and 0.99. This mathematical model provides insights into the robustness requirements for imitation learning systems and can inform data collection strategies for real-world robotic applications.",
+    abstract: "Behavioral Cloning (BC) is a simple and widely used approach in Imitation Learning (IL), but its performance is highly sensitive to the quality of demonstration data. In this work, we evaluate the robustness of BC policies trained on noisy demonstrations generated by MimicGen, a synthetic data generation system that augments a small number of human demonstrations through scene variation and trajectory stitching. We systematically inject Gaussian spatial noise into the action trajectories of MimicGen-generated data and train BC policies across 11 robotic manipulation tasks. We find that small amounts of noise improve generalization, whereas higher levels predictably degrade policy success. To characterize this behavior, we introduce a four-parameter sigmoid model that captures the relationship between noise amplitude and downstream policy performance. Our model achieves an aggregate $R^2$ of 0.9962, and can be estimated using just one or two data points with under 4\% error. This framework offers a lightweight, quantitative tool for assessing demonstration quality and robustness in IL pipelines, supporting safer deployment of automated systems in domains where clean supervision data may be limited.",
     thumbnail: "./research_videos/mimicgen_coffee.gif",
     pdfLink: "./papers/Richards_MimicGen.pdf",
     officialLink: null,
@@ -83,15 +58,43 @@ export const publications = [
     citations: {
       bibtex: `@inproceedings{richards2025modeling,
   title={Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation},
-  author={Richards, Everett and Zhu, Yuke},
+  author={Richards, Everett and Dai, Liu},
   booktitle={MIT Undergraduate Research Technology Conference 2025},
   year={2025}
 }`,
-      apa: "Richards, E., & Zhu, Y. (2025). Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation. In MIT Undergraduate Research Technology Conference 2025.",
-      mla: 'Richards, Everett, and Yuke Zhu. "Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation." MIT Undergraduate Research Technology Conference 2025. 2025.',
-      chicago: "Richards, Everett, and Yuke Zhu. \"Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation.\" In MIT Undergraduate Research Technology Conference 2025, 2025."
+      apa: "Richards, E., & Dai, L. (2025). Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation. In MIT Undergraduate Research Technology Conference 2025.",
+      mla: 'Richards, Everett, and Liu Dai. "Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation." MIT Undergraduate Research Technology Conference 2025. 2025.',
+      chicago: "Richards, Everett, and Liu Dai. \"Modeling Imitation Learning Robustness to Noisy Demonstrations via Sigmoid Degradation.\" In MIT Undergraduate Research Technology Conference 2025, 2025."
     }
-  }
+  },
+  {
+    title: "Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception",
+    authors: ["Everett Richards", "Bipul Thapa", "Lena Mashayekhy"],
+    venue: "IEEE International Conference on Edge Computing (EDGE)",
+    venueType: "Helsinki, Finland",
+    year: 2025,
+    abstract: "Accurate and reliable object detection is critical for ensuring the safety and efficiency of Connected Autonomous Vehicles (CAVs). Traditional on-board perception systems have limited accuracy due to occlusions and blind spots, while cloud-based solutions introduce significant latency, making them unsuitable for real-time processing demands required for autonomous driving in dynamic environments. To address these challenges, we introduce an innovative framework, Edge-Enabled Collaborative Object Detection (ECOD) for CAVs, that leverages edge computing and multi-CAV collaboration for real-time, multi-perspective object detection. Our ECOD framework integrates two key algorithms: Perceptive Aggregation and Collaborative Estimation (PACE) and Variable Object Tally and Evaluation (VOTE). PACE aggregates detection data from multiple CAVs on an edge server to enhance perception in scenarios where individual CAVs have limited visibility. VOTE utilizes a consensus-based voting mechanism to improve the accuracy of object classification by integrating data from multiple CAVs. Both algorithms are designed at the edge to operate in real-time, ensuring low-latency and reliable decision-making for CAVs. We develop a hardware-based controlled testbed consisting of camera-equipped robotic CAVs and an edge server to evaluate the efficacy of our framework. Our experimental results demonstrate the significant benefits of ECOD in terms of improved object classification accuracy, outperforming traditional single-perspective onboard approaches by up to 75%, while ensuring low-latency, edge-driven real-time processing. This research highlights the potential of edge computing to enhance collaborative perception for latency-sensitive autonomous systems.",
+    thumbnail: "./research_videos/reu_video.gif",
+    pdfLink: "./papers/Richards_ECOD.pdf",
+    officialLink: "https://ieeexplore.ieee.org/document/11120480",
+    posterLink: "./posters/UDEL.jpg",
+    citations: {
+      bibtex: `@INPROCEEDINGS{11120480,
+  author={Richards, Everett and Thapa, Bipul and Mashayekhy, Lena},
+  booktitle={2025 IEEE International Conference on Edge Computing and Communications (EDGE)}, 
+  title={Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={13-22},
+  keywords={Accuracy;Image edge detection;Collaboration;Object detection;Real-time systems;Classification algorithms;Servers;Vehicle dynamics;Autonomous vehicles;Edge computing},
+  doi={10.1109/EDGE67623.2025.00011}}
+}`,
+      apa: "Richards, E., Thapa, B., & Mashayekhy, L. (2025). Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception. In 2025 IEEE International Conference on Edge Computing and Scalable Cloud (EDGE) (pp. 1-8). IEEE.",
+      mla: 'Richards, Everett, et al. "Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception." 2025 IEEE International Conference on Edge Computing and Scalable Cloud (EDGE). IEEE, 2025.',
+      chicago: "Richards, Everett, Bipul Thapa, and Lena Mashayekhy. \"Edge-Enabled Collaborative Object Detection for Real-Time Multi-Vehicle Perception.\" In 2025 IEEE International Conference on Edge Computing and Scalable Cloud (EDGE), pp. 1-8. IEEE, 2025."
+    }
+  },
 ];
 
 export const researches = [

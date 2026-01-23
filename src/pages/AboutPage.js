@@ -1,5 +1,5 @@
 import { PhotographIcon } from "@heroicons/react/solid";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const personalPhotos = [
   {
@@ -22,6 +22,10 @@ const personalPhotos = [
 
 export default function AboutPage() {
   const [selectedPhoto, setSelectedPhoto] = useState(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen py-10 lg:py-20">

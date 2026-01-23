@@ -1,5 +1,5 @@
 import { BookOpenIcon, ChevronDownIcon, ChevronUpIcon, ClipboardCopyIcon, CheckIcon } from "@heroicons/react/solid";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { publications } from "../data";
 
 function PublicationCard({ publication }) {
@@ -29,24 +29,24 @@ function PublicationCard({ publication }) {
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-8">
       <div className="flex flex-col lg:flex-row gap-6">
         {/* Thumbnail */}
-        <div className="lg:w-1/4">
-          <div className="w-full h-48 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
-            {publication.thumbnail ? (
-              <img
-                src={publication.thumbnail}
-                alt={publication.title}
-                className="w-full h-full object-cover"
-              />
-            ) : (
-              <div className="w-full h-full flex items-center justify-center text-gray-400">
-                <BookOpenIcon className="w-16 h-16" />
-              </div>
-            )}
+          <div className="lg:w-1/3 flex items-center">
+            <div className="w-full h-48 lg:h-64 xl:h-72 bg-gray-200 dark:bg-gray-700 rounded-lg overflow-hidden">
+              {publication.thumbnail ? (
+                <img
+            src={publication.thumbnail}
+            alt={publication.title}
+            className="w-full h-full object-cover"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center text-gray-400">
+            <BookOpenIcon className="w-16 h-16" />
+                </div>
+              )}
+            </div>
           </div>
-        </div>
 
-        {/* Content */}
-        <div className="lg:w-3/4">
+          {/* Content */}
+        <div className="lg:w-2/3">
           {/* Title */}
           <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
             {publication.title}
@@ -176,6 +176,10 @@ function PublicationCard({ publication }) {
 }
 
 export default function PublicationsPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen py-10 lg:py-20">
       <div className="container px-5 mx-auto lg:px-10">
