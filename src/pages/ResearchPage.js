@@ -1,8 +1,12 @@
 import { AcademicCapIcon } from "@heroicons/react/solid";
-import React from "react";
+import React, { useEffect } from "react";
 import { researches } from "../data";
 
 export default function ResearchPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen py-10 lg:py-20">
       <style>

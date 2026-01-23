@@ -35,8 +35,8 @@ export default function ResearchOverview() {
             Research Experience
           </h2>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-700 dark:text-gray-400">
-            I have conducted research at four R1 research universities, focusing on machine learning, 
-            computer vision, and robotics. My work spans autonomous vehicles, imitation learning, 
+            I have conducted research at four R1 research universities, focusing on machine learning,
+            computer vision, and robotics. My work spans autonomous vehicles, imitation learning,
             and sensor fusion applications.
           </p>
         </div>
@@ -51,8 +51,8 @@ export default function ResearchOverview() {
                 {uni.description}
               </p>
               {uni.image && (
-                <img 
-                  src={uni.image} 
+                <img
+                  src={uni.image}
                   alt={`Research at ${uni.name}`}
                   className="w-full h-48 object-cover rounded-lg"
                 />
@@ -63,10 +63,10 @@ export default function ResearchOverview() {
 
         <div className="text-center">
           <Link
-            to="/research"
+            to="/publications"
             className="inline-flex text-white bg-blue-500 border-0 py-3 px-8 focus:outline-none hover:bg-blue-600 rounded-lg text-lg transition-colors focus:ring-2 focus:ring-blue-400"
           >
-            View All Research Projects
+            View Publications
           </Link>
         </div>
       </div>

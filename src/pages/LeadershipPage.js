@@ -1,5 +1,5 @@
 import { UserGroupIcon } from "@heroicons/react/solid";
-import React from "react";
+import React, { useEffect } from "react";
 
 const leadershipData = [
   {
@@ -20,6 +20,10 @@ const leadershipData = [
 ];
 
 export default function LeadershipPage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen py-10 lg:py-20">
       <div className="container px-5 mx-auto text-center lg:px-10">

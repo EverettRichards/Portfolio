@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavbarNew from "./components/NavbarNew";
 import Home from "./pages/Home";
 import ResearchPage from "./pages/ResearchPage";
+import PublicationsPage from "./pages/PublicationsPage";
 import LeadershipPage from "./pages/LeadershipPage";
 import AboutPage from "./pages/AboutPage";
 
@@ -15,6 +16,7 @@ export default function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/research" component={ResearchPage} />
+            <Route path="/publications" component={PublicationsPage} />
             <Route path="/leadership" component={LeadershipPage} />
             <Route path="/about" component={AboutPage} />
           </Switch>
