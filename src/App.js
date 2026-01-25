@@ -10,7 +10,7 @@ import AboutPage from "./pages/AboutPage";
 export default function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-400">
+      <div className="min-h-screen bg-white dark:bg-slate-950 text-gray-900 dark:text-gray-300">
         <NavbarNew />
         <main>
           <Switch>

@@ -27,7 +27,7 @@ export default function ResearchOverview() {
   ];
 
   return (
-    <section id="research-overview" className="py-10 lg:py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="research-overview" className="py-10 lg:py-20 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
       <div className="container px-5 mx-auto">
         <div className="text-center mb-12">
           <AcademicCapIcon className="mx-auto inline-block w-10 mb-4 text-gray-700 dark:text-gray-400" />
@@ -43,7 +43,7 @@ export default function ResearchOverview() {
 
         <div className="grid md:grid-cols-2 gap-6 lg:w-4/5 mx-auto mb-8">
           {universities.map((uni, index) => (
-            <div key={index} className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md">
+            <div key={index} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-shadow duration-300">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                 {uni.name}
               </h3>

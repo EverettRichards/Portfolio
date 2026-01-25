@@ -37,7 +37,7 @@ export default function NavbarNew() {
   };
 
   return (
-    <header className="bg-gray-800 dark:bg-gray-800 sticky top-0 z-50 shadow-md">
+    <header className="bg-gray-800 dark:bg-gray-900 sticky top-0 z-50 shadow-lg border-b border-gray-700 dark:border-gray-800">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <Link to="/" className="title-font font-medium text-white mb-4 md:mb-0">
           <span className="ml-3 text-xl">Everett Richards</span>
