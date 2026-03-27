@@ -5,6 +5,7 @@ import LeadershipPreview from "../components/LeadershipPreview";
 import SkillsCompact from "../components/SkillsCompact";
 import ContactUpdated from "../components/ContactUpdated";
 import SectionDots from "../components/SectionDots";
+import News from "../components/News";
 
 export default function Home() {
   useEffect(() => {
@@ -15,6 +16,7 @@ export default function Home() {
     <div>
       <SectionDots />
       <Hero />
+      <News />
       <ResearchOverview />
       <LeadershipPreview />
       <SkillsCompact />

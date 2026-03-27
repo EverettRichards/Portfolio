@@ -54,7 +54,7 @@ export default function NavbarNew() {
             to="/publications" 
             className={`mr-8 hover:text-white transition-colors ${isActive('/publications') ? 'text-blue-400' : 'text-gray-400'}`}
           >
-            Publications
+            Research
           </Link>
           <Link 
             to="/leadership" 
