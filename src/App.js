@@ -6,6 +6,7 @@ import ResearchPage from "./pages/ResearchPage";
 import PublicationsPage from "./pages/PublicationsPage";
 import LeadershipPage from "./pages/LeadershipPage";
 import AboutPage from "./pages/AboutPage";
+import PoetryPage from "./pages/PoetryPage";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/publications" component={PublicationsPage} />
             <Route path="/leadership" component={LeadershipPage} />
             <Route path="/about" component={AboutPage} />
+            <Route path="/poetry" component={PoetryPage} /> {/* new route; not linked in navbar */}
           </Switch>
         </main>
       </div>
