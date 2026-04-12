@@ -4,7 +4,7 @@ import './News.css';
 
 const initialNews = [
     {
-        date: '2026-02-25',
+        date: '2026-04-08',
         event: 'My resolution, <b>"A Resolution Upholding Student Governance and Financial Accountability in Mandatory Fee Decisions"</b>, was unanimously approved by the SDSU Associated Students University Council.'
     },
     {
