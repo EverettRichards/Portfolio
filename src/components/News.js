@@ -4,8 +4,12 @@ import './News.css';
 
 const initialNews = [
     {
+        date: '2026-04-03',
+        event: 'Awarded <b>Most Outstanding Student"</b> by the SDSU Department of Mathematics and Statistics.'
+    },
+    {
         date: '2026-03-27',
-        event: 'Elected <b>"Most Outstanding Computer Science Graduate"</b> by the SDSU Department of Computer Science.'
+        event: 'Awarded <b>"Most Outstanding Graduate"</b> by the SDSU Department of Computer Science.'
     },
     {
         date: '2026-02-25',
@@ -18,6 +22,14 @@ const initialNews = [
     {
         date: '2025-11-15',
         event: 'Helped organize and lead the <b><a href="https://acm.sdsu.edu/hack" target="_blank">Innovate 4 SDSU Hackathon</a></b>, in which nearly 200 students came together to build projects that benefit the San Diego community.'
+    },
+    {
+        date: '2025-10-31',
+        event: 'Awarded the <b>Association for Computing Machinery \& Upsilon Pi Epsilon Scholarship</b> for outstanding leadership, service, and academic excellence in the computing and information disciplines.'
+    },
+    {
+        date: '2025-10-14',
+        event: 'Awarded the <b>Steven Michael Rogers Scholarship in Mathematics</b> for demonstrated potential in mathematical sciences.'  
     },
     {
         date: '2025-10-11',
