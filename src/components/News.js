@@ -4,16 +4,16 @@ import './News.css';
 
 const initialNews = [
     {
+        date: '2026-02-25',
+        event: 'My resolution, <b>"A Resolution Upholding Student Governance and Financial Accountability in Mandatory Fee Decisions"</b>, was unanimously approved by the SDSU Associated Students University Council.'
+    },
+    {
         date: '2026-04-03',
         event: 'Awarded <b>Most Outstanding Student"</b> by the SDSU Department of Mathematics and Statistics.'
     },
     {
         date: '2026-03-27',
         event: 'Awarded <b>"Most Outstanding Graduate"</b> by the SDSU Department of Computer Science.'
-    },
-    {
-        date: '2026-02-25',
-        event: 'My resolution, <i>"A Resolution Upholding Student Governance and Financial Accountability in Mandatory Fee Decisions"</i>, was unanimously approved by the SDSU College of Sciences Student Council.'
     },
     {
         date: '2025-12-02',
