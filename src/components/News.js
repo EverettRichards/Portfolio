@@ -9,7 +9,7 @@ const initialNews = [
     },
     {
         date: '2026-04-03',
-        event: 'Awarded <b>Most Outstanding Student"</b> by the SDSU Department of Mathematics and Statistics.'
+        event: 'Awarded <b>"Most Outstanding Student"</b> by the SDSU Department of Mathematics and Statistics.'
     },
     {
         date: '2026-03-27',
