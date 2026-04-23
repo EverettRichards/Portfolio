@@ -4,7 +4,7 @@ import { hard_skills, soft_skills } from "../data";
 
 export default function SkillsCompact() {
   return (
-    <section id="skills" className="py-10 lg:py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="skills" className="py-10 lg:py-20 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
       <div className="container px-5 mx-auto">
         <div className="text-center mb-8">
           <ChipIcon className="w-10 inline-block mb-4 text-gray-700 dark:text-gray-400" />
@@ -23,7 +23,7 @@ export default function SkillsCompact() {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {hard_skills.map((skill) => (
-                <div key={skill} className="bg-white dark:bg-gray-900 rounded-lg flex p-3 items-center shadow-sm">
+                <div key={skill} className="bg-white dark:bg-gray-800 rounded-lg flex p-3 items-center shadow-md border border-gray-200 dark:border-gray-700">
                   <BadgeCheckIcon className="text-blue-500 w-5 h-5 flex-shrink-0 mr-3" />
                   <span className="title-font font-medium text-gray-800 dark:text-white text-sm"
                     dangerouslySetInnerHTML={{ __html: skill }} />
@@ -34,12 +34,12 @@ export default function SkillsCompact() {
           
           {/* Professional Skills */}
           <div className="flex-1">
-            <h3 className="text-lg font-bold text-gray-900 dark:text-white py-3 bg-gray-200 dark:bg-gray-900 mb-4 text-center rounded-lg">
+            <h3 className="text-lg font-bold text-gray-900 dark:text-white py-3 bg-gray-200 dark:bg-gray-800 mb-4 text-center rounded-lg border border-gray-300 dark:border-gray-700">
               Professional Skills
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {soft_skills.map((skill) => (
-                <div key={skill} className="bg-white dark:bg-gray-900 rounded-lg flex p-3 items-center shadow-sm">
+                <div key={skill} className="bg-white dark:bg-gray-800 rounded-lg flex p-3 items-center shadow-md border border-gray-200 dark:border-gray-700">
                   <BadgeCheckIcon className="text-blue-500 w-5 h-5 flex-shrink-0 mr-3" />
                   <span className="title-font font-medium text-gray-800 dark:text-white text-sm"
                     dangerouslySetInnerHTML={{ __html: skill }} />
