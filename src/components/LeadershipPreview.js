@@ -22,7 +22,7 @@ export default function LeadershipPreview() {
   ];
 
   return (
-    <section id="leadership-preview" className="py-10 lg:py-20">
+    <section id="leadership-preview" className="py-10 lg:py-20 border-t border-gray-200 dark:border-gray-800">
       <div className="container px-5 mx-auto">
         <div className="text-center mb-12">
           <UserGroupIcon className="mx-auto inline-block w-10 mb-4 text-gray-700 dark:text-gray-400" />
@@ -37,7 +37,7 @@ export default function LeadershipPreview() {
 
         <div className="grid md:grid-cols-3 gap-6 lg:w-4/5 mx-auto mb-8">
           {leadershipHighlights.map((item, index) => (
-            <div key={index} className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-md text-center">
+            <div key={index} className="bg-gray-50 dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-800 text-center hover:shadow-xl transition-shadow duration-300">
               <div className="text-4xl mb-4">{item.icon}</div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
                 {item.title}
