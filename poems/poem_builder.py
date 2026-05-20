@@ -75,6 +75,9 @@ def build_poems(source_dir: Path):
             continue
 
         suffix = p.suffix.lower()
+        # Treat files with no extension as text files
+        if suffix == "":
+            suffix = ".txt"
         title = p.stem
 
         if suffix == ".txt":
