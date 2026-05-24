@@ -22,6 +22,30 @@ export const soft_skills = [
 
 export const publications = [
   {
+    title: "Task-Aligned Stability Analysis of Vision-Language Models for Autonomous Driving Hazard Detection",
+    authors: ["Everett Richards"],
+    venue: "International Conference on Machine Learning (ICML) Workshop on Combining Theory and Benchmarks",
+    venueType: "Seoul, South Korea",
+    year: 2026,
+    abstract: "Vision-language models (VLMs) are increasingly used for scene understanding in autonomous driving, but robustness analysis often relies on task-agnostic embedding stability alone. We study whether corruption-induced embedding drift predicts changes in a task-aligned hazard score derived from CLIP image-text similarities. Using controlled corruptions on BDD100K road scenes, we compare embedding drift against margin drift, defined as the change in hazard score under perturbation. The relationship is highly corruption-dependent: some families exhibit strong coupling between representation drift and decision drift, while others induce hazardous decision instability despite relatively modest embedding change. A scatter analysis reveals a structured upper envelope relating margin drift to embedding drift, suggesting that representation change constrains but does not determine decision instability. These results suggest that robustness benchmarks should include task-aligned stability measures in addition to embedding-level perturbation statistics.",
+    thumbnail: "./research_videos/hazard_detection.png",
+    pdfLink: null,
+    officialLink: null,
+    posterLink: null,
+    citations: {
+      bibtex: `@inproceedings{richards2026stability,
+  title={Task-Aligned Stability Analysis of Vision-Language Models for Autonomous Driving Hazard Detection},
+  author={Richards, Everett},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2026},
+  location={Seoul, South Korea}
+}`,
+      apa: `Richards, E. (2026). Task-Aligned Stability Analysis of Vision-Language Models for Autonomous Driving Hazard Detection. In Proceedings of the International Conference on Machine Learning (ICML) Workshop on Combining Theory and Benchmarks.`,
+      mla: `Richards, Everett. "Task-Aligned Stability Analysis of Vision-Language Models for Autonomous Driving Hazard Detection." Proceedings of the International Conference on Machine Learning (ICML) Workshop on Combining Theory and Benchmarks, 2026.`,
+      chicago: `Richards, Everett. "Task-Aligned Stability Analysis of Vision-Language Models for Autonomous Driving Hazard Detection." In Proceedings of the International Conference on Machine Learning (ICML) Workshop on Combining Theory and Benchmarks, 2026.`
+    }
+  },
+  {
     title: "From Chaos to Clarity: Strengthening 3D Collaborative Autonomous Vehicle Perception with Noise-Aware Training",
     authors: ["Everett Richards", "Allie Lopez", "Jose Morales", "Ziming Zhang"],
     venue: "MIT Undergraduate Research Technology Conference",

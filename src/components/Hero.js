@@ -14,10 +14,10 @@ export default function Hero() {
           </h2>
           
           <ul className="title-font sm:text-md mb-8 font-medium text-gray-600 dark:text-gray-300 text-left list-disc text-md px-5">
-            <li className="my-2">Pursuing B.S. in Computer Science & Applied Mathematics at SDSU</li>
-            <li className="my-2">Research at 4 R1 universities in machine learning for robotics</li>
-            <li className="my-2">Published 3 research papers on autonomous systems</li>
-            <li className="my-2">Founder & President of SDSU ACM Chapter</li>
+            <li className="my-2">Pursuing PhD in Computer Science at the University of Delaware</li>
+            <li className="my-2">Recently completed B.S. in Computer Science & Applied Mathematics at SDSU</li>
+            <li className="my-2">Published 4 <a href="/publications" class="underline">research papers</a> on autonomous vehicles and robotics</li>
+            <li className="my-2">Founder & former President of the <a href="https://acm.sdsu.edu" target="_blank" class="underline">ACM Chapter</a> at SDSU</li>
           </ul>
           
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
@@ -28,7 +28,7 @@ export default function Hero() {
               Publications
             </Link>
             <a
-              href="/files/Richards_CV_12_25.pdf" 
+              href="/files/Richards_CV.pdf" 
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-300 dark:hover:bg-gray-700 rounded text-lg transition-colors focus:ring-2 focus:ring-blue-400"
