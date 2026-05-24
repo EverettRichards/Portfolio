@@ -4,6 +4,10 @@ import './News.css';
 
 const initialNews = [
     {
+        date: '2026-05-23',
+        event: 'Paper accepted for publication at the ICML Workshop on Combining Theory and Benchmarks.'
+    },
+    {
         date: '2026-04-08',
         event: 'My resolution, <b>"A Resolution Upholding Student Governance and Financial Accountability in Mandatory Fee Decisions"</b>, was unanimously approved by the SDSU Associated Students University Council.'
     },
