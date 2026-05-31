@@ -10,7 +10,7 @@ export default function Hero() {
             Hi, I'm Everett.
           </h1>
           <h2 className="title-font sm:text-2xl text-xl mb-6 font-medium text-gray-700 dark:text-gray-300">
-            Computer Science & Applied Mathematics Student | AI Researcher
+            Computer Scientist | AI Researcher | Robotics Enthusiast
           </h2>
           
           <ul className="title-font sm:text-md mb-8 font-medium text-gray-600 dark:text-gray-300 text-left list-disc text-md px-5">
@@ -51,7 +51,7 @@ export default function Hero() {
           <img
             className="object-cover object-center rounded-2xl shadow-xl"
             alt="Everett presenting research"
-            src="./slideshow/NeurIPS.jpg"
+            src="./slideshow/grad_photo.png"
           />
         </div>
       </div>

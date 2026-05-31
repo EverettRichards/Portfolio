@@ -4,20 +4,28 @@ import './News.css';
 
 const initialNews = [
     {
+        date: '2026-08-20',
+        event: '<b>Joined the University of Delaware as a PhD Student</b> in Computer Science, specializing in Artificial Intelligence and Robotics.'
+    },
+    {
         date: '2026-05-23',
-        event: 'Paper accepted for publication at the ICML Workshop on Combining Theory and Benchmarks.'
+        event: '<b>ICML Workshop Paper Accepted</b> -- My paper, titled "Task-Aligned Stability Analysis of Vision-Language Models for Autonomous Driving Hazard Detection", was accepted for publication at the <a href="https://icml.cc/" target="_blank">International Conference on Machine Learning (ICML)</a> Workshop on <a href="https://sites.google.com/view/icml-ctb/home" target="_blank">Combining Theory and Benchmarks (CTB)</a> in Seoul, South Korea.'
+    },
+    {
+        date: '2026-05-09',
+        event: '<b>Graduated with highest honors from San Diego State University</b> with a B.S. in Computer Science and a B.S. in Applied Mathematics.'
     },
     {
         date: '2026-04-08',
-        event: 'My resolution, <b>"A Resolution Upholding Student Governance and Financial Accountability in Mandatory Fee Decisions"</b>, was unanimously approved by the SDSU Associated Students University Council.'
+        event: '<b>University Council Resolution Approved</b> -- My resolution, "A Resolution Upholding Student Governance and Financial Accountability in Mandatory Fee Decisions", was unanimously approved by the SDSU Associated Students University Council.'
     },
     {
         date: '2026-04-03',
-        event: 'Awarded <b>"Most Outstanding Student"</b> by the SDSU Department of Mathematics and Statistics.'
+        event: '<b>Awarded "Most Outstanding Graduate"</b> by the SDSU Department of Mathematics and Statistics.'
     },
     {
         date: '2026-03-27',
-        event: 'Awarded <b>"Most Outstanding Graduate"</b> by the SDSU Department of Computer Science.'
+        event: '<b>Awarded "Most Outstanding Graduate"</b> by the SDSU Department of Computer Science.'
     },
     {
         date: '2025-12-02',
@@ -33,7 +41,7 @@ const initialNews = [
     },
     {
         date: '2025-10-14',
-        event: 'Awarded the <b>Steven Michael Rogers Scholarship in Mathematics</b> for demonstrated potential in mathematical sciences.'  
+        event: 'Awarded the <b>Steven Michael Rogers Scholarship in Mathematics</b> for demonstrated potential in mathematical sciences.'
     },
     {
         date: '2025-10-11',
@@ -139,8 +147,18 @@ const initialNews = [
 
 const PREVIEW_COUNT = 7;
 
+function getCurrentDateString() {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0');
+    const day = String(today.getDate()).padStart(2, '0');
+
+    return `${year}-${month}-${day}`;
+}
+
 export default function News() {
-    const [news] = useState(initialNews);
+    const currentDate = getCurrentDateString();
+    const news = initialNews.filter((item) => item.date <= currentDate);
     const [expanded, setExpanded] = useState(false);
 
     const previewNews = news.slice(0, PREVIEW_COUNT);
