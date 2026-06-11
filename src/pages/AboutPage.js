@@ -11,13 +11,29 @@ const personalPhotos = [
     caption: "Adventuring at Estes Park in the Colorado Rocky Mountains."
   },
   {
+    photo: "./slideshow/NOLA.jpg",
+    caption: "Immersed in the culture of the French Quarter in New Orleans, Louisiana."
+  },
+  {
     photo: "./slideshow/boston_kayak.jpg",
     caption: "Kayaking on the Charles River in Boston, MA."
+  },
+  {
+    photo: "./slideshow/waymo.jpg",
+    caption: "Testing out Waymo's self-driving car technology in San Francisco, CA."
   },
   {
     photo: "./slideshow/Teddie2.jpg",
     caption: "Exploring the nation's capital with a family member's dog, Teddie."
   },
+  {
+    photo: "./slideshow/golden_gate.jpg",
+    caption: "Biking to & across the Golden Gate Bridge in San Francisco, CA."
+  },
+  {
+    photo: "./slideshow/tallinn.jpg",
+    caption: "Enjoying the charming medieval architecture of Tallinn, Estonia."
+  }
 ];
 
 export default function AboutPage() {
