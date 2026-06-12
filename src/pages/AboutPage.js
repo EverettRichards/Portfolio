@@ -11,29 +11,33 @@ const personalPhotos = [
     caption: "Adventuring at Estes Park in the Colorado Rocky Mountains."
   },
   {
-    photo: "./slideshow/NOLA.jpg",
-    caption: "Immersed in the culture of the French Quarter in New Orleans, Louisiana."
-  },
-  {
-    photo: "./slideshow/boston_kayak.jpg",
-    caption: "Kayaking on the Charles River in Boston, MA."
-  },
-  {
-    photo: "./slideshow/waymo.jpg",
-    caption: "Testing out Waymo's self-driving car technology in San Francisco, CA."
+    photo: "./slideshow/golden_gate.jpg",
+    caption: "Biking to & across the Golden Gate Bridge in San Francisco, CA."
   },
   {
     photo: "./slideshow/Teddie2.jpg",
     caption: "Exploring the nation's capital with a family member's dog, Teddie."
   },
   {
-    photo: "./slideshow/golden_gate.jpg",
-    caption: "Biking to & across the Golden Gate Bridge in San Francisco, CA."
+    photo: "./slideshow/waymo.jpg",
+    caption: "Testing out Waymo's self-driving car technology in San Francisco, CA."
+  },
+  {
+    photo: "./slideshow/boston_kayak.jpg",
+    caption: "Kayaking on the Charles River in Boston, MA."
+  },
+  {
+    photo: "./slideshow/beach_bike.jpg",
+    caption: "Biking on the rocky cliffs of Ocean Beach, California."
+  },
+  {
+    photo: "./slideshow/honey_island.jpg",
+    caption: "Exploring the Honey Island Swamp near New Orleans, Louisiana."
   },
   {
     photo: "./slideshow/tallinn.jpg",
     caption: "Enjoying the charming medieval architecture of Tallinn, Estonia."
-  }
+  },
 ];
 
 export default function AboutPage() {
@@ -55,7 +59,7 @@ export default function AboutPage() {
           I enjoy exploring the outdoors, traveling to new places, and spending time with family and friends.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:w-4/5 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:w-[90%] mx-auto">
           {personalPhotos.map((item, index) => (
             <div 
               key={index} 
@@ -70,11 +74,13 @@ export default function AboutPage() {
               role="button"
               aria-label={`View larger image: ${item.caption}`}
             >
-              <img
-                src={item.photo}
-                alt={item.caption}
-                className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-110"
-              />
+              <div className="w-full relative transition-transform duration-300 group-hover:scale-110" style={{ paddingTop: 'calc(100% / 1.55)' }}>
+                <img
+                  src={item.photo}
+                  alt={item.caption}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
               <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 flex items-end p-4">
                 <p className="text-white text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {item.caption}
@@ -107,11 +113,15 @@ export default function AboutPage() {
             >
               &times;
             </button>
-            <img
-              src={selectedPhoto.photo}
-              alt={selectedPhoto.caption}
-              className="max-w-full max-h-screen object-contain rounded-lg"
-            />
+            <div style={{ width: 'min(90vw, 1200px)' }} className="mx-auto">
+              <div className="relative mx-auto" style={{ paddingTop: 'calc(100% / 1.55)' }}>
+                <img
+                  src={selectedPhoto.photo}
+                  alt={selectedPhoto.caption}
+                  className="absolute inset-0 w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
             <p className="text-white text-center mt-4 text-lg">
               {selectedPhoto.caption}
             </p>
