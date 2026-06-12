@@ -193,6 +193,22 @@ export default function PublicationsPage() {
             and robotics. Each publication includes the full citation, abstract, and links to the 
             paper and related materials.
           </p>
+
+          <div className="mt-6">
+            <a
+              href="https://scholar.google.com/citations?user=iowXMSwAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mx-auto rounded-full border border-gray-300 dark:border-gray-600 bg-white/90 dark:bg-gray-800/90 px-4 py-2 text-lg font-medium text-gray-700 dark:text-gray-200 shadow-sm transition-all hover:-translate-y-0.5 hover:border-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+            >
+              <img
+                src="/icons/google-scholar.svg"
+                alt="Google Scholar"
+                className="h-6 w-6"
+              />
+              Google Scholar
+            </a>
+          </div>
         </div>
 
         <div className="lg:w-4/5 mx-auto">
