@@ -4,7 +4,7 @@ import { contacts } from "../data";
 
 export default function ContactUpdated() {
     return (
-        <section id="contact" className="py-10 lg:py-20">
+        <section id="contact" className="py-10 lg:py-20 border-t border-gray-200 dark:border-gray-800">
           <div className="container px-5 mx-auto text-center">
             <div className="flex flex-col w-full mb-12">
                 <MailIcon className="mx-auto inline-block w-10 mb-4 text-gray-700 dark:text-gray-400" />
@@ -22,7 +22,7 @@ export default function ContactUpdated() {
                       href={contact.url} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="bg-gray-50 dark:bg-gray-800 rounded-lg flex p-4 items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors shadow-md h-full"
+                      className="bg-gray-50 dark:bg-gray-900 rounded-lg flex p-4 items-center justify-center hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors shadow-lg border border-gray-200 dark:border-gray-700 h-full"
                     >
                         <img 
                           src={contact.icon} 

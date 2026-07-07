@@ -39,7 +39,7 @@ export default function ResearchPage() {
           <h2 className="text-3xl font-semibold mb-6 text-gray-900 dark:text-white">Research Experience</h2>
           <div className="text-left lg:w-3/4 mx-auto space-y-8">
             {researches.map((research, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-lg">
+              <div key={index} className="bg-white dark:bg-gray-900 rounded-lg p-6 shadow-lg border border-gray-200 dark:border-gray-800">
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                   {research.title}
                 </h3>
