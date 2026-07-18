@@ -8,6 +8,18 @@ const initialNews = [
         event: '<b>Joined the University of Delaware as a PhD Student</b> in Computer Science, specializing in Artificial Intelligence and Robotics.'
     },
     {
+        date: '2026-07-10',
+        event: 'Was awarded the <b>Robert W. Gore Fellowship</b>, which recognizes outstanding graduate students at the University of Delaware College of Engineering.'
+    },
+    {
+        date: '2026-06-22',
+        event: 'Began working as a <b>STEM summer camp instructor</b> at iD Tech Camps on the UCSD Campus, teaching Python programming and 3D game development.'
+    },
+    {
+        date: '2026-06-17',
+        event: 'Served as a <b>project judge and mentor</b> for the <a href="https://cipherhacks.tech/" target="_blank" class="underline">CipherHacks 2026</a> high school hackathon.'
+    },
+    {
         date: '2026-05-23',
         event: '<b>ICML Workshop Paper Accepted</b> -- My paper, titled "Task-Aligned Stability Analysis of Vision-Language Models for Autonomous Driving Hazard Detection", was accepted for publication at the <a href="https://icml.cc/" target="_blank">International Conference on Machine Learning (ICML)</a> Workshop on <a href="https://sites.google.com/view/icml-ctb/home" target="_blank">Combining Theory and Benchmarks (CTB)</a> in Seoul, South Korea.'
     },
@@ -21,11 +33,11 @@ const initialNews = [
     },
     {
         date: '2026-04-03',
-        event: '<b>Awarded "Most Outstanding Graduate"</b> by the SDSU Department of Mathematics and Statistics.'
+        event: 'Was awarded the <b>"Most Outstanding Mathematics Graduate"</b> award by the SDSU Department of Mathematics and Statistics.'
     },
     {
         date: '2026-03-27',
-        event: '<b>Awarded "Most Outstanding Graduate"</b> by the SDSU Department of Computer Science.'
+        event: 'Was awarded the <b>"Most Outstanding Computer Science Graduate"</b> award by the SDSU Department of Computer Science.'
     },
     {
         date: '2025-12-02',

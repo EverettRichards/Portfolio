@@ -10,7 +10,7 @@ const leadershipData = [
     Organized and presented 30+ workshops on topics including machine learning, web development, version control, prompt engineering, and Python programming.
     Planned and implemented recurring social events, including the STEM Karaoke Night series and biannual Computer Science Bowling Night.
     Managed an operating budget of more than $6,000 per year, including $2,500 from Google.`,
-    image: require("../images/hackathon_judge.jpg"),
+    image: require("../images/ACM_Welcome.jpg"),
   },
   {
     title: "Co-Founder & Vice President",
@@ -26,18 +26,27 @@ const leadershipData = [
   },
   {
     title: "University Council Representative",
-    org: "Associated Students of SDSU + College of Sciences Student Council",
+    org: "Associated Students of San Diego State University",
     link: "https://as.sdsu.edu/",
-    body: "Represented nearly 8,000 College of Sciences students on the Associated Students University Council. Met with university officials (including SDSU President Adela de la Torre, pictured on the right) to advocate for student needs. Led a push for transparency in mandatory student fees. Served as an Executive Officer on the College of Sciences Student Council.",
+    body: `Represented nearly 8,000 College of Sciences students on the Associated Students University Council. Met with university officials (including SDSU President Adela de la Torre, pictured on the right) to advocate for student needs. Sponsored a successful
+    <a href="https://as.sdsu.edu/govt/resources/legislation/149" target="_blank" class="underline">resolution</a>
+    advocating for increased transparency in mandatory student fee decisions.`,
     image: require("../images/adela1.jpg"),
   },
   {
-    title: "Math & Computer Science Tutoring",
+    title: "Math & Computer Science Tutor",
     org: "SDSU Math and Science Learning Center (MSLC)",
     link: "https://mslc.sdsu.edu",
     body: "Served as a tutor at the Math and Science Learning Center (MSLC), and an Instructional Assistant for Discrete Mathematics. Tutored hundreds of students in physics, computer science, probability, linear algebra, discrete mathematics, and real analysis.",
-    image: require("../images/mslc.jpeg"),
+    image: require("../images/tutor2.jpg"),
   },
+  {
+    title: "STEM Summer Camp Instructor",
+    org: "iD Tech Camps",
+    link: "https://www.idtech.com/",
+    body: "Taught Python programming and 3D game development to children aged 10-12 based on the iDTech GamePlan Curriculum. Supervised recreational activities and ensured a safe and engaging learning environment for all campers.",
+    image: require("../images/iD3.jpg"),
+  }
 ];
 
 export default function LeadershipPage() {
