@@ -10,7 +10,7 @@ bordered in hazard-orange:
 I press "OK" to dismiss, as I always do,
 and proceed with no due caution,
 because a broken sensor does no wrong
-until the thing it's monitoring fails.
+(unless the thing it's monitoring does).
 
 And I place my phone above the cupholders
 that seldom carry any weight,
