@@ -68,6 +68,12 @@ export default function NavbarNew() {
           >
             Personal
           </Link>
+          <Link 
+            to="/tutor" 
+            className={`mr-8 hover:text-white transition-colors ${isActive('/tutor') ? 'text-blue-400' : 'text-gray-400'}`}
+          >
+            Tutor
+          </Link>
         </nav>
 
         <div className="flex items-center gap-4">
