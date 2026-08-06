@@ -10,7 +10,7 @@ html, body {
 }
 
 html.dark, body {
-  background-color: #111827; /* gray-900 */
+  background-color: #020617; /* slate-950 - darker for better dark mode */
 }
 
 html:not(.dark) {
