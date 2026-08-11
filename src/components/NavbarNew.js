@@ -11,6 +11,18 @@ export default function NavbarNew() {
     const initialTheme = getInitialTheme();
     applyTheme(initialTheme);
     setTheme(initialTheme);
+
+    const syncThemeFromDocument = () => {
+      setTheme(document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+    };
+
+    const observer = new MutationObserver(syncThemeFromDocument);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   const handleThemeToggle = () => {
@@ -72,7 +84,7 @@ export default function NavbarNew() {
             to="/tutor" 
             className={`mr-8 hover:text-white transition-colors ${isActive('/tutor') ? 'text-blue-400' : 'text-gray-400'}`}
           >
-            Tutor
+            Tutoring
           </Link>
         </nav>
 
