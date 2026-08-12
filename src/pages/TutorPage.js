@@ -118,7 +118,7 @@ function TutorPage() {
                   <div className="text-md font-semibold uppercase tracking-[0.2em] text-slate-950">
                     Everett Richards
                   </div>
-                  <div className="mt-2 text-lg font-medium">
+                  <div className="mt-2 text-lg font-medium text-slate-700 dark:text-slate-300">
                     Computer science and mathematics tutor.
                   </div>
                 </div>
