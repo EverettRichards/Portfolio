@@ -23,7 +23,7 @@ const tutorContent = {
     "Physics: mechanics, electricity and magnetism, and other quantitative foundation courses",
   ],
   rates: [
-    { label: "Starting rate", value: "$39/hour", detail: "for standard tutoring sessions. Group discounts available!" },
+    { label: "Starting rate", value: "$49/hour", detail: "for standard tutoring sessions. Group discounts available!" },
     { label: "Session length", value: "1 hour minimum", detail: "longer sessions available by request" },
     { label: "Payment", value: "Immediately after session", detail: "cash, Venmo, or another agreed method" },
   ],
@@ -84,7 +84,7 @@ function TutorPage() {
                   Online or in person
                 </span>
                 <span className="rounded-full bg-amber-100 px-4 py-2 text-sm font-medium text-amber-800 dark:bg-amber-950 dark:text-amber-200">
-                  Rates start at $39/hour
+                  Rates start at $49/hour
                 </span>
               </div>
 
