@@ -4,7 +4,8 @@ import { applyTheme, getInitialTheme } from "../utils/theme";
 
 const tutorContent = {
   name: "Everett Richards",
-  title: "PhD Computer Science student at the University of Delaware",
+  title: "Math and Computer Science Tutor (all levels)",
+  subtitle: "PhD Computer Science student at the University of Delaware",
   photo: "/slideshow/grad_photo.png",
   email: "evrich@udel.edu",
   signupFormUrl: "https://forms.gle/kK6MyEsX4sVD92Fj6",
@@ -65,12 +66,15 @@ function TutorPage() {
               <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900 dark:text-white">
                 {tutorContent.name}
               </h1>
-              <p className="mt-4 text-xl sm:text-2xl font-medium text-slate-700 dark:text-slate-300">
+              <p className="mt-4 text-xl sm:text-2xl font-semibold text-sky-700 dark:text-sky-300">
                 {tutorContent.title}
               </p>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 dark:text-slate-300">
-                {tutorContent.bio}
+              <p className="mt-1 text-lg sm:text-xl font-light text-slate-700 dark:text-slate-300">
+                {tutorContent.subtitle}
               </p>
+              {/* <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 dark:text-slate-300">
+                {tutorContent.bio}
+              </p> */}
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <span className="rounded-full bg-sky-100 px-4 py-2 text-sm font-medium text-sky-800 dark:bg-sky-950 dark:text-sky-200">

@@ -180,35 +180,35 @@ export default function News() {
         <section className="section news-section mb-14" id="news">
             <div className="container px-5 pt-10 pb-2 mx-auto">
                 <div className="text-center mb-2 md:mb-6">
-                    <ChipIcon className="w-10 inline-block mb-4" />
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font text-white mb-4">
+                    <ChipIcon className="w-10 inline-block mb-4 text-gray-700 dark:text-gray-400" />
+                    <h1 className="sm:text-4xl text-3xl font-medium title-font text-gray-900 dark:text-white mb-4">
                         News &amp; Updates
                     </h1>
-                    <p className="text-base leading-relaxed xl:w-3/5 lg:w-4/5 mx-auto">
+                    <p className="text-base leading-relaxed xl:w-3/5 lg:w-4/5 mx-auto text-slate-700 dark:text-slate-300">
                         Stay up to date with my latest professional milestones including employment, publications, awards, and leadership.
                     </p>
                 </div>
             </div>
-            <div className="flex flex-col w-full md:w-5/6 lg:w-3/4 sm:mx-auto sm:mb-2 text-xs md:text-base">
+            <div className="flex flex-col w-full md:w-5/6 lg:w-3/4 sm:mx-auto sm:mb-2 text-xs md:text-base text-slate-700 dark:text-slate-200">
                 {news.length === 0 ? (
-                    <p className="section-empty">No news updates yet. Stay tuned!</p>
+                    <p className="section-empty text-slate-600 dark:text-slate-300">No news updates yet. Stay tuned!</p>
                 ) : (
-                    <div className="table-container mx-auto text-white bg-gray-800">
-                        <table className="news-table w-full border-separate border-spacing-y-4 border-spacing-x-6 pt-2">
+                    <div className="table-container mx-auto overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800">
+                        <table className="news-table w-full border-separate border-spacing-y-4 border-spacing-x-6 pt-2 text-slate-700 dark:text-slate-200">
                             <colgroup>
                                 <col style={{ whiteSpace: 'nowrap', width: '1%' }} />
                                 <col />
                             </colgroup>
                             <thead>
                                 <tr>
-                                    <th className="px-1 md:px-4 py-2 text-left">Date</th>
-                                    <th className="px-1 md:px-4 py-2 text-left">Event</th>
+                                    <th className="px-1 md:px-4 py-2 text-left text-slate-500 dark:text-slate-400">Date</th>
+                                    <th className="px-1 md:px-4 py-2 text-left text-slate-500 dark:text-slate-400">Event</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {previewNews.map((item, idx) => (
                                     <tr key={idx} className="align-top">
-                                        <td className="pl-1 md:pl-4 py-2" style={{ whiteSpace: 'nowrap' }}>{item.date} </td>
+                                        <td className="pl-1 md:pl-4 py-2 text-slate-500 dark:text-slate-400" style={{ whiteSpace: 'nowrap' }}>{item.date} </td>
                                         <td className="px-1 md:px-4 py-2">
                                             <span dangerouslySetInnerHTML={{ __html: item.event }} />
                                         </td>
@@ -216,7 +216,7 @@ export default function News() {
                                 ))}
                                 {expanded && remainingNews.map((item, idx) => (
                                     <tr key={PREVIEW_COUNT + idx} className="align-top">
-                                        <td className="px-1 md:px-4 py-2" style={{ whiteSpace: 'nowrap' }}>{item.date} </td>
+                                        <td className="px-1 md:px-4 py-2 text-slate-500 dark:text-slate-400" style={{ whiteSpace: 'nowrap' }}>{item.date} </td>
                                         <td className="px-1 md:px-4 py-2">
                                             <span dangerouslySetInnerHTML={{ __html: item.event }} />
                                         </td>
@@ -227,7 +227,7 @@ export default function News() {
                         {remainingNews.length > 0 && (
                             <div className="text-center mt-2 mb-4">
                                 <button
-                                    className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded transition"
+                                    className="px-4 py-2 rounded-full bg-slate-900 text-white transition-colors hover:bg-slate-700 dark:bg-slate-100 dark:text-slate-900 dark:hover:bg-white"
                                     onClick={() => setExpanded((prev) => !prev)}
                                 >
                                     {expanded ? 'Show Less' : `Show ${remainingNews.length} More`}

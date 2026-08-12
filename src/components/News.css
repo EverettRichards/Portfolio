@@ -1,9 +1,16 @@
-span b {
-    /* font-style: italic; */
-    color: #5bb2ff;
+.news-table span b {
+    color: #2563eb;
 }
 
-span a {
+html.dark .news-table span b {
+    color: #93c5fd;
+}
+
+.news-table span a {
     text-decoration: underline;
-    /*color: #ddaaff;*/
+    color: #1d4ed8;
+}
+
+html.dark .news-table span a {
+    color: #bfdbfe;
 }
