@@ -1,14 +1,12 @@
 import { AcademicCapIcon, ClockIcon, CurrencyDollarIcon, MailIcon, PhotographIcon } from "@heroicons/react/solid";
 import React, { useEffect } from "react";
-import { applyTheme, getInitialTheme } from "../utils/theme";
 
 const tutorContent = {
   name: "Everett Richards",
-  title: "Math and Computer Science Tutor (all levels)",
-  subtitle: "PhD Computer Science student at the University of Delaware",
+  title: "PhD Computer Science student at the University of Delaware",
   photo: "/slideshow/grad_photo.png",
   email: "evrich@udel.edu",
-  signupFormUrl: "https://forms.gle/kK6MyEsX4sVD92Fj6",
+  signupFormUrl: "https://forms.gle/your-google-form-link",
   bio: "I am a PhD Computer Science student at the University of Delaware with two bachelor's degrees from San Diego State University: Computer Science and Applied Mathematics. I have one year of experience as a Discrete Math TA and one year tutoring at SDSU's Math and Science Learning Center, where I worked with CS, mathematics, and physics students across a wide range of undergraduate and upper-division coursework.",
   qualifications: [
     "PhD Computer Science student at the University of Delaware",
@@ -23,7 +21,7 @@ const tutorContent = {
     "Physics: mechanics, electricity and magnetism, and other quantitative foundation courses",
   ],
   rates: [
-    { label: "Starting rate", value: "$49/hour", detail: "for standard tutoring sessions. Group discounts available!" },
+    { label: "Starting rate", value: "$45/hour", detail: "for standard tutoring sessions" },
     { label: "Session length", value: "1 hour minimum", detail: "longer sessions available by request" },
     { label: "Payment", value: "Immediately after session", detail: "cash, Venmo, or another agreed method" },
   ],
@@ -37,44 +35,61 @@ const tutorContent = {
   policies: [
     "24-hour cancellation notice",
     "Online or in-person sessions",
-    "No completing graded assignments or exams",
-    "Group discounts available!!!",
+    "No completing graded assignments",
+    "No take-home exams",
   ],
 };
 
 function TutorPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
-    const previousTheme = getInitialTheme();
-    applyTheme('light');
-
-    return () => {
-      applyTheme(previousTheme);
-    };
   }, []);
+
+  const handleContactSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+
+    const name = String(formData.get("name") || "Prospective student").trim();
+    const replyEmail = String(formData.get("email") || "").trim();
+    const course = String(formData.get("course") || "").trim();
+    const format = String(formData.get("format") || "").trim();
+    const message = String(formData.get("message") || "").trim();
+
+    const subject = encodeURIComponent(`Tutoring inquiry from ${name}`);
+    const body = encodeURIComponent(
+      [
+        `Name: ${name}`,
+        replyEmail ? `Email: ${replyEmail}` : null,
+        course ? `Course / topic: ${course}` : null,
+        format ? `Preferred format: ${format}` : null,
+        message ? `Message:\n${message}` : null,
+      ]
+        .filter(Boolean)
+        .join("\n\n")
+    );
+
+    window.location.href = `mailto:${tutorContent.email}?subject=${subject}&body=${body}`;
+  };
 
   return (
     <div className="bg-gradient-to-b from-slate-50 via-white to-cyan-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-950">
       <section className="relative overflow-hidden">
         <div className="absolute inset-x-0 top-0 h-80 bg-gradient-to-r from-sky-500/10 via-cyan-400/10 to-emerald-400/10 blur-3xl" />
         <div className="container mx-auto px-5 lg:px-10 pt-10 lg:pt-16 pb-12 lg:pb-16 relative">
-          <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-            <div className="lg:pr-8">
+          <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
+            <div>
               <div className="inline-flex items-center rounded-full border border-sky-200 bg-white/80 px-4 py-2 text-sm font-semibold tracking-wide text-sky-700 shadow-sm backdrop-blur dark:border-sky-900/60 dark:bg-gray-800/80 dark:text-sky-300">
                 University tutoring services
               </div>
               <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight text-gray-900 dark:text-white">
                 {tutorContent.name}
               </h1>
-              <p className="mt-4 text-xl sm:text-2xl font-semibold text-sky-700 dark:text-sky-300">
+              <p className="mt-4 text-xl sm:text-2xl font-medium text-slate-700 dark:text-slate-300">
                 {tutorContent.title}
               </p>
-              <p className="mt-1 text-lg sm:text-xl font-light text-slate-700 dark:text-slate-300">
-                {tutorContent.subtitle}
-              </p>
-              {/* <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 dark:text-slate-300">
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 dark:text-slate-300">
                 {tutorContent.bio}
-              </p> */}
+              </p>
 
               <div className="mt-8 flex flex-wrap gap-3">
                 <span className="rounded-full bg-sky-100 px-4 py-2 text-sm font-medium text-sky-800 dark:bg-sky-950 dark:text-sky-200">
@@ -84,7 +99,7 @@ function TutorPage() {
                   Online or in person
                 </span>
                 <span className="rounded-full bg-amber-100 px-4 py-2 text-sm font-medium text-amber-800 dark:bg-amber-950 dark:text-amber-200">
-                  Rates start at $49/hour
+                  Rates start at $45/hour
                 </span>
               </div>
 
@@ -93,7 +108,7 @@ function TutorPage() {
                   href={tutorContent.signupFormUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center rounded-full bg-blue-600 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-sky-500/25 transition-transform hover:-translate-y-0.5 hover:bg-sky-700"
+                  className="inline-flex items-center rounded-full bg-sky-600 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-sky-500/25 transition-transform hover:-translate-y-0.5 hover:bg-sky-700"
                 >
                   Sign up with the Google Form
                 </a>
@@ -106,20 +121,20 @@ function TutorPage() {
               </div>
             </div>
 
-            <div className="relative lg:max-w-[480px] lg:ml-auto">
+            <div className="relative">
               <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-sky-500/20 via-cyan-400/10 to-emerald-400/20 blur-2xl" />
               <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-2xl shadow-slate-300/40 ring-1 ring-slate-200/70 dark:border-gray-700/60 dark:bg-gray-800 dark:ring-gray-700/80">
                 <img
                   src={tutorContent.photo}
                   alt="Everett Richards"
-                  className="h-[420px] w-full object-cover object-center xl:h-[340px]"
+                  className="h-[420px] w-full object-cover object-center"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent px-6 py-2 text-white">
-                  <div className="text-md font-semibold uppercase tracking-[0.2em] text-slate-950">
-                    Everett Richards
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent p-6 text-white">
+                  <div className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-200">
+                    Professional photo
                   </div>
-                  <div className="mt-2 text-lg font-medium text-slate-700 dark:text-slate-300">
-                    Computer science and mathematics tutor.
+                  <div className="mt-2 text-lg font-medium">
+                    Same image as the main site landing page for easy updating.
                   </div>
                 </div>
               </div>
@@ -133,7 +148,7 @@ function TutorPage() {
           <article className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm dark:border-gray-800 dark:bg-gray-800">
             <div className="flex items-center gap-3">
               <PhotographIcon className="h-6 w-6 text-sky-600 dark:text-sky-400" />
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">About Me</h2>
+              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Short Bio</h2>
             </div>
             <p className="mt-5 text-base leading-7 text-slate-700 dark:text-slate-300">
               {tutorContent.bio}
@@ -172,7 +187,7 @@ function TutorPage() {
               ))}
             </div>
             <p className="mt-6 text-sm leading-6 text-slate-500 dark:text-slate-400">
-              If your class is close to one of these topics but isn't listed, reach out anyway!
+              If your class is close to one of these topics, reach out anyway. The page is meant to be edited easily, so this list can stay broad or be narrowed to match your preferences.
             </p>
           </article>
 
@@ -187,7 +202,7 @@ function TutorPage() {
                   <div className="text-sm font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-300">
                     {rate.label}
                   </div>
-                  <div className="mt-1 text-2xl font-semibold text-slate-900">
+                  <div className="mt-1 text-2xl font-semibold text-slate-900 dark:text-white">
                     {rate.value}
                   </div>
                   <div className="mt-1 text-sm text-slate-600 dark:text-slate-300">
@@ -238,7 +253,7 @@ function TutorPage() {
 
       <section className="container mx-auto px-5 lg:px-10 py-6 lg:py-10">
         <div className="grid gap-6 xl:grid-cols-[1.1fr_0.9fr] items-start">
-          {/* <article className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm dark:border-gray-800 dark:bg-gray-800">
+          <article className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm dark:border-gray-800 dark:bg-gray-800">
             <div className="flex items-center gap-3">
               <MailIcon className="h-6 w-6 text-sky-600 dark:text-sky-400" />
               <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">Contact Form</h2>
@@ -320,7 +335,7 @@ function TutorPage() {
                 </a>
               </div>
             </form>
-          </article> */}
+          </article>
 
           <aside className="space-y-6">
             <div className="rounded-3xl border border-slate-200 bg-slate-950 p-7 text-white shadow-sm dark:border-gray-800">
@@ -347,7 +362,7 @@ function TutorPage() {
                   Ready to book tutoring?
                 </h3>
                 <p className="mt-4 text-base leading-7 text-slate-300">
-                  Fill out the Google Form to request a tutoring session. I will respond as soon as possible to schedule a time that works for both of us!
+                  Replace the URL in the page config with your Google Form and this becomes the main call to action for the site.
                 </p>
                 <div className="mt-6 inline-flex items-center rounded-full bg-white px-5 py-3 text-base font-semibold text-slate-950">
                   Open Google Form
