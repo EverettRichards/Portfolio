@@ -12,7 +12,7 @@ const personalPhotos = [
   },
   {
     photo: "./slideshow/golden_gate.jpg",
-    caption: "Biking to & across the Golden Gate Bridge in San Francisco, CA."
+    caption: "Biking to & across the Golden Gate Bridge in San Francisco, California."
   },
   {
     photo: "./slideshow/Teddie2.jpg",
@@ -20,11 +20,11 @@ const personalPhotos = [
   },
   {
     photo: "./slideshow/waymo.jpg",
-    caption: "Testing out Waymo's self-driving car technology in San Francisco, CA."
+    caption: "Testing out Waymo's self-driving car technology in San Francisco, California."
   },
   {
     photo: "./slideshow/boston_kayak.jpg",
-    caption: "Kayaking on the Charles River in Boston, MA."
+    caption: "Kayaking on the Charles River in Boston, Massachusetts."
   },
   {
     photo: "./slideshow/beach_bike.jpg",
@@ -37,6 +37,30 @@ const personalPhotos = [
   {
     photo: "./slideshow/tallinn.jpg",
     caption: "Enjoying the charming medieval architecture of Tallinn, Estonia."
+  },
+  {
+    photo: "./slideshow/cincinnati.jpg",
+    caption: "Standing on a hill overlooking Cincinnati, Ohio."
+  },
+  {
+    photo: "./slideshow/louisville.jpg",
+    caption: "Enjoying a beautiful sunset over the Ohio River in Louisville, Kentucky."
+  },
+  {
+    photo: "./slideshow/pittsburgh.jpg",
+    caption: "Standing on a hill overlooking Pittsburgh, Pennsylvania."
+  },
+  {
+    photo: "./slideshow/susquehanna.jpg",
+    caption: "Camping in the beautiful green woods of Susquehanna State Park in Maryland."
+  },
+  {
+    photo: "./slideshow/mission_trails.jpg",
+    caption: "Hiking North Fortuna Mountain at Mission Trails in San Diego, California."
+  },
+  {
+    photo: "./slideshow/delmar_bike.jpg",
+    caption: "Bicycling in Del Mar, California as part of a 44-mile ride from La Mesa to Oceanside."
   },
 ];
 
