@@ -1,14 +1,5 @@
 8/18/2026
 
-* A little palindromic verse about perspective.
-The point is that two people can observe the same physical object at the same moment in time,
-and yet come to different conclusions about what that shared experience means.
-Importantly, you can only ever truly know what it means from your own point of view.
-We both see the same craters and canyons. I see a message. You might, too, but it's opaque to me.
-I can only wonder if this experience means to you what it means to me.
-
-...
-
 Do we see the same moon?
 When I look at the sky,
 I see craters and canyons
@@ -18,3 +9,34 @@ that tell me you'll never come home;
 you see craters and canyons
 when you look at the sky.
 Do we see the same moon?
+
+
+
+... My rambling thoughts ...
+
+A little palindromic verse about perspective.
+The point is that two people can observe the same physical object (or idea or whatever) at the same moment in time,
+and yet come to different conclusions about what that shared experience means.
+Importantly, you can only ever truly know what it means from your own point of view.
+We both see the same craters and canyons. I see a message. You might, too, but it's opaque to me.
+I can only wonder if this experience means to you what it means to me.
+
+The poem begins with the question: "Do we see the same moon?",
+as one might ask a distant lover when looking at the night sky simultaneously,
+in order to feel connected by that moment.
+Notice the flow here. The poem is essentially read in an ABCDCBA pattern,
+with "I" becoming "you" half-way through, as soon as the moonlight is invoked.
+THe semicolon after "you'll never come home" indicates a switch in perspectives.
+For the first six lines, I explore the night sky from my own perspective;
+I see craters and canyons and "white-washed sunbeams" (the sun's rays reflected off the moon),
+and I decide that they are trying to tell me something.
+Then, in lines 7-8, the perspective shifts, in a way.
+It is my recollection of what *you* are observing.
+That is -- the only thing I know for sure is that you see the moon for what it is.
+I have no idea what, if anything, you think it symbolizes.
+Finally, I call back to the original question: Do we see the same moon?
+In other words -- I know we are literally looking at the same thing,
+but does it mean the same thing to you that it does to me?
+Of course this is meant to apply to all sorts of things,
+especially when it comes to values and politics and whatnot.
+How can we be sure if we see eye-to-eye?
