@@ -114,14 +114,14 @@ function TutorPage() {
                   alt="Everett Richards"
                   className="h-[420px] w-full object-cover object-center xl:h-[340px]"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent px-6 py-2 text-white">
+                {/* <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950/90 via-slate-950/50 to-transparent px-6 py-2 text-white">
                   <div className="text-md font-semibold uppercase tracking-[0.2em] text-slate-950">
                     Everett Richards
                   </div>
                   <div className="mt-2 text-lg font-medium text-slate-700 dark:text-slate-300">
                     Computer science and mathematics tutor.
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
