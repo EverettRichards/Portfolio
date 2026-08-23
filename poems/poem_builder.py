@@ -11,8 +11,8 @@ Each poem file:
 PDF files are copied into public/poems so the React dev server serves them as static assets.
 Output: src/poems.json -> [{"title": "...", "date": "...", "content": "...", "type":"text|pdf"}]
 """
-import os
 import json
+import re
 import shutil
 from pathlib import Path
 from datetime import datetime
@@ -57,6 +57,43 @@ def format_date(dt: datetime):
     year2 = dt.year % 100
     return f"{month}/{day}/{year2:02d}"
 
+def extract_text_metadata(lines):
+    """
+    Extract date/content/favorite metadata from poem text lines.
+
+    Rules:
+    - If the first line contains '#favorite', mark poem as favorite.
+    - If the first line contains '#stormy', mark poem as stormy.
+    - Date still comes from the first logical date line:
+      - same first line with supported tags removed, if non-empty
+      - otherwise the second line
+    """
+    if len(lines) == 0:
+        return "", "", False, False
+
+    first_line = lines[0].strip()
+    first_line_lower = first_line.lower()
+    is_favorite = "#favorite" in first_line_lower
+    is_stormy = "#stormy" in first_line_lower
+
+    date_line_index = 0
+    if is_favorite or is_stormy:
+        raw_date = re.sub(r"(?i)#favorite|#stormy", "", first_line).strip()
+        if raw_date:
+            date_line_index = 0
+        else:
+            date_line_index = 1
+            raw_date = lines[1].strip() if len(lines) > 1 else ""
+    else:
+        raw_date = first_line
+
+    parsed = parse_date(raw_date)
+    date = format_date(parsed) if parsed else raw_date
+    content_start = min(date_line_index + 1, len(lines))
+    content = "\n".join(lines[content_start:]).lstrip("\n")
+
+    return date, content, is_favorite, is_stormy
+
 def build_poems(source_dir: Path):
     poems = []
     if not source_dir.exists():
@@ -98,20 +135,15 @@ def build_poems(source_dir: Path):
                 print(f"Skipping {p.name}: marked WIP in content")
                 continue
 
-            if len(lines) == 0:
-                date = ""
-                content = ""
-            else:
-                raw_date = lines[0].strip()
-                parsed = parse_date(raw_date)
-                date = format_date(parsed) if parsed else raw_date
-                content = "\n".join(lines[1:]).lstrip("\n")
+            date, content, is_favorite, is_stormy = extract_text_metadata(lines)
 
             poems.append({
                 "title": title,
                 "date": date,
                 "content": content,
-                "type": "text"
+                "type": "text",
+                "favorite": is_favorite,
+                "stormy": is_stormy
             })
 
         elif suffix == ".pdf":
@@ -131,7 +163,9 @@ def build_poems(source_dir: Path):
                 "title": title,
                 "date": date,
                 "content": rel_path,
-                "type": "pdf"
+                "type": "pdf",
+                "favorite": False,
+                "stormy": False
             })
         else:
             # ignore other file types

@@ -110,7 +110,7 @@ function TutorPage() {
               <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-sky-500/20 via-cyan-400/10 to-emerald-400/20 blur-2xl" />
               <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-2xl shadow-slate-300/40 ring-1 ring-slate-200/70 dark:border-gray-700/60 dark:bg-gray-800 dark:ring-gray-700/80">
                 <img
-                  src={tutorContent.photo}
+                  s56rc={tutorContent.photo}
                   alt="Everett Richards"
                   className="h-[420px] w-full object-cover object-center xl:h-[340px]"
                 />
