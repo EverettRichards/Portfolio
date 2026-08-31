@@ -153,7 +153,7 @@
   },
   {
     "title": "I Closed My Eyes",
-    "date": "6/12/26",
+    "date": "6/10/26",
     "content": "/poems/I Closed My Eyes.pdf",
     "type": "pdf",
     "favorite": false,
@@ -289,11 +289,19 @@
   },
   {
     "title": "Shadow",
-    "date": "5/20/26",
+    "date": "5/26/26",
     "content": "/poems/Shadow.pdf",
     "type": "pdf",
     "favorite": false,
     "stormy": false
+  },
+  {
+    "title": "Sic Semper Tyrannis",
+    "date": "8/30/26",
+    "content": "\"Thus always to tyrants\",\nas the old saying goes,\nand said Lincoln's assassin\nas he climbed over rows\n\nof shot-startled patrons\nwho squinted in awe\nat the semi-star brother\nthat before them, they saw.\n\nA tyrant is ruthless\nof course, but please see\nthe compassionate strife\nof complete monarchy;\n\nfor in her bold tempo\nthere is love and deep care,\nthough I wouldn't cast blame\nif you're still unaware.\n\nDo bid me, and listen:\nher power depends\non your tired belief\nthat she's tied all your ends,\n\nand the frame of advice\nis ill-suited, at best,\nand you know it's an order,\nnot a humble request.\n\nSo I urge you, dear reader,\nto raise your right hand\nand shake it with vigor\n'til they all understand\n\nthat you're not the meek damsel\nyou've been led to believe,\nbut in fact, a great warrior\nfar too grand for their sieve.",
+    "type": "text",
+    "favorite": false,
+    "stormy": true
   },
   {
     "title": "Silicon Valley",
@@ -433,7 +441,7 @@
   },
   {
     "title": "The Three-Year Curse",
-    "date": "7/25/26",
+    "date": "7/26/26",
     "content": "/poems/The Three-Year Curse.pdf",
     "type": "pdf",
     "favorite": false,
@@ -441,7 +449,7 @@
   },
   {
     "title": "The Wanderer",
-    "date": "5/20/26",
+    "date": "5/26/26",
     "content": "/poems/The Wanderer.pdf",
     "type": "pdf",
     "favorite": false,
