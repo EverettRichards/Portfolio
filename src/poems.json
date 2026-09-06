@@ -177,7 +177,7 @@
   },
   {
     "title": "I Closed My Eyes",
-    "date": "6/12/26",
+    "date": "8/16/26",
     "content": "/poems/I Closed My Eyes.pdf",
     "type": "pdf",
     "favorite": false,
@@ -320,6 +320,14 @@
     "stormy": false
   },
   {
+    "title": "Ready or Not？",
+    "date": "9/5/26",
+    "content": "Was I ever really ready for the journey?\nI once thought I was,\nbut that was before I knew\nwhat the journey would entail;\nand I still don't know.\n\nCan you ever be ready\nfor something so unknown?\nAt first, I found it hard to leave,\nbut after breaking free, I found\nthat I don't really want to go home.\n\nAnd still, I know that\nthe journey has only just begun,\nand my startled heartbeat\nscampers 'tween my ribs,\nafraid of what's to come.\n\n...\n\nThere'll be someday when my eyes\nno longer drift across the sky,\nand my gaze no longer scatters\nlike newly-hatched spiders\nacross the beckoning clouds.\n\nBut 'til then, I'll allow\nthis bushy-tailed wonder\nand oblivion to win,\nbecause I might ne'er be ready\nfor this guideless journey,\n\nand in hindsight, I'll know\nthat despite all the costs\nthat I've yet to encounter,\nthat my time here was worthwhile\nand that I made the right choice.",
+    "type": "text",
+    "favorite": false,
+    "stormy": false
+  },
+  {
     "title": "Reno",
     "date": "3/22/22",
     "content": "A golden glass-cased shore grows taller with every moment\nSand rains down from the beach in the sky\nThe sandcastles in the floating realm are dismantled as they cascade to the next stage\nTheir remnants are indistinguishable from the rest\n\nTwo highways meet in Reno\nThey ran parallel at first, but they now overlap in dismay\nThe highways twist and knot until they find their paths into the desert\nNow alone on their separate journies to eternity",
@@ -345,7 +353,7 @@
   },
   {
     "title": "Shadow",
-    "date": "5/20/26",
+    "date": "8/16/26",
     "content": "/poems/Shadow.pdf",
     "type": "pdf",
     "favorite": false,
@@ -513,7 +521,7 @@
   },
   {
     "title": "The Three-Year Curse",
-    "date": "7/25/26",
+    "date": "8/16/26",
     "content": "/poems/The Three-Year Curse.pdf",
     "type": "pdf",
     "favorite": false,
@@ -521,7 +529,7 @@
   },
   {
     "title": "The Wanderer",
-    "date": "5/20/26",
+    "date": "8/16/26",
     "content": "/poems/The Wanderer.pdf",
     "type": "pdf",
     "favorite": false,
