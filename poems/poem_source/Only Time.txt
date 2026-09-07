@@ -32,3 +32,7 @@ at once, I see that my past self
 wouldn't guess the life I've led,
 and that only time can tell me
 what strange journeys lie ahead. 
+
+<image>
+src="only_time.jpg"
+</image>

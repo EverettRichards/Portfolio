@@ -62,3 +62,11 @@ my sand-castle dreams
 until they're nothing but mounds,
 smooth and symmetrical,
 just beyond the tide's reach?
+
+<image>
+src="susq_sun.jpg"
+</image>
+
+<image>
+src="susq_fire.jpg"
+</image>

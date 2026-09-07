@@ -14,13 +14,25 @@ Output: src/poems.json -> [{"title": "...", "date": "...", "content": "...", "ty
 import json
 import re
 import shutil
+import tempfile
 from pathlib import Path
 from datetime import datetime
+
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]  # repository root
 SOURCE_DIR = ROOT / "poems" / "poem_source"
 OUTPUT_FILE = ROOT / "src" / "poems.json"
 PUBLIC_PDF_DIR = ROOT / "public" / "poems"
+POEM_MEDIA_DIR = ROOT / "poems" / "poem_media"
+PUBLIC_MEDIA_DIR = ROOT / "public" / "poem_media"
+
+# Hard-coded creation dates for PDFs whose filesystem dates are unreliable.
+PDF_DATE_OVERRIDES = {
+    "Shadow": "5/12/26",
+    "The Three-Year Curse": "7/26/26",
+    "The Wanderer": "5/20/26",
+}
 
 # Candidate input formats for dates found in txt first-lines
 _DATE_FORMATS = [
@@ -31,6 +43,71 @@ _DATE_FORMATS = [
     "%B %d, %Y",
     "%b %d, %Y",
 ]
+
+MEDIA_EXTENSIONS = {".jpg", ".jpeg", ".png"}
+MEDIA_COMPRESSION_THRESHOLD = 500 * 1024
+MEDIA_TARGET_SIZE = 250 * 1024
+
+def compress_media_file(media_file: Path):
+    """Compress an oversized supported image in place, keeping its filename."""
+    if media_file.suffix.lower() not in MEDIA_EXTENSIONS or media_file.stat().st_size <= MEDIA_COMPRESSION_THRESHOLD:
+        return
+
+    original_size = media_file.stat().st_size
+    candidate_path = None
+    best_path = None
+    try:
+        with Image.open(media_file) as image:
+            image.load()
+            is_jpeg = media_file.suffix.lower() in {".jpg", ".jpeg"}
+            image_format = "JPEG" if is_jpeg else "PNG"
+            exif_data = image.info.get("exif")
+            metadata_options = {"exif": exif_data} if exif_data else {}
+
+            if is_jpeg:
+                if image.mode in {"RGBA", "LA"}:
+                    background = Image.new("RGB", image.size, "white")
+                    background.paste(image, mask=image.getchannel("A"))
+                    source = background
+                else:
+                    source = image.convert("RGB")
+                candidates = [(source, {"quality": quality, "optimize": True, "progressive": True, **metadata_options})
+                              for quality in range(85, 15, -5)]
+            else:
+                source = image.convert("RGBA")
+                candidates = [(source, {"optimize": True, "compress_level": 9, **metadata_options})]
+                candidates.extend(
+                    (source.quantize(colors=colors), {"optimize": True, "compress_level": 9, **metadata_options})
+                    for colors in (256, 128, 64, 32)
+                )
+
+            with tempfile.NamedTemporaryFile(dir=media_file.parent, suffix=media_file.suffix, delete=False) as temp:
+                candidate_path = Path(temp.name)
+            with tempfile.NamedTemporaryFile(dir=media_file.parent, suffix=media_file.suffix, delete=False) as best:
+                best_path = Path(best.name)
+
+            best_size = original_size
+            for candidate, save_options in candidates:
+                candidate.save(candidate_path, format=image_format, **save_options)
+                candidate_size = candidate_path.stat().st_size
+                if candidate_size < best_size:
+                    shutil.copyfile(candidate_path, best_path)
+                    best_size = candidate_size
+                if best_size <= MEDIA_TARGET_SIZE:
+                    break
+
+            if best_size < original_size:
+                shutil.copyfile(best_path, media_file)
+                target_note = " (under 250 KB)" if best_size <= MEDIA_TARGET_SIZE else ""
+                print(f"Compressed {media_file.name}: {original_size // 1024} KB -> {best_size // 1024} KB{target_note}")
+            else:
+                print(f"Could not reduce {media_file.name}; leaving original file unchanged")
+    except Exception as e:
+        print(f"Failed compressing poem media {media_file.name}: {e}")
+    finally:
+        for temporary_path in (candidate_path, best_path):
+            if temporary_path:
+                temporary_path.unlink(missing_ok=True)
 
 def parse_date(s: str):
     s = s.strip()
@@ -101,6 +178,15 @@ def build_poems(source_dir: Path):
         return poems
 
     PUBLIC_PDF_DIR.mkdir(parents=True, exist_ok=True)
+    if POEM_MEDIA_DIR.exists():
+        PUBLIC_MEDIA_DIR.mkdir(parents=True, exist_ok=True)
+        for media_file in POEM_MEDIA_DIR.iterdir():
+            if media_file.is_file():
+                try:
+                    compress_media_file(media_file)
+                    shutil.copy2(media_file, PUBLIC_MEDIA_DIR / media_file.name)
+                except Exception as e:
+                    print(f"Failed copying poem media {media_file.name} to public: {e}")
 
     for p in sorted(source_dir.iterdir()):
         if not p.is_file():
@@ -147,10 +233,12 @@ def build_poems(source_dir: Path):
             })
 
         elif suffix == ".pdf":
-            # For PDFs use file modification time as date and copy into public/poems
-            mtime = p.stat().st_mtime
-            dt = datetime.fromtimestamp(mtime)
-            date = format_date(dt)
+            # Use a known creation date when available; otherwise use file modification time.
+            date = PDF_DATE_OVERRIDES.get(title)
+            if not date:
+                mtime = p.stat().st_mtime
+                dt = datetime.fromtimestamp(mtime)
+                date = format_date(dt)
             dest = PUBLIC_PDF_DIR / p.name
             try:
                 shutil.copy2(p, dest)

@@ -5,6 +5,10 @@
 I drove from Delaware through Maryland, West Virginia, Kentucky, Indiana, Ohio, and Pennsylvania.
 I was amazed by the stark green-ness of the landscape, and how every state I visited was just as vibrant as the last.
 
+<image>
+src="subaru_stars.jpg"
+</image>
+
 ...
 
 The pre-processed grief

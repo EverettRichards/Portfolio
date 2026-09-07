@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^5.9.0",
+    "@craco/craco": "^7.1.0",
     "@heroicons/react": "^1.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.3.4",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^5.0.1",
     "react-slideshow-image": "^4.3.1",
     "readdirp": "^3.6.0"
   },
@@ -25,11 +25,23 @@
     ]
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.6",
+    "autoprefixer": "^10.4.21",
     "escape": "^0.0.1",
-    "postcss": "^7.0.36",
+    "postcss": "^8.4.49",
     "reduce-css-calc": "^2.1.8",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "tailwindcss": "^3.4.17"
   },
-  "allowScripts": {}
+  "allowScripts": {},
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

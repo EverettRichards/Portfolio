@@ -21,3 +21,8 @@ so all of your Coors
 and Coronas can miss me
 'cause tonight's chosen vice
 is my peanut butter whiskey.
+
+<image>
+src="pb_whiskey.jpg"
+width=200
+</image>

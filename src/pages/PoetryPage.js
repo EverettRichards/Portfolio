@@ -41,6 +41,35 @@ function StormyEyeMarker({ className = "" }) {
   );
 }
 
+function parsePoemContent(content) {
+  const blocks = [];
+  const imagePattern = /<image>\s*src\s*=\s*["']([^"']+)["']\s*(?:width\s*=\s*(\d+)\s*)?(?:height\s*=\s*(\d+)\s*)?<\/image>/gi;
+  let textStart = 0;
+  let match;
+
+  while ((match = imagePattern.exec(content)) !== null) {
+    if (match.index > textStart) {
+      blocks.push({ type: "text", content: content.slice(textStart, match.index) });
+    }
+
+    const filename = match[1].split(/[\\/]/).pop();
+    blocks.push({
+      type: "image",
+      src: `/poem_media/${encodeURIComponent(filename)}`,
+      width: Number(match[2] || 400),
+      height: match[3] ? Number(match[3]) : undefined,
+      alt: filename,
+    });
+    textStart = imagePattern.lastIndex;
+  }
+
+  if (textStart < content.length) {
+    blocks.push({ type: "text", content: content.slice(textStart) });
+  }
+
+  return blocks.length > 0 ? blocks : [{ type: "text", content }];
+}
+
 function parseForSort(s) {
   if (!s) return 0;
   const t = Date.parse(s);
@@ -194,9 +223,25 @@ export default function PoetryPage() {
                           </object>
                         </div>
                       ) : (
-                        <pre className="whitespace-pre-wrap text-gray-800 dark:text-gray-100 text-sm">
-                          {p.content}
-                        </pre>
+                        <div className="text-gray-800 dark:text-gray-100 text-sm">
+                          {parsePoemContent(p.content).map((block, blockIndex) =>
+                            block.type === "image" ? (
+                              <div key={`image-${blockIndex}`} className="my-4 text-left">
+                                <img
+                                  src={block.src}
+                                  alt={block.alt}
+                                  width={block.width}
+                                  height={block.height}
+                                  className="h-auto max-w-full"
+                                />
+                              </div>
+                            ) : (
+                              <pre key={`text-${blockIndex}`} className="whitespace-pre-wrap">
+                                {block.content}
+                              </pre>
+                            )
+                          )}
+                        </div>
                       )}
                     </div>
                   )}

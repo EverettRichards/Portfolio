@@ -18,7 +18,7 @@ And so when I hear you say
 that it's best we don't keep in touch,
 I know that.
 I've known that for months.
-Every fiber of being I've ever ignored
+Every fiber of my being I've ever ignored
 has told me so.
 But I couldn't admit it,
 I couldn't lend air to those words,
@@ -93,3 +93,7 @@ has chosen to cast them
 into the void.
 
 I hope you catch them.
+
+<image>
+src="coors_light.jpg"
+</image>

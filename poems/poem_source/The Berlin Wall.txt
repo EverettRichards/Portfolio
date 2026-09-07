@@ -90,3 +90,7 @@ recalling, but not longing for
 the clear-skied conclusions
 that contoured the breast
 of the desert southwest.
+
+<image>
+src="berlin_wall.jpg"
+</image>

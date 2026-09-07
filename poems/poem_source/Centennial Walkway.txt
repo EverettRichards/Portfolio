@@ -53,3 +53,7 @@ every memory that fades
 as new ones arise,
 and every breath my lungs borrow
 from the Earth's love-torn blanket.
+
+<image>
+src="centennial.jpg"
+</image>

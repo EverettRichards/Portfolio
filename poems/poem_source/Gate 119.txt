@@ -33,3 +33,11 @@ So I ask you, dearest conscience,
 as my eyes trace those tri-colored angels,
 sliding through their heavenly gates,
 what novelty do the stars afford me?
+
+<image>
+src="gate119.jpg"
+</image>
+
+<image>
+src="SFO.jpg"
+</image>

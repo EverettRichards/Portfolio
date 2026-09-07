@@ -24,3 +24,7 @@ And though beyond that double door
 the city streets are hostile,
 my thoughts are safe to roam and write
 in this warm and tidy hostel.
+
+<image>
+src="french_quarter.jpg"
+</image>

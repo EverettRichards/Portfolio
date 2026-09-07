@@ -19,3 +19,7 @@ in the same city,
 in the same hostel,
 in the same billiards hall,
 at the very same time.
+
+<image>
+src="nola_girls.jpg"
+</image>
