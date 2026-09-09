@@ -1,30 +1,46 @@
-WIP
 9/06/2026
 
 I find myself on the shores of Atlantic City
-and I realize that after all the times I've been to the east coast as a kid,
-I don't know if I've ever touched the waters of the Atlantic Ocean.
+and I realize that after all the times
+I'd been to the east coast as a kid,
+I don't know if I'd ever touched
+the waters of the Atlantic Ocean.
+
 And so I do.
-Despite the grey color that I'm sure would repulse me by daylight,
-and despite the foul odor that I'd inhale if my sinuses were clearer,
-I still reach out and touch the water. Even though I know I shouldn't.
-And it wasn't the moment of epiphany that I had anticipated.
+
+Despite the bleak color
+that I'm sure would repulse me by daylight,
+and despite the foul odor
+that I'd inhale if my sinuses were clearer,
+I still reach out and touch the water,
+And the smell of the sand on my fingers
+tells me that I shouldn't have.
+
+It wasn't the moment of epiphany
+that I had envisioned mere seconds prior.
 
 And then I thought of Bruce Springsteen,
 and how he sang a sad tale of Atlantic City,
 and I tried to recall the lyrics,
-as if I might find insights into another man's perspective
+as if it might help to seek insight
+into another man's perspective
 into this strange mirage of the anthropocene.
 
 Springsteen begins,
 "They blew up a chicken man in Philly last night
 and now they blew up his house, too"
 And every time I heard those words, I thought,
-"What does that mean? That's absurd. That doesn't make any sense."
-And now, here in Atlantic City, I've thought about it.
+"What does that mean?
+That's absurd.
+That doesn't make any sense."
 
-I still don't know what it means,
-but I know how it *feels*.
+And now, as my soles slowly sink
+into this sandy Sunday evening
+here in central New Jersey,
+I still don't understand.
+
+I still don't know what he meant,
+but I know how he *felt*.
 I *get it*.
 
 Looking out at that city, I *get it*.
@@ -36,24 +52,48 @@ that my shallow footprints now inhabit
 momentarily, until the next high tide.
 
 And I see the casinos rising sharply out of the shore,
-disrupting the otherwise-perfect landscape
-and the boardwalk dancing gently along the seastrand
+disrupting the otherwise-perfect landscape,
+and the boardwalk dances gently along the seastrand
 in the dark jungle-night,
 
 And it occurs to me that Bruce Springsteen
-never mentioned the beach, or the casinos, or the boardwalk,
-but focused instead on deeper, more internal problems:
-crime, poverty, and hopelessness.
-These were the things he saw in this sinful city,
-and these are the things I know I am full of.
+never mentioned the beach,
+or the casinos, or the boardwalk,
+but focused instead on deeper,
+more internal problems:
 
-But, here I am.
-At the same place that inspired Bruce Springsteen
+Crime.
+Poverty.
+Desperation.
+
+These were the things he saw
+in this pseudo-sin-city,
+and these are the things
+that I know I am full of.
+
+But, here I am,
+at the same place that inspired Bruce Springsteen
 to have these obscure, absurd, melancholic visions
-and words in his mind.
+and words in his mind;
 
-They blew up a chicken man in Philly last night.
+and then the tide nearly soaks my shoes
+and I realize that my impression here
+is temporary; fungible.
+
+And so I squat on the beach
+and I trace the sand with my index finger,
+solemnly beckoning the sea to erase me,
+and I step back to see my two-word poem
+glowing pink and green with the skyline:
+
+"FORGET ME".
 
 <image>
+src="forget_me.jpg"
+</image>
+<image>
 src="atlantic_city_boat.jpg"
+</image>
+<image>
+src="atlantic_skyline.jpg"
 </image>
