@@ -1,6 +1,7 @@
 import { BookOpenIcon, ChevronDownIcon, ChevronUpIcon, ClipboardCopyIcon, CheckIcon } from "@heroicons/react/solid";
 import React, { useState, useEffect } from "react";
 import { publications } from "../data";
+import scholarMetrics from "../generated/scholarMetrics.json";
 
 function PublicationCard({ publication }) {
   const [isAbstractExpanded, setIsAbstractExpanded] = useState(false);
@@ -194,20 +195,41 @@ export default function PublicationsPage() {
             paper and related materials.
           </p>
 
-          <div className="mt-6">
-            <a
-              href="https://scholar.google.com/citations?user=iowXMSwAAAAJ&hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mx-auto rounded-full border border-gray-300 dark:border-gray-600 bg-white/90 dark:bg-gray-800/90 px-4 py-2 text-lg font-medium text-gray-700 dark:text-gray-200 shadow-sm transition-all hover:-translate-y-0.5 hover:border-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
-            >
-              <img
-                src="/icons/google-scholar.svg"
-                alt="Google Scholar"
-                className="h-6 w-6"
-              />
-              Google Scholar
-            </a>
+          <p className="lg:w-[50%] mx-auto leading-tight text-sm text-gray-700 dark:text-gray-400 italic mt-2">
+            This page focused on my first-author publications, i.e. research projects in which I had a principal role. For a complete list of my publications, including co-authored papers, please visit my Google Scholar profile, linked below.
+          </p>
+
+          <div className="mt-3">
+            <div className="inline-flex flex-wrap items-center justify-center gap-3">
+              
+              <a
+                href="https://scholar.google.com/citations?user=iowXMSwAAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-blue-200 dark:border-blue-900 bg-blue-50/90 dark:bg-blue-950/90 px-4 py-2 text-lg font-medium text-blue-600 dark:text-gray-200 shadow-sm transition-all hover:-translate-y-0.5 hover:border-blue-400 hover:text-blue-700 dark:hover:text-blue-300"
+              >
+                <img
+                  src="/icons/google-scholar.svg"
+                  alt="Google Scholar"
+                  className="h-6 w-6"
+                />
+                Google Scholar
+              </a>
+
+              <span className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/90 px-4 py-2 text-sm font-medium text-grey-700 shadow-sm dark:border-blue-900 dark:bg-blue-950/70 dark:text-blue-200">
+                <span className="uppercase tracking-wide text-[0.7rem] text-grey-700 dark:text-blue-300">H-index</span>
+                <span className="inline-flex h-7 min-w-7 items-center justify-center rounded-full bg-blue-600 px-2 text-sm font-semibold text-white">
+                  {scholarMetrics.hIndex}
+                </span>
+              </span>
+
+              <span className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/90 px-4 py-2 text-sm font-medium text-grey-700 shadow-sm dark:border-blue-900 dark:bg-blue-950/70 dark:text-blue-200">
+                <span className="uppercase tracking-wide text-[0.7rem] text-grey-700 dark:text-blue-300">Citations</span>
+                <span className="inline-flex h-7 min-w-7 items-center justify-center rounded-full bg-blue-600 px-2 text-sm font-semibold text-white">
+                  {scholarMetrics.citations}
+                </span>
+              </span>
+            </div>
           </div>
         </div>
 

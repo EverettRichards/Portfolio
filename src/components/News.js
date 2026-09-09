@@ -4,8 +4,16 @@ import './News.css';
 
 const initialNews = [
     {
+        date: '2026-09-08',
+        event: '<b>Appointed as a Senator <i>Pro Tempore</i></b> to the UD Graduate Student Government, representing the Department of Computer and Information Sciences.'
+    },
+    {
+        date: '2026-09-08',
+        event: '<b>Appointed to the Student Advisory Council</b> of the Biden Institute at UD.'
+    },
+    {
         date: '2026-08-20',
-        event: '<b>Joined the University of Delaware as a PhD Student</b> in Computer Science, specializing in Artificial Intelligence and Robotics.'
+        event: '<b>Joined the University of Delaware as a PhD Student</b> in Computer Science, specializing in computer vision and edge computing for autonomous vehicles.'
     },
     {
         date: '2026-07-10',

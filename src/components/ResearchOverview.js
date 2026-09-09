@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 export default function ResearchOverview() {
   const universities = [
     {
-      name: "Worcester Polytechnic Institute (WPI)",
+      name: "Worcester Polytechnic Institute",
       description: "Developed noise-aware training for collaborative autonomous vehicle perception, achieving up to 40% improvement in robustness under challenging conditions.",
       image: "./research_videos/carla.gif"
     },
     {
-      name: "University of California San Diego (UCSD)",
+      name: "University of California San Diego",
       description: "Modeled imitation learning robustness to noisy demonstrations using sigmoid degradation curves with R² values between 0.91 and 0.99.",
       image: "./research_videos/mimicgen_coffee.gif"
     },
@@ -20,7 +20,7 @@ export default function ResearchOverview() {
       image: "./research_videos/reu_video.gif"
     },
     {
-      name: "San Diego State University (SDSU)",
+      name: "San Diego State University",
       description: "Designed data analytics for construction worker safety using IMU sensor fusion and machine learning with real-time 3D visualization.",
       image: "./research_videos/dice_video.gif"
     }

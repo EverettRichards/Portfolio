@@ -13,7 +13,9 @@
     "readdirp": "^3.6.0"
   },
   "scripts": {
+    "prestart": "node scripts/update-scholar-hindex.mjs",
     "start": "craco start",
+    "prebuild": "node scripts/update-scholar-hindex.mjs",
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
