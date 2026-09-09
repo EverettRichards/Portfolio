@@ -19,12 +19,16 @@ tells me that I shouldn't have.
 It wasn't the moment of epiphany
 that I had envisioned mere seconds prior.
 
+<image>
+src="atlantic_city_boat.jpg"
+</image>
+
 And then I thought of Bruce Springsteen,
 and how he sang a sad tale of Atlantic City,
 and I tried to recall the lyrics,
-as if it might help to seek insight
-into another man's perspective
-into this strange mirage of the anthropocene.
+as if it might help me to hear
+another man's perspective
+on this strange mirage of the anthropocene.
 
 Springsteen begins,
 "They blew up a chicken man in Philly last night
@@ -55,7 +59,9 @@ And I see the casinos rising sharply out of the shore,
 disrupting the otherwise-perfect landscape,
 and the boardwalk dances gently along the seastrand
 in the dark jungle-night,
-
+<image>
+src="atlantic_skyline.jpg"
+</image>
 And it occurs to me that Bruce Springsteen
 never mentioned the beach,
 or the casinos, or the boardwalk,
@@ -90,10 +96,4 @@ glowing pink and green with the skyline:
 
 <image>
 src="forget_me.jpg"
-</image>
-<image>
-src="atlantic_city_boat.jpg"
-</image>
-<image>
-src="atlantic_skyline.jpg"
 </image>
