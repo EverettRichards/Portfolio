@@ -32,6 +32,7 @@ PDF_DATE_OVERRIDES = {
     "Shadow": "5/12/26",
     "The Three-Year Curse": "7/26/26",
     "The Wanderer": "5/20/26",
+    "Show and Tell": "9/15/26",
 }
 
 # Candidate input formats for dates found in txt first-lines
