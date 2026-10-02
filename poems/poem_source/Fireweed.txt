@@ -35,3 +35,13 @@ and though the soil is still
 rich and battered with soot,
 
 all they can see is the fireweed.
+
+<image>
+src="fireweed.jpg"
+</image>
+<image>
+src="burnt_palms.jpg"
+</image>
+<image>
+src="fireweed_forest.png"
+</image>
