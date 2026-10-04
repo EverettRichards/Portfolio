@@ -56,9 +56,9 @@
     "stormy": false
   },
   {
-    "title": "By The Time I Come Back To San Diego (That's How I Got To Delaware)",
+    "title": "By The Time I Come Back To San Diego (That's How I Got To Newark)",
     "date": "10/2/26",
-    "content": "By the time I come back to San Diego,\nanother season will have passed.\n\nThe soft, verdant leaves\nthat I ride by every day\nwill have faded and fallen\nin damp piles by the street,\n\nThe winds that I race against\non my northward commute\nwill only hasten their flights\nand grow cold as they grow restless,\n\nThe day-one acquaintances\nI bump into here and there\nwill become a core part\nof my weekly routine,\n\nThe troubles that burden\nmy heart and my mind\nwill be soft-superseded\nby new strifes and worries,\n\nAnd the memories of home\nthat I idly hold\nwill be less pure than ever\nas my new life unfolds.\n\nAnother season has passed;\nthat's how I got to Delaware.",
+    "content": "By the time I come back to San Diego,\nanother season will have passed.\n\nThe soft, verdant leaves\nthat I ride by every day\nwill have faded and fallen\nin damp piles by the street,\n\nThe winds that I race against\non my northward commute\nwill only hasten their flights\nand grow cold as they grow restless,\n\nThe day-one acquaintances\nI bump into here and there\nwill become a core part\nof my weekly routine,\n\nThe troubles that burden\nmy heart and my mind\nwill be soft-superseded\nby new strifes and worries,\n\nAnd the memories of home\nthat I idly hold\nwill be less pure than ever\nas my new life unfolds.\n\nAnother season has passed;\nthat's how I got to Newark.",
     "type": "text",
     "favorite": false,
     "stormy": false
@@ -138,9 +138,9 @@
   {
     "title": "Fireweed",
     "date": "10/2/26",
-    "content": "They say that a rumor\ncan spread like wildfire,\nand of course, they mean\nquickly, crudely, indiscriminantly,\npropagating in all directions,\n\nbut what they don't tell you\nis that the scorched trees\noften remain upright,\ncoated in their own charcoal\nbut alive nonetheless,\n\nand that, way up north,\nthe fireweed races\nto fill the nurtured soil\nand bring magenta vibrance\nto the forsaken land,\n\nthough not quite as fast\nas the fires that first\nhad to rip through the forest\nto make room for new life.\n\nTo the faces and foes\nI had ne'er before seen,\nI was worse than a stranger:\nI was well known;\n\nAnd to the friends I have found\na mere two seasons later,\nI am born again,\nand though the soil is still\nrich and battered with soot,\n\nall they can see is the fireweed.\n\n<image>\nsrc=\"fireweed.jpg\"\n</image>\n<image>\nsrc=\"burnt_palms.jpg\"\n</image>\n<image>\nsrc=\"fireweed_forest.png\"\n</image>",
+    "content": "They say that a rumor\ncan spread like wildfire,\nand of course, they mean\nquickly, crudely, indiscriminantly,\npropagating in all directions,\n\nbut what they don't tell you\nis that the scorched trees\noften remain upright,\ncoated in their own charcoal\nbut alive nonetheless,\n\nand that, way up north,\nthe fireweed races\nto fill the nurtured soil\nand bring magenta vibrance\nto the forsaken land,\n\nthough not quite as fast\nas the fires that first\nhad to rip through the forest\nto make room for new life.\n\nTo the faces and foes\nI had ne'er before seen,\nI was worse than a stranger:\nI was well known;\n\nAnd to the friends I have found\na mere two seasons later\nin this forested place,\nI am born again;\n\nand though the soil is still\nrich and battered with soot,\nall they can see in me\nis a prairie of fireweed.\n\n<image>\nsrc=\"fireweed.jpg\"\n</image>\n<image>\nsrc=\"burnt_palms.jpg\"\n</image>\n<image>\nsrc=\"fireweed_forest.png\"\n</image>",
     "type": "text",
-    "favorite": false,
+    "favorite": true,
     "stormy": false
   },
   {
@@ -229,7 +229,7 @@
     "content": "They say sober thoughts\nare at risk to become\ndrunk words, though my mind\nis still not quite numb;\n\nAnd you think you see meaning\n'tween the lines in my po'ms,\nlike burden-free whispers\nin their ramshackle homes;\n\nAnd I wouldn't quite blame you\nto misread my aim,\nbut to go love another\nis not part of my game;\n\nYou can sift through my words,\nbut that's not the issue;\nsee, I'm not drunk enough\nto tell you that I miss you.",
     "type": "text",
     "favorite": false,
-    "stormy": false
+    "stormy": true
   },
   {
     "title": "If I Could Capture The Moon",
@@ -244,7 +244,7 @@
     "date": "10/1/26",
     "content": "If I should fall from grace,\nyou should know that my efforts\nwere all spent in vain\nchasing bone-breaking pavement\nover blood pedigree.\n\nIf I should fall from grace,\nyou ought to leave me behind\nlike the leather-bound wallet\nthat didn't say \"hello\"\non your way out the door.\n\nIf I should fall from grace,\nplease be warned by my devotion\nand my failure, in loving just one,\nwhile my furrow-browed friends\nstood crinkled in contempt.\n\nIf I should fall from grace,\nI urge you not to mistake\nmy plain feelings for manifestos;\nfor the only coherency found here\nis by coincidence alone.\n\nIf I should fall from grace,\nremember always that freedom\nis the fundamental virtue:\nfrom it, all others can be derived;\nwithout it, others arrive only by chance.\n\nIf I should fall from grace,\nlet me fall, and fall, and fall,\nand do not try to arrest me\nwith a blanket and pillow;\nto fall, thus, is my destiny.",
     "type": "text",
-    "favorite": false,
+    "favorite": true,
     "stormy": false
   },
   {
@@ -286,14 +286,6 @@
     "type": "text",
     "favorite": false,
     "stormy": false
-  },
-  {
-    "title": "Medley, Part I",
-    "date": "9/17/26",
-    "content": "* A medley of song lyrics from a certain playlist... Paragraph breaks mean a new song. Occasionally I will include >2 lines from a single song, usually from different parts of the song.\n\nI thought of you as everything\nI've had but couldn't keep.\n\nIn the middle of the night,\nI may watch you go,\n\nand something in the orange\ntells me that you're never coming home.\n\nI've looked for love\nin all the same old places,\n\nbut oh, how it feels so real,\nlying here with no one near.\n\nDid you finally get the chance\nto dance along the light of day?\n\nI loved you first, yeah,\nI loved you the most;\nYou tell me that you love me,\nyet you won't even hug me.\n\nBut the letters that you left behind,\nno longer shall I read;\nI'll soon forget\nwhat was never there.\n\nWhen you can fall for chains of silver,\nyou can fall for chains of gold;\nall I do is miss you and the way we used to be;\nall I do is kiss you through the bars of a rhyme;\n\nand after all the violence and double-talk,\nthere's just a song in all the trouble and the strife.\n\nYou could stand me up at the gates of hell,\nbut I won't back down.\n\nTold a girl of the summer by the sea,\nsaid to her, would you like to go with me?\nIn with changes, always out with time;\nnothing left but walking down the line.\n\nOpen the door, love,\nlet your light shine in;\n\nin the morning sun, I couldn't tell you\nso many things about how much I really love you.\n\nWe were in love! We were in love!\nI can wait, I can wait.\n\nI haven't seen you in ages,\nbut it's not as bleak as it seems;\n\njust go to sleep\nand dream I'm with you.\n\n'cause you make me complete,\nand you'll always have a piece of me.\n\nBut I'm a million different people\nfrom one day to the next;\n\nwe're just two lost souls\nswimming in a fish bowl,\nyear after year.\n\nI make my way to a small cafe.\nI wonder what you did today?\n\nGod willing, we will meet again someday.",
-    "type": "text",
-    "favorite": false,
-    "stormy": true
   },
   {
     "title": "Meursault",
@@ -502,6 +494,14 @@
     "type": "text",
     "favorite": true,
     "stormy": false
+  },
+  {
+    "title": "Stormy Eyes Medley",
+    "date": "9/17/26",
+    "content": "* A medley of song lyrics from a certain playlist... Paragraph breaks mean a new song. Occasionally I will include >2 lines from a single song, usually from different parts of the song.\n\nI thought of you as everything\nI've had but couldn't keep.\n\nIn the middle of the night,\nI may watch you go,\n\nand something in the orange\ntells me that you're never coming home.\n\nI've looked for love\nin all the same old places,\n\nbut oh, how it feels so real,\nlying here with no one near.\n\nDid you finally get the chance\nto dance along the light of day?\n\nI loved you first, yeah,\nI loved you the most;\nYou tell me that you love me,\nyet you won't even hug me.\n\nBut the letters that you left behind,\nno longer shall I read;\nI'll soon forget\nwhat was never there.\n\nWhen you can fall for chains of silver,\nyou can fall for chains of gold;\nall I do is miss you and the way we used to be;\nall I do is kiss you through the bars of a rhyme;\n\nand after all the violence and double-talk,\nthere's just a song in all the trouble and the strife.\n\nYou could stand me up at the gates of hell,\nbut I won't back down.\n\nTold a girl of the summer by the sea,\nsaid to her, would you like to go with me?\nIn with changes, always out with time;\nnothing left but walking down the line.\n\nOpen the door, love,\nlet your light shine in;\n\nin the morning sun, I couldn't tell you\nso many things about how much I really love you.\n\nWe were in love! We were in love!\nI can wait, I can wait.\n\nI haven't seen you in ages,\nbut it's not as bleak as it seems;\n\njust go to sleep\nand dream I'm with you.\n\n'cause you make me complete,\nand you'll always have a piece of me.\n\nBut I'm a million different people\nfrom one day to the next;\n\nwe're just two lost souls\nswimming in a fish bowl,\nyear after year.\n\nI make my way to a small cafe.\nI wonder what you did today?\n\nGod willing, we will meet again someday.",
+    "type": "text",
+    "favorite": false,
+    "stormy": true
   },
   {
     "title": "Stormy Eyes, Part I",

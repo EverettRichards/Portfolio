@@ -1,3 +1,4 @@
+#favorite
 10/02/26
 
 They say that a rumor
@@ -29,12 +30,14 @@ I was worse than a stranger:
 I was well known;
 
 And to the friends I have found
-a mere two seasons later,
-I am born again,
+a mere two seasons later
+in this forested place,
+I am born again;
+
 and though the soil is still
 rich and battered with soot,
-
-all they can see is the fireweed.
+all they can see in me
+is a prairie of fireweed.
 
 <image>
 src="fireweed.jpg"

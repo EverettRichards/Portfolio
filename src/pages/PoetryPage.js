@@ -104,6 +104,7 @@ export default function PoetryPage() {
       .map((era, idx) => ({
         id: era.id || `era-${idx}`,
         title: era.title || era.name || "Untitled Era",
+        subtitle: era.subtitle || "",
         cutoff: parseForSort(era.date),
         date: era.date || "",
       }))
@@ -146,7 +147,7 @@ export default function PoetryPage() {
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-700 dark:text-gray-400">
             A selection of poems and short stories I've written. Click a title to expand and read the work.
-            {" "}Some entries are personal favorites and are marked with a <FavoriteStarMarker className="mx-0.5" />. Entries related to Stormy Eyes are marked with a <StormyEyeMarker className="mx-0.5" />.
+            {" "}Some entries are personal favorites and are marked with a <FavoriteStarMarker className="mx-0.5" />.
           </p>
         </div>
 
@@ -161,11 +162,16 @@ export default function PoetryPage() {
                 return (
                   <div
                     key={`${item.era.id}-${idx}`}
-                    className="h-24 rounded-lg flex items-center justify-center bg-gray-100 dark:bg-gray-900"
+                    className="min-h-24 rounded-lg flex items-center justify-center bg-gray-100 dark:bg-gray-900 px-4 py-5"
                   >
-                    <p className="text-center text-lg font-semibold tracking-wide text-gray-700 dark:text-gray-300">
-                      {item.era.title}
-                    </p>
+                    <div className="text-center text-gray-700 dark:text-gray-300">
+                      <p className="text-lg font-semibold tracking-wide">{item.era.title}</p>
+                      {item.era.subtitle ? (
+                        <p className="mt-1 text-sm font-normal tracking-normal text-gray-600 dark:text-gray-400">
+                          {item.era.subtitle}
+                        </p>
+                      ) : null}
+                    </div>
                   </div>
                 );
               }
