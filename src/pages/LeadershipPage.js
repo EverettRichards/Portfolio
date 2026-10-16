@@ -3,6 +3,24 @@ import React, { useEffect } from "react";
 
 const leadershipData = [
   {
+    title: "Advisory Council Member",
+    org: "The Biden Institute at UD",
+    link: "https://sites.udel.edu/gsg/",
+    body: `
+    Served on the advisory council that plans and provides feedback regarding guest speakers and special events hosted by the Biden Institute at the University of Delaware. Such speakers have included President Joe Biden, former DNC Senior Advisor Tom Manatos, and former New Orleans mayor Mitch Landrieu.
+    `,
+    image: require("../images/biden2.jpg")
+  },
+  {
+    title: "Graduate Student Senator",
+    org: "UD Graduate Student Government",
+    link: "https://sites.udel.edu/gsg/",
+    body: `
+    Represented the Department of Computer and Information Sciences in the Graduate Student Government at the University of Delaware. Served on the Transportation Committee, where I co-sponsored a successful resolution aimed at improving safety and accessibility for bicyclists on campus.
+    `,
+    image: require("../images/GSG.jpg")
+  },
+  {
     title: "Founder & President",
     org: "Association for Computing Machinery (ACM) at SDSU",
     link: "https://acm.sdsu.edu",
@@ -28,7 +46,7 @@ const leadershipData = [
     title: "University Council Representative",
     org: "Associated Students of San Diego State University",
     link: "https://as.sdsu.edu/",
-    body: `Represented nearly 8,000 College of Sciences students on the Associated Students University Council. Met with university officials (including SDSU President Adela de la Torre, pictured on the right) to advocate for student needs. Sponsored a successful
+    body: `Represented nearly 8,000 College of Sciences students on the Associated Students University Council. Met with university officials (including SDSU President Adela de la Torre, pictured on the right) to advocate for student needs. Helped secure an additional $30,000 in funding for student organizations. Sponsored a successful
     <a href="https://as.sdsu.edu/govt/resources/legislation/149" target="_blank" class="underline">resolution</a>
     advocating for increased transparency in mandatory student fee decisions.`,
     image: require("../images/adela1.jpg"),
