@@ -7,8 +7,8 @@ export const getInitialTheme = () => {
     return storedTheme;
   }
   
-  // Default to dark theme
-  return 'dark';
+  // Default to light theme
+  return 'light';
 };
 
 export const applyTheme = (theme) => {
