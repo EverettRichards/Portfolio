@@ -11,6 +11,7 @@ Each poem file:
 PDF files are copied into public/poems so the React dev server serves them as static assets.
 Output: src/poems.json -> [{"title": "...", "date": "...", "content": "...", "type":"text|pdf"}]
 """
+import argparse
 import json
 import re
 import shutil
@@ -172,7 +173,7 @@ def extract_text_metadata(lines):
 
     return date, content, is_favorite, is_stormy
 
-def build_poems(source_dir: Path):
+def build_poems(source_dir: Path, compress: bool = False):
     poems = []
     if not source_dir.exists():
         print(f"No source directory found at {source_dir}")
@@ -184,7 +185,8 @@ def build_poems(source_dir: Path):
         for media_file in POEM_MEDIA_DIR.iterdir():
             if media_file.is_file():
                 try:
-                    compress_media_file(media_file)
+                    if compress:
+                        compress_media_file(media_file)
                     shutil.copy2(media_file, PUBLIC_MEDIA_DIR / media_file.name)
                 except Exception as e:
                     print(f"Failed copying poem media {media_file.name} to public: {e}")
@@ -272,5 +274,13 @@ def write_output(poems, out_file: Path):
         print(f"Failed to write {out_file}: {e}")
 
 if __name__ == "__main__":
-    poems = build_poems(SOURCE_DIR)
+    parser = argparse.ArgumentParser(description="Build the poem archive and public assets.")
+    parser.add_argument(
+        "--compress",
+        action="store_true",
+        help="Compress oversized poem images before copying them to public assets.",
+    )
+    args = parser.parse_args()
+
+    poems = build_poems(SOURCE_DIR, compress=args.compress)
     write_output(poems, OUTPUT_FILE)
