@@ -7,6 +7,7 @@ export default function SectionDots() {
     { id: 'hero', label: 'Hero' },
     { id: 'research-overview', label: 'Research' },
     { id: 'leadership-preview', label: 'Leadership' },
+    { id: 'awards', label: 'Awards' },
     { id: 'skills', label: 'Skills' },
     { id: 'contact', label: 'Contact' }
   ];

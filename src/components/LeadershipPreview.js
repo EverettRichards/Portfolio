@@ -10,8 +10,8 @@ export default function LeadershipPreview() {
       icon: "🏆"
     },
     {
-      title: "University Council Representative",
-      description: "Represented College of Sciences students, advocating for STEM research funding.",
+      title: "Student Government Representative",
+      description: "Advocated for student interests in the SDSU University Council and the UD Graduate Student Senate.",
       icon: "🎓"
     },
     {

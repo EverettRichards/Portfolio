@@ -5,25 +5,30 @@ import { Link } from "react-router-dom";
 export default function ResearchOverview() {
   const universities = [
     {
-      name: "Worcester Polytechnic Institute",
+      name: "Intelligent Transportation Systems",
+      description: "Explored state-of-the-art techniques in intelligent transportation systems, focusing on autonomous vehicles, robotaxis, and traffic infrastructure.",
+      image: "./research_videos/carlab.jpg"
+    },
+    {
+      name: "Noise-Aware Sensor Fusion",
       description: "Developed noise-aware training for collaborative autonomous vehicle perception, achieving up to 40% improvement in robustness under challenging conditions.",
-      image: "./research_videos/carla.gif"
+      image: "./research_videos/chaos.png"
     },
     {
-      name: "University of California San Diego",
-      description: "Modeled imitation learning robustness to noisy demonstrations using sigmoid degradation curves with R² values between 0.91 and 0.99.",
-      image: "./research_videos/mimicgen_coffee.gif"
-    },
-    {
-      name: "University of Delaware",
+      name: "Collaborative Object Detection on the Edge",
       description: "Created edge-enabled collaborative object detection framework (PACE & VOTE algorithms) for multi-vehicle perception systems.",
-      image: "./research_videos/reu_video.gif"
+      image: "./research_videos/ecod.png"
     },
     {
-      name: "San Diego State University",
-      description: "Designed data analytics for construction worker safety using IMU sensor fusion and machine learning with real-time 3D visualization.",
-      image: "./research_videos/dice_video.gif"
-    }
+      name: "Imitation Learning for Articulated Robotics",
+      description: "Modeled imitation learning robustness to noisy demonstrations using sigmoid degradation curves with R² values between 0.91 and 0.99.",
+      image: "./research_videos/coffeebot.png"
+    },
+    // {
+    //   name: "Safety in Industrial Cyber-Physical Systems",
+    //   description: "Designed data analytics for construction worker safety using IMU sensor fusion and machine learning with real-time 3D visualization.",
+    //   image: "./research_videos/dice_video.gif"
+    // }
   ];
 
   return (
@@ -35,9 +40,8 @@ export default function ResearchOverview() {
             Research Experience
           </h2>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-700 dark:text-gray-400">
-            I have conducted research at four R1 research universities, focusing on machine learning,
-            computer vision, and robotics. My work spans autonomous vehicles, imitation learning,
-            and sensor fusion applications.
+            I have completed a wide range of research projects across multiple disciplines and at four different R1 research universities.
+            My work focuses on machine learning, computer vision, robotics, and intelligent transportation systems.
           </p>
         </div>
 
@@ -54,7 +58,7 @@ export default function ResearchOverview() {
                 <img
                   src={uni.image}
                   alt={`Research at ${uni.name}`}
-                  className="w-full h-48 object-cover rounded-lg"
+                  className="w-full h-auto object-cover rounded-lg"
                 />
               )}
             </div>
