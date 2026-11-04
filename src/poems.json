@@ -249,9 +249,17 @@
   },
   {
     "title": "I Closed My Eyes",
-    "date": "6/12/26",
+    "date": "8/16/26",
     "content": "/poems/I Closed My Eyes.pdf",
     "type": "pdf",
+    "favorite": false,
+    "stormy": false
+  },
+  {
+    "title": "I Don't Think I've Seen You Smile Today",
+    "date": "11/4/26",
+    "content": "I don't think I've seen you smile today.\n\nDid I do something wrong?\nDid I say something rude?\nWas my demeanor inelegant\nand my manners all crude?\n\nOr, perhaps, something happened\nat the place where you work--\nDid you fumble a deadline?\nWas your boss a big jerk?\n\nOr, maybe, I'm reading\nsome false clues in your eyes,\nfor I just cannot see\nwhat's beyond your disguise.\n\nBut, alas, you just shrug\nand say it's quite alright,\nso I forfeit my probe\nand I bid you goodnight.",
+    "type": "text",
     "favorite": false,
     "stormy": false
   },
@@ -678,6 +686,14 @@
     "type": "text",
     "favorite": false,
     "stormy": true
+  },
+  {
+    "title": "The End of an Era",
+    "date": "11/3/26",
+    "content": "* A poem about the 2026 U.S. midterm elections, and the ensuing end of the Trump era.\n\nAn era has died tonight,\nits crooked shadow no longer to reign\no'er the river-mended country;\nA decade of chaos, concluded.",
+    "type": "text",
+    "favorite": false,
+    "stormy": false
   },
   {
     "title": "The French Quarter",
