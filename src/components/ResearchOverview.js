@@ -12,17 +12,17 @@ export default function ResearchOverview() {
     {
       name: "Noise-Aware Sensor Fusion",
       description: "Developed noise-aware training for collaborative autonomous vehicle perception, achieving up to 40% improvement in robustness under challenging conditions.",
-      image: "./research_videos/chaos.png"
-    },
-    {
-      name: "Collaborative Object Detection on the Edge",
-      description: "Created edge-enabled collaborative object detection framework (PACE & VOTE algorithms) for multi-vehicle perception systems.",
-      image: "./research_videos/ecod.png"
+      image: "./research_videos/wpi_poster.jpg"
     },
     {
       name: "Imitation Learning for Articulated Robotics",
       description: "Modeled imitation learning robustness to noisy demonstrations using sigmoid degradation curves with R² values between 0.91 and 0.99.",
-      image: "./research_videos/coffeebot.png"
+      image: "./research_videos/mit_il.jpg"
+    },
+    {
+      name: "Collaborative Object Detection on the Edge",
+      description: "Created edge-enabled collaborative object detection framework (PACE & VOTE algorithms) for multi-vehicle perception systems.",
+      image: "./research_videos/buggies.jpg"
     },
     // {
     //   name: "Safety in Industrial Cyber-Physical Systems",
